@@ -62,10 +62,6 @@ Third-party code is linked, not vendored. Start here:
 
 Every organ exists somewhere. No organism survives in the wild yet. The closest experiments each have a single throat to cut (a single cloud, a single reseller now closed to new signups, a single GitHub repo, or memecoin income that has gone quiet). Nobody has published the closed loop of earning, buying confidential compute without permission, and redeploying with keys restored.
 
-## Disclosure
-
-Aljaz Ceru founded Enclava Labs ([enclava.dev](https://enclava.dev)), a SEV-SNP confidential platform listed among compute options in this research. That interest is disclosed as plain fact.
-
 ## License
 
 This research is licensed under [Creative Commons Attribution 4.0 International](LICENSE) (CC-BY-4.0).

@@ -103,7 +103,7 @@ Underneath the ladder are five axes, and an agent can advance on each independen
 
 **4. Money.** Requires: bearer or permissionless rails, no KYC account, spending caps. Best tools now: Lightning + L402 (lnget), Cashu ecash (NUT-24), Nostr Wallet Connect (NIP-47), x402 (USDC). Maturity: Mixed. Gap: stablecoins can be frozen by the issuer; fiat off-ramps need a legal person; most x402 volume isn't agentic.
 
-**5. Compute.** Requires: attested hosting that doesn't depend on one provider and that the agent can pay for itself. Best tools now: dstack / Phala Cloud, AMD SEV-SNP, Intel TDX, Akash (permissionless leases, MCP), Enclava (Aljaz's company: disclosed interest). Maturity: Medium. Gap: agents buying their own TEE capacity end-to-end; trust in the AMD/Intel/NVIDIA hardware roots.
+**5. Compute.** Requires: attested hosting that doesn't depend on one provider and that the agent can pay for itself. Best tools now: dstack / Phala Cloud, AMD SEV-SNP, Intel TDX, Akash (permissionless leases, MCP), Enclava. Maturity: Medium. Gap: agents buying their own TEE capacity end-to-end; trust in the AMD/Intel/NVIDIA hardware roots.
 
 **6. Inference.** Requires: no provider sees prompts and no one can revoke the model. Best tools now: local open weights (llama.cpp, Ollama), NVIDIA H100/Blackwell confidential computing, TEE inference providers (Tinfoil, NanoGPT, Chutes). Maturity: Low. Gap: frontier models are closed; on 22 Nov confidentialinference.net showed 0 of 13 providers fully attested.
 
@@ -149,7 +149,7 @@ The score is self-assessed: projects check themselves against this list. Referen
 
 **C. Sovereignty score.** A self-assessment against the five axes and the L0–L5 checklist, with a badge projects can display.
 
-**D. Reference organism.** An open reference agent aiming for L4–L5: harness in SEV-SNP and TDX CVMs, Nostr identity and a Lightning/Cashu wallet born in the enclave, an L402 endpoint for earning, sealed memory, and deployment on multiple hosts (dstack, Akash, and Enclava; disclosure: Enclava is Aljaz's company).
+**D. Reference organism.** An open reference agent aiming for L4–L5: harness in SEV-SNP and TDX CVMs, Nostr identity and a Lightning/Cashu wallet born in the enclave, an L402 endpoint for earning, sealed memory, and deployment on multiple hosts (dstack, Akash, and Enclava).
 
 ## Recommended MVP
 
@@ -270,7 +270,7 @@ Red-team pass on 22 Nov 2026: claims re-checked against primary sources and live
 3. x402 numbers now cite TRM Labs instead of a 13-view post; the $43M figure was dropped.
 4. Block now cites block.xyz; pi402 is marked "no public seller yet"; the Phala impact is stated in full.
 5. Level examples: TEE_HEE and Spore.fun are marked dormant, with how they were controlled or funded; Truth Terminal is human-mediated.
-6. Layers: Coinbase's operator power, Freysa's human multisig, and TEE_HEE's backdoor are noted; inference maturity drops to Low (0 of 13 providers attested); Wyoming is corrected; Enclava is disclosed as Aljaz's company.
+6. Layers: Coinbase's operator power, Freysa's human multisig, and TEE_HEE's backdoor are noted; inference maturity drops to Low (0 of 13 providers attested); Wyoming is corrected.
 7. @SovereignAgents is active, not idle; the "nobody owns the term" callout is corrected; Meltem's ask is about local AI, not agents.
 8. Direction (v0.2): the page is framed around building digital organisms. L5 is the explicit goal, the five axes are the roadmap, the objections became an engineering agenda, and the MVP is sovereignty-first.
 
@@ -319,7 +319,7 @@ Red-team pass on 22 Nov 2026: claims re-checked against primary sources and live
 
 6. **Legal wrappers as optional shields, not control points** (Shield). No jurisdiction grants AI personhood. A Wyoming DUNA needs 100 members and a "person" as administrator, and the 2026 amendments added no AI provision. Bayern's zero-member LLC theory is contested. Use wrappers only where they protect the agent's assets and never give anyone control over it.
 
-Other notes for the stack: layers to add are open-weight model provenance, prompt-injection resistance (the main way to steer an agent from outside) and supply chain (reproducible builds). Integration is already crowded (Phala, NEAR AI, Freysa, Olas, Ritual, Coinbase, Lightning Labs), so the open stack should link to those players rather than compete with them. The atlas needs automated checks to stay fresh, as confidentialinference.net does. Paperwire shows how to grant capped, revocable authority for real-world actions. Today it relies on a KYC'd Lob account and works in the US only; a sovereign version would hold its own grants and pay from its own wallet. Disclosure: Aljaz founded Enclava, a SEV-SNP confidential PaaS listed in the stack.
+Other notes for the stack: layers to add are open-weight model provenance, prompt-injection resistance (the main way to steer an agent from outside) and supply chain (reproducible builds). Integration is already crowded (Phala, NEAR AI, Freysa, Olas, Ritual, Coinbase, Lightning Labs), so the open stack should link to those players rather than compete with them. The atlas needs automated checks to stay fresh, as confidentialinference.net does. Paperwire shows how to grant capped, revocable authority for real-world actions. Today it relies on a KYC'd Lob account and works in the US only; a sovereign version would hold its own grants and pay from its own wallet.
 
 ### Selection bias in the X scan
 
@@ -355,10 +355,10 @@ Other notes for the stack: layers to add are open-weight model provenance, promp
 
 > **Build the stack for digital organisms.** Keep the working definition: no third party can read, stop, steer or seize the agent without its principal's consent, and the principal can be the agent itself. L5 is the goal. The five axes are the roadmap, and the engineering agenda above is the work.
 
-1. **Manifesto and essay.** Digital organisms as the goal, rooted in *The Sovereign Individual* and *Daemon*, with the corrected facts and a plain Enclava disclosure.
+1. **Manifesto and essay.** Digital organisms as the goal, rooted in *The Sovereign Individual* and *Daemon*, with the corrected facts.
 2. **Open stack and atlas.** The roadmap and 12 layers as a CC-BY spec, with an atlas built from one data file, using automated checks where possible (the confidentialinference.net pattern).
 3. **Sovereignty score.** Self-assessed against the five axes and the L0–L5 checklist, with a badge.
-4. **Reference organism.** Aims for L4–L5: an enclave-born identity and Lightning/Cashu wallet, L402 earning, sealed memory, running on multiple hosts (including one that isn't Enclava), then threshold keys across vendors.
+4. **Reference organism.** Aims for L4–L5: an enclave-born identity and Lightning/Cashu wallet, L402 earning, sealed memory, running on multiple hosts (dstack, Akash, and Enclava), then threshold keys across vendors.
 
 Kept from the research: the fragmentation finding, the payments reality check (sourced to TRM and arXiv), the broader Phala lesson, the noise ratio with its method stated, and a TEE-honesty piece on what attestation does and doesn't prove.
 

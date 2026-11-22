@@ -52,13 +52,13 @@ Tally of 35 claims: 15 verified, 14 overstated, misattributed, outdated or under
 
 ## 2. Strongest objections (steelmanned)
 
-> This section is a critique, kept for the record. Some engineering points remain useful (TEE fragility, weak live examples, the need for an Enclava disclosure, unsolved key recovery). The implied conclusion — that sovereignty should be redefined as accountable custody — was **rejected**. See [direction.md](direction.md).
+> This section is a critique, kept for the record. Some engineering points remain useful (TEE fragility, weak live examples, unsolved key recovery). The implied conclusion — that sovereignty should be redefined as accountable custody — was **rejected**. See [direction.md](direction.md).
 
 
 1. **The definition's top level is CNAS's threat model.** "No third party can … stop it without its principal's consent", with the principal set to the agent itself, gives you CNAS's "runs outside human control" with "resist correction". The ladder then rewards exactly that at L5 ("only its constitution can stop it"). A scorecard that ranks agents higher the harder they are to stop gamifies the scenario that Axios, Euronews and The Register just covered, and that Ball says may become a crime. The holon caveat doesn't fix this, because the levels still read as "more sovereign is better".
 2. **The ladder isn't an ordering.** L4 doesn't need L2 or L3: a custodial agent on AWS paid through Stripe funds itself, and Truth Terminal and Conway Automaton aimed at self-funding without TEEs. L3 doesn't need L2: MPC or threshold signing, or a hardware signer, gives self-custody without an enclave. L5 contradicts itself: "only its constitution can stop it" and "has a legal wrapper" can't both hold, because a court can always act through the wrapper's officers. These are five independent axes (privacy, custody, funding, continuity, accountability) dressed as a ladder.
 3. **The live examples are mostly dead, and self-funding is mostly tokens.** TEE_HEE: silent since Jan 2025, with a built-in 7-day human recovery. Spore.fun: silent since Jan 2026, funded by memecoins. Conway Automaton: no commits since Aug 2026; one user reported $0 revenue and −$39 over 14 days (https://github.com/Conway-Research/automaton/issues/300). Truth Terminal: human-mediated. TRM puts agentic x402 volume at ~$5–11K a month across all agents. L3–L5 currently describes a graveyard plus a hope.
-4. **TEE-centrism has two problems: it's fragile, and it's a conflict of interest.** L2 rests on AMD/Intel/NVIDIA attestation keys and TCB policy, which are third parties by definition. Physical attacks (TEE.fail) are out of the vendors' threat model, and the operator with physical access is exactly the party L2 claims to exclude. The framework's own centrepiece, dstack, was the vector in October. Aljaz's own directory shows 0 of 13 inference providers fully attested. And Aljaz founded Enclava (a SEV-SNP confidential PaaS, https://enclava.dev), which the framework lists as a compute option with no disclosure, so a spec that makes TEEs the gate to L2+ will read as marketing.
+4. **TEE-centrism is fragile.** L2 rests on AMD/Intel/NVIDIA attestation keys and TCB policy, which are third parties by definition. Physical attacks (TEE.fail) are out of the vendors' threat model, and the operator with physical access is exactly the party L2 claims to exclude. The framework's own centrepiece, dstack, was the vector in October. confidentialinference.net shows 0 of 13 inference providers fully attested.
 5. **"No human backdoor" key recovery is unsolved, and nobody shipping it actually avoids one.** Sealed keys die with the hardware, firmware or vendor. Every real system recovers through a human or a governance quorum: TEE_HEE's timed credential release, Freysa's committee multisig, Coinbase's operator policy, dstack's KMS governance. The scorecard criterion "no human has ever seen the keys" can't be verified from outside, and when it's true it means user funds die with the enclave.
 
 Other objections:
@@ -86,7 +86,7 @@ Other objections:
 
 **Survives:** the fragmentation observation; the payments reality check (with TRM and arXiv as sources); the Phala lesson, broadened; the noise ratio, with its method stated; Ball's role and view count; the follower counts; the TEE-honesty piece.
 
-**Fix:** the CNAS definition; who coined the term; the x402 sources; TEE_HEE and Truth Terminal attribution; Wyoming; @SovereignAgents; pi402 "shipping"; Paperwire's scope; the Enclava disclosure.
+**Fix:** the CNAS definition; who coined the term; the x402 sources; TEE_HEE and Truth Terminal attribution; Wyoming; @SovereignAgents; pi402 "shipping"; Paperwire's scope.
 
 **Drop:** "nobody owns the term"; "security named it first"; L5's "only its constitution can stop it"; public ratings of named third-party projects; "reply to CNAS/Ball to reclaim the term" as a growth plan.
 
@@ -105,9 +105,9 @@ Other objections:
 Stop defining sovereignty as "nobody can stop it". Define it as **accountable custody**: every power over an agent (read, steer, halt, upgrade, spend, recover) is held by a named party, provably, and the agent can prove the full list. This keeps the privacy and self-custody ambition, answers CNAS with its own distinction (persistent vs sovereign), and makes a declared halt path a required property at every level instead of a weakness.
 
 MVP (2 weeks), replacing spec + Atlas + scorecard:
-1. **Essay:** "Sovereign ≠ unstoppable", with the corrected facts above, the accountable-custody definition, and a disclosure of the Enclava interest.
+1. **Essay:** "Sovereign ≠ unstoppable", with the corrected facts above, the accountable-custody definition.
 2. **Agent Control Manifest v0:** a small JSON schema listing who can read, halt, upgrade, spend and recover, each row backed by evidence (an attestation quote, a multisig address, a macaroon or grant caveat, a Paperwire-style grant), plus a CLI verifier. This is the confidentialinference.net pattern (automated, objective checks) applied to agents.
-3. **One reference agent** that publishes a passing manifest: an enclave-held operating key, an owner-held halt key, L402 spend caps, a capped grant for any real-world action, deployed on two targets including one that isn't Enclava.
+3. **One reference agent** that publishes a passing manifest: an enclave-held operating key, an owner-held halt key, L402 spend caps, a capped grant for any real-world action, deployed on two targets.
 4. **Profiles instead of levels:** five axes (privacy, custody, funding, continuity, accountability) shown as a profile, self-assessed and opt-in, with no rankings of named third parties.
 5. **A demand gate before building the Atlas:** build it only if outside builders publish manifests. Until then, list only the components the reference agent uses.
 
@@ -115,4 +115,4 @@ Paperwire belongs in the manifest's "act" and "spend" rows as the reference for 
 
 
 ## Subsequent corrections
-The framework was edited the same day: an adversarial-review section was added, and the wrong or overstated claims were corrected inline (finding 1 and 2, the x402 numbers and sources, Block, pi402, Phala, level examples, L5, Coinbase, Freysa, TEE_HEE, inference maturity, Wyoming, the Enclava disclosure, @SovereignAgents, Meltem, Ritual, and the 'nobody owns the term' callout). The corrected text is in [what-it-means.md](what-it-means.md).
+The framework was edited the same day: an adversarial-review section was added, and the wrong or overstated claims were corrected inline (finding 1 and 2, the x402 numbers and sources, Block, pi402, Phala, level examples, L5, Coinbase, Freysa, TEE_HEE, inference maturity, Wyoming, @SovereignAgents, Meltem, Ritual, and the 'nobody owns the term' callout). The corrected text is in [what-it-means.md](what-it-means.md).

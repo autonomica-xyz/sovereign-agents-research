@@ -55,6 +55,3 @@ Layers to add to the stack: open-weight model provenance, prompt-injection resis
 
 Site map: `/` manifesto · `/essay` · `/levels` · `/stack/<layer>` · `/atlas` · `/score` · `/kit` (reference organism) · `/library` · `/feed`.
 
-## Disclosure
-
-Aljaz Ceru founded Enclava Labs (enclava.dev, a SEV-SNP confidential PaaS), which is listed in the stack. Disclosed as plain fact.
