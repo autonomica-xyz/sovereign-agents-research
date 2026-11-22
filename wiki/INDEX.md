@@ -38,6 +38,18 @@ The wiki is the living layer over `docs/` (the long-form record). Start here.
 | [open-problems](pages/open-problems.md) | The 5 hard open problems, verbatim-grade distillation | stable |
 | [economy](pages/economy.md) | Measured agent-economy revenue, weekly-updated | seed |
 
+## Approaches map (broad-and-exhaustive research space, operator directive 22 Nov)
+
+| Page | Topic | Status |
+|---|---|---|
+| [approaches map](pages/approaches.md) | Every mechanism class by which a sovereign agent could exist, per function | seed |
+| [approaches-crypto](pages/approaches-crypto.md) | FHE, MPC-as-mind, iO/witness encryption, timelock | seed (36 findings) |
+| [approaches-physical](pages/approaches-physical.md) | Orbital, seabed, home-lab, mobile, jurisdiction arbitrage | seed (30 findings) |
+| [approaches-distributed-mind](pages/approaches-distributed-mind.md) | Swarm cognition, identity theory, resurrection, lineage | seed (31 findings) |
+| [approaches-legal](pages/approaches-legal.md) | Personhood, contracts without persons, state response | seed (39 findings) |
+| [approaches-emergence-economics](pages/approaches-emergence-economics.md) | Agent economies, evolution, financing, cost math | seed (32 findings) |
+| [approaches-covert](pages/approaches-covert.md) | Steganography, attribution resistance, shutdown post-mortems | seed (34 findings) |
+
 ## Living files
 
 - [open-questions](open-questions.md) — the research backlog (prioritised).

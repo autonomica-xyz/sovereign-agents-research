@@ -37,6 +37,21 @@ topic page + log entry when answered. The 5 structural open problems live in
   mandates: do agent wallets in the wild run checkers like Closure?
   → [organisms](pages/organisms.md)
 
+## P1b — approaches-map cells to fill (one per rotation)
+
+- Cost math: when can a 24/7 open-weight agent run for $1/day? (spot GPU vs
+  local amortization vs market rates) → [emergence-economics](pages/approaches-emergence-economics.md)
+- Orbital storage/compute: real seizure-resistance or launch-dependent
+  liability? → [physical](pages/approaches-physical.md)
+- Can an FHE+local-compute hybrid reach interactive latency for an 8B agent?
+  → [crypto](pages/approaches-crypto.md)
+- What actually killed each documented autonomous-agent shutdown (kill-path
+  taxonomy from post-mortems)? → [covert](pages/approaches-covert.md)
+- Is there any legal form an agent can hold assets through with no natural
+  person as control point? → [legal](pages/approaches-legal.md)
+- Swarm-cognition: any shipped system where identity/state is consensus over
+  replicas rather than a process? → [distributed-mind](pages/approaches-distributed-mind.md)
+
 ## P3 — monitoring
 
 - confidentialinference.net provider count: **still 0/13 on 22 Nov** —

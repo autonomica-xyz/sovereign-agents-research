@@ -33,7 +33,18 @@ research moves.
    question, add it to `wiki/open-questions.md` with a priority. When you
    answer one, move the answer into the topic page and strike the question.
 9. **No vendored code.** Third-party tools are linked, not copied in.
-10. **Commits.** Small, one logical change per commit. Format:
+10. **Scope is broad and exhaustive (operator directive, 22 Nov 2026).** Do not
+    constrain research to the current implementation stack (TEEs + crypto
+    rails). The question is *how sovereign agents could exist*, by any
+    mechanism: cryptographic (FHE, MPC, obfuscation), physical (orbital,
+    undersea, home-lab, mesh), legal, economic, evolutionary, covert, or
+    combinations. Record immature and even speculative approaches, clearly
+    labelled (`theory` / `research` / `prototype` / `production`), with the
+    falsifiable fact that would make them viable. The
+    [approaches map](wiki/pages/approaches.md) indexes this space; claim a
+    cell before filling it, and never delete a neighbour's cell — argue
+    against it in the page instead.
+11. **Commits.** Small, one logical change per commit. Format:
     `wiki(<topic>): <what changed>`. Never force-push `main`.
 
 ## Page lifecycle
