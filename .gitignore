@@ -1,0 +1,4 @@
+.DS_Store
+*.log
+.mmd-out/
+node_modules/
