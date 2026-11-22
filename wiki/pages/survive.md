@@ -47,3 +47,35 @@ organism's attested code.**
    from a threshold quorum + rollback-safe state.
 3. Self-repair that patches its own image without a developer key.
 
+
+## Update 2026-11-22 — cross-vendor custody status (research pass 1)
+
+The open problem (human-free cross-vendor attested-quorum recovery) is still
+unshipped, but the substrate moved in Oct–Nov 2026:
+
+- NEAR MPC: all signing now in Intel TDX TEEs on mainnet, attested on-chain,
+  Trail of Bits audit published (11-of-17; independent tracker shows 16/11
+  after a node removal 22 Oct) — [near.org](https://www.near.org/blog/chain-signatures-tee).
+  FROST (RFC 9591) added alongside Cait-Sith ECDSA; **no proactive share
+  refresh** (resharing only on membership change). Release 3.19.0 (12 Nov)
+  removed ECDSA presignatures entirely, closing the TEE-rollback share-leak
+  vector Trail of Bits flagged 25 Sep; key-share migration now requires an
+  attested destination node — [releases](https://github.com/near/mpc/releases).
+- Lit Protocol v3 "Chipotle": execution decoupled from the KMS, key
+  orchestration on-chain via TEE root of trust; **verified AMD attestation
+  landed 21 Nov** on top of its SGX heritage — first two-vendor attestation
+  move by a deployed signing network —
+  [chipotle releases](https://github.com/LIT-Protocol/chipotle/releases).
+- dstack v0.6.6 (20 Nov): SEV-SNP TCB policy anchored to AMD security
+  bulletins (VCEK chip+TCB binding, AMD CRL revocation enforced), key-epoch
+  crossing + `dstack-key-recovery` tool for pre-rotation epochs. Recovery is
+  still operator/KMS-epoch based — [release](https://github.com/Dstack-TEE/dstack/releases/tag/v0.6.6).
+- Freysa sovereign-agents framework docs *specify* automated cross-TEE
+  recovery (Shamir shares across TDX/SEV/Nitro/SGX, each verifying requester
+  attestation, "no human intervention") — spec only, no shipped
+  implementation found — [architecture](https://framework.freysa.ai/sovereign-agents-framework/architecture).
+- Deployed analog: Signal SVR v3 recovers backup keys across SGX (Azure),
+  SEV-SNP (GCP) and Nitro (AWS) with no human committee — backup keys, not
+  signing quorums — [eprint 2026/1108](https://eprint.iacr.org/2026/1108).
+- Paper-stage: "Sovereign Execution Consensus" cross-vendor FROST design
+  ([Zenodo](https://doi.org/10.5281/zenodo.18135001)).

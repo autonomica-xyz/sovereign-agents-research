@@ -36,6 +36,7 @@ The wiki is the living layer over `docs/` (the long-form record). Start here.
 | [superorganism](pages/superorganism.md) | Review of Tribler/superorganism-experiment | stable |
 | [dead-ends](pages/dead-ends.md) | Approaches ruled out, and why | stable |
 | [open-problems](pages/open-problems.md) | The 5 hard open problems, verbatim-grade distillation | stable |
+| [economy](pages/economy.md) | Measured agent-economy revenue, weekly-updated | seed |
 
 ## Living files
 

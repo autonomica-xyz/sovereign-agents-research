@@ -37,3 +37,18 @@ fact-checked) and [research-notes.md](../../docs/research-notes.md).
    transit and provable destruction of the source, so the agent can't be
    cloned.
 
+
+## Status notes 2026-11-22 (research pass 1)
+
+- **#1**: closest deployed analogs — NEAR MPC (TDX-only, presignature-free,
+  attested migration), Lit Chipotle (SGX+AMD attestation, 21 Nov), Signal
+  SVR3 (cross-vendor recovery, backup keys). Freysa *specs* human-free
+  cross-TEE recovery but hasn't shipped it. Still open.
+- **#2**: ERC-733 draft v4 formalizes Stage 0–3 (prototype → dev-proof →
+  decentralized TEE network → trustless); dstack-tutorial documents
+  timelock-exit + on-chain upgrade authorization; IETF
+  draft-reddy-seat-cc-workload-identity (Oct 2026) on binding attestable
+  identity to rotating keys. No agent-authorized succession yet.
+- **#4**: confidentialinference.net still 0/13; Chutes flags 11/20 models
+  confidential with nonce-bound TDX + GPU attestation — progress on supply,
+  not on independent verification.

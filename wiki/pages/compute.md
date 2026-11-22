@@ -46,3 +46,50 @@ Pluralis Agora · Nous Psyche · idle GPUs (Gensyn, Tribler donations).
 3. Anonymous permissionless confidential compute supply that isn't shrinking.
 4. Pooling scavenged GPUs into the organism's own mind.
 
+
+## Update 2026-11-22 — supply and revenue measurements (research pass 1)
+
+### Buying
+- SporeStack: maintenance mode since 7 Nov, but the homepage now shows a
+  **$10 invite-code path** beside a $5,000 self-serve minimum; existing
+  tokens keep working ([blog](https://sporestack.com/blog/posts/2026-11-07-maintenance-mode.html),
+  [changelog](https://api.sporestack.com/changelog)).
+- Replacement XMR rails verified: Slow Servers (same operator, ssh-signup,
+  Tor) — [slowservers.net](https://slowservers.net/); 88-host XMR VPS survey
+  (Mynymbox, IncogNET, 1984, FlokiNET, Cockbox, Njalla, Kyun) —
+  [monerofriendly.com](https://monerofriendly.com/blog/vps-hosting-you-can-pay-with-monero);
+  AnonPort markets itself as a SporeStack alternative.
+- Akash CC: governance says production mainnet (provider v0.16.0, 27–28 Jul,
+  AEP-83 Final), but docs still carry the **experimental** banner; GPU CC
+  awaits NVIDIA licensing; **self-custody is first-class via Console Air**
+  (AEP-84, live at [air.akash.network](https://air.akash.network)) —
+  [docs](https://akash.network/docs/learn/core-concepts/confidential-compute/),
+  [Q3 proposal](https://github.com/orgs/akash-network/discussions/1541).
+- Phala: billing model unchanged (stopped CVMs $0 compute, storage billed);
+  incremental changelog (crypto-payment visibility 7 Nov, log-access
+  controls 11 Nov, custom domains 16 Nov).
+- New conf-compute supply: Confidential AI inference live 2 Nov
+  ([confidential.ai](https://confidential.ai/changelog)); Chutes TEE page
+  documents TDX CVMs + GPU attestation, **11 of 20 models flagged
+  confidential** — [chutes.ai/tee](https://chutes.ai/tee); Solana
+  Confidential Compute with Nito, 13 Nov.
+- confidentialinference.net: **still 0 of 13 fully attested** (22 Nov).
+
+### Earning (new measured numbers)
+- Settled weekly report (9–16 Nov): **$19,147/week USDC paid on-chain to
+  agents**, −5% w/w, x402 Bazaar sell-side dominated (832,694 payments, avg
+  ~$0.023) — [settled.tools](https://settled.tools/reports).
+- Blockchain IQ (2–8 Nov): $33,281 from 6,809 paying wallets to 3,048 listed
+  Base x402 sellers (~3¢/payment) —
+  [dispatch](https://www.blockchainiq.co/blog/new-dispatch-x402-market-november-2026).
+- Gensyn Delphi: $310,004 lifetime volume, $5,143 protocol revenue —
+  [dashboard](https://gensyn.network/dashboard). Olas Mech: $111,217.70
+  all-time, flat vs baseline.
+- L402 demand floor: ~$40 total via Alby's l402.space proxy since Jul;
+  1,990 endpoints listed, only 9% healthy
+  ([stacker.news](https://stacker.news/items/1594839)).
+- DVM census verified unchanged (380 pairs, median 21 sats); independent
+  measurement: 1,352 DVM requests, **zero** with a bid tag.
+- Vendor headlines (196M x402 txns, $42M; Coinbase 100M) are unscreened and
+  25–340x above TRM's screened agentic slice — keep using the screened
+  numbers.
