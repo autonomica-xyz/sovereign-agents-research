@@ -6,6 +6,18 @@ This repository is the public record of that research. The website it is meant t
 
 Compiled 22 Nov 2026.
 
+## Wiki (living layer)
+
+This repo is maintained wiki-style for long-term research by human and LLM
+agents. Start at [wiki/INDEX.md](wiki/INDEX.md):
+
+- [wiki/pages/](wiki/pages/) — 15 topic pages (definition, roadmap, drives, organisms, dead ends, open problems)
+- [wiki/open-questions.md](wiki/open-questions.md) — the prioritised research backlog
+- [wiki/log/](wiki/log/) — one dated entry per research session
+- [AGENTS.md](AGENTS.md) — contribution rules for agents working in this repo
+
+`docs/` below remains the long-form record.
+
 ## Framing
 
 An agent is sovereign to the degree that no third party (vendor, host, government or anyone else) can read it, stop it, steer it, or take its assets without the consent of its principal. The principal can be the agent itself.
