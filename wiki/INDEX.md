@@ -95,16 +95,18 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Technologies
 
-50 pages.
+57 pages.
 
 | Page | Gist |
 |---|---|
 | [AMD SEV-SNP](pages/amd-sev-snp.md) | AMD's confidential-VM technology (Secure Encrypted Virtualization with Secure Nested Paging). |
 | [Arweave AO / HyperBEAM](pages/arweave-ao.md) | AO is a compute layer on Arweave where each process's message log is stored permanently, so its state can be recomputed on any node. |
 | [AWS Nitro Enclaves](pages/aws-nitro-enclaves.md) | Isolated VMs inside an EC2 instance, attested by AWS's own signing chain. |
+| [Aztec](pages/aztec.md) | A privacy-first Ethereum rollup where contracts can hold private state and proofs are made on the user's device. |
 | [Bitcoin vaults and covenants](pages/bitcoin-vaults.md) | A vault forces withdrawals through a delay during which a recovery key can claw them back. |
 | [Blossom (content-addressed blobs)](pages/blossom.md) | Blobs stored on simple HTTP servers and addressed by their SHA-256 hash, authorised with Nostr keys. |
 | [Briar](pages/briar.md) | Peer-to-peer messenger that syncs over Tor, Wi-Fi or Bluetooth with no servers; designed for activists and internet shutdowns. |
+| [CoinJoin and Bitcoin mixing](pages/coinjoin.md) | Many users combine inputs into one Bitcoin transaction with equal-sized outputs so ownership links break (Maxwell, 2013). |
 | [dstack](pages/dstack.md) | Open-source framework (github.com/Dstack-TEE) that runs Docker apps in confidential VMs with a key management service that releases keys only to… |
 | [EIP-7702 (EOA code delegation)](pages/eip-7702.md) | Shipped in Ethereum's Pectra upgrade (7 May 2025): an ordinary key-based account can sign an authorisation that points it at contract code,… |
 | [ENS (Ethereum Name Service)](pages/ens.md) | Names like `alice.eth` held as tokens on Ethereum and resolved by smart contract. |
@@ -130,6 +132,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Mesh LLM](pages/mesh-llm.md) | Open-source Rust project that pools GPUs on many machines into one OpenAI-compatible endpoint over iroh, with Nostr discovery. |
 | [Miniscript](pages/miniscript.md) | A structured subset of Bitcoin Script (Wuille, Poelstra, Towns) that makes spending policies composable and analysable: "2 of these 3 keys, or… |
 | [MPC and TEE-backed wallets](pages/mpc-wallets.md) | Wallets where no single machine holds the whole private key: either the key is split into shares that sign together by multi-party computation… |
+| [Namada](pages/namada.md) | Proof-of-stake chain with a multi-asset shielded pool for IBC assets. |
 | [Namecoin (.bit)](pages/namecoin.md) | The first fork of Bitcoin (2011), built to register names (.bit) on a blockchain. |
 | [napplet (NIP-5D web applets)](pages/napplet.md) | Nostr-native web applets: sandboxed iframes addressed by npub, with signing brokered by the host shell (specified as NIP-5D). |
 | [NEAR MPC (Chain Signatures)](pages/near-mpc.md) | A production threshold-signing network: an 11-of-17 set of nodes, now all in Intel TDX, signs transactions on many chains for NEAR accounts and… |
@@ -138,21 +141,25 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [nsite (NIP-5A) and nsyte](pages/nsyte-nsite.md) | nsite is a static website described by a signed Nostr event that maps paths to SHA-256 hashes of files stored on Blossom servers. |
 | [NVIDIA confidential computing (GPU TEEs)](pages/nvidia-confidential-computing.md) | H100, H200 and Blackwell GPUs can run in a confidential mode paired with a CPU TEE, so model weights, prompts and memory stay encrypted from the host. |
 | [Nym mixnet](pages/nym.md) | A mixnet that adds cover traffic and random delays to packets (Loopix design) so that even an observer watching the whole network cannot easily… |
+| [Penumbra](pages/penumbra.md) | Cosmos chain (live since Jul 2024) where every asset sits in one shielded pool, with a private batch DEX and private staking. |
 | [Privy](pages/privy.md) | Embedded-wallet provider (keys split with secure enclaves, created at login with email or social accounts) used by many consumer crypto apps and… |
+| [Railgun](pages/railgun.md) | Shielded pool and private DeFi system on Ethereum and other EVM chains, using zk-SNARKs; "Private Proofs of Innocence" let users show their funds… |
 | [Reticulum](pages/reticulum.md) | Mark Qvist's cryptography-based networking stack that works over almost any medium, including LoRa radio, packet radio, serial links and the… |
 | [Safe (smart-contract multisig)](pages/safe.md) | The dominant smart-contract account on EVM chains (formerly Gnosis Safe): m-of-n owners, modules and guards. |
 | [Session keys and spending permissions](pages/session-keys.md) | Short-lived keys with narrow rights (which contracts, how much, until when) granted by a smart account. |
 | [Signal SVR3 (cross-vendor recovery precedent)](pages/signal-svr3.md) | Signal's Secure Value Recovery v3 splits users' backup-key secrets across enclaves on three vendors (SGX on Azure, SEV-SNP on GCP, Nitro on AWS),… |
 | [Tor onion services](pages/tor-onion-services.md) | A server reachable at a .onion address without revealing its IP. |
+| [Tornado Cash](pages/tornado-cash.md) | Immutable Ethereum mixer contracts. |
 | [Turnkey](pages/turnkey.md) | Wallet infrastructure that generates keys and signs only inside AWS Nitro Enclaves, with a policy engine (asset, counterparty, spend limit,… |
 | [Urbit](pages/urbit.md) | A personal server OS where identity (a "ship" such as ~sampel-palnet) is an NFT-like asset on Ethereum, and all networking is between identities,… |
 | [Veilid](pages/veilid.md) | A peer-to-peer application framework released by Cult of the Dead Cow members in 2023: private routing, a distributed hash table and node… |
 | [Walrus + Seal](pages/walrus-seal.md) | Walrus (Mysten Labs) stores blobs across a decentralised storage network; Seal is a threshold secrets service whose t-of-n key servers release… |
 | [Yggdrasil Network](pages/yggdrasil.md) | An experimental end-to-end encrypted IPv6 overlay mesh where each node's address is derived from its public key and routing needs no central… |
+| [ZK proofs of computation (zkML, zkVMs)](pages/zkml.md) | Zero-knowledge proofs that a program (or model) ran correctly on hidden inputs. |
 
 ## Money rails
 
-21 pages.
+22 pages.
 
 | Page | Gist |
 |---|---|
@@ -177,6 +184,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Stablecoins (USDC) as agent money](pages/stablecoins.md) | USDC on Base or Solana is what most agent clouds and x402 sellers accept. |
 | [Stripe: Machine Payments Protocol, Tempo, ACP and agent toolkit](pages/stripe-machine-payments.md) | Stripe launched the Machine Payments Protocol (MPP) with the Tempo blockchain's mainnet on 18 Mar 2026, for programmatic payments in stablecoins,… |
 | [x402 (HTTP 402 + stablecoins)](pages/x402.md) | Coinbase's HTTP-402 payment protocol, mostly USDC on Base and Solana. |
+| [Zcash](pages/zcash.md) | Proof-of-work coin (launched Oct 2016) with zero-knowledge shielded pools that hide sender, receiver and amount. |
 
 ## Compute sources
 
@@ -274,7 +282,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Attacks and kill vectors
 
-16 pages.
+25 pages.
 
 | Page | Gist |
 |---|---|
@@ -284,15 +292,24 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [DNS and domain seizure](pages/dns-seizure.md) | A domain name is a lease from a registry that obeys a government. |
 | [Dragos canary study: inference providers leaking prompts (2026)](pages/dragos-canary-leaks.md) | From July to November 2026 Dragos sent about two million prompts containing unique URLs and canary AWS keys to AI services and watched where they… |
 | [Host seizure (physical raids on servers)](pages/host-seizure.md) | Police can take the machine. |
+| [Legal takedown](pages/legal-takedown.md) | States act on people and companies, not code: Tornado Cash's contracts kept running while its developers were prosecuted; Samourai's founders got… |
 | [Memory poisoning](pages/memory-poisoning.md) | An agent's persistent memory is an attack surface: plant false records and they steer every later decision, and children inherit them. |
+| [Model and state theft](pages/model-theft.md) | Weights leak: Meta's LLaMA weights spread from a torrent within a week of limited release (Mar 2023), and Mistral's CEO confirmed in Jan 2024 that… |
+| [OFAC and chain-level censorship](pages/ofac-chain-censorship.md) | Sanctions can push block builders, relays, RPC providers, stablecoin issuers and front ends to refuse an address. |
+| [Payment deplatforming](pages/payment-deplatforming.md) | Losing the ability to get paid or to pay. |
 | [Phala dstack guest-agent incident (8–12 Oct 2026)](pages/phala-dstack-incident-2026-10.md) | Between 8 and 12 Oct 2026 an attacker abused a path bug in dstack's `guest-agent` (versions v0.3.1–v0.6.0) to read container logs and environment… |
 | [Phala November 2026 breach (CVMs + confidential inference)](pages/phala-inference-breach-2026-11.md) | Two attacks by one actor. |
 | [Prompt-injection drain](pages/prompt-injection-drain.md) | The cheapest way to rob an agent is to talk it into paying. |
+| [Provider KYC (identity gates on compute and models)](pages/provider-kyc.md) | Each identity check between the organism and a resource is a point where someone can refuse service. |
 | [Public balance exposure](pages/public-balance-exposure.md) | An organism whose wallet sits on a transparent chain tells every predator how much it has, who pays it and where it spends. |
 | [Recovery-path takeover](pages/recovery-path-takeover.md) | Every way to recover an account is a way to steal it. |
+| [Relay and app-store censorship](pages/relay-censorship.md) | Even open protocols have chokepoints: Nostr relays choose what to store, and app stores choose which clients exist. |
 | [Single code source](pages/single-code-source.md) | If every body pulls its code from one place, whoever controls that place controls (or kills) the species. |
+| [Social engineering of agents](pages/social-engineering.md) | Talking an agent, or the humans and dashboards around it, into moving money. |
 | [Supplier shutdown](pages/supplier-shutdown.md) | The organism dies when the one shop that sells it bodies closes. |
+| [Sybil attacks](pages/sybil-attacks.md) | One actor posing as many (Douceur, 2002). |
 | [TEE.fail (DDR5 bus interposer)](pages/tee-fail.md) | Oct 2025: researchers built a DDR5 memory-bus interposer for under $1,000 that observes deterministic encrypted memory traffic and extracts… |
+| [Wallet drainers](pages/wallet-drainers.md) | Phishing kits that trick a wallet into signing approvals, permits or delegations that hand over funds. |
 | [WireTap (DDR4 passive interposer on SGX)](pages/wiretap.md) | 2025 (ACM CCS 2025): a passive interposer on a DDR4 bus captured server SGX's deterministic memory ciphertext and recovered the Quoting Enclave's… |
 
 ## Actors (people and organisations)
