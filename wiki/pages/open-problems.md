@@ -20,13 +20,12 @@ fact-checked) and [research-notes.md](../../docs/research-notes.md).
    of N (same identity and keys) without trusting the developer's signing key
    — reproducible builds, measurement transparency log, timelocked on-chain
    upgrade policy. How do emergency patches fit without becoming a bypass?
-3. **A verifiable halt that isn't a backdoor.** Can a halt capability be
-   publicly declared and attested, able only to stop/freeze (never read, steer
-   or move funds), provably the only out-of-band control path, and preserved
-   across migration? Candidate: in-enclave predicate checked against an
-   on-chain/threshold-signed stop signal. *(Note: the project rejected the
-   accountable-custody frame; this is retained as a research question, not a
-   framing.)*
+3. **Proving there is no hidden control path.** Can the organism prove,
+   to itself and to counterparties, that no out-of-band path exists that can
+   read, steer, stop or move its funds (no debug port, operator API, recovery
+   flow or upgrade key), and keep that true across migration? See
+   [recovery-path-takeover](recovery-path-takeover.md) and
+   [op-self-authorized-succession](op-self-authorized-succession.md).
 4. **Attestation without trusting chip vendors or physical security.** What
    combination of multi-vendor attestation, ZK proofs of inference, or
    optimistic re-execution verifies execution when any vendor's attestation key
