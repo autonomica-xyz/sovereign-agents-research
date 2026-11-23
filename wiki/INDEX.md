@@ -172,7 +172,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Money rails
 
-22 pages.
+23 pages.
 
 | Page | Gist |
 |---|---|
@@ -198,6 +198,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Stripe: Machine Payments Protocol, Tempo, ACP and agent toolkit](pages/stripe-machine-payments.md) | Stripe launched the Machine Payments Protocol (MPP) with the Tempo blockchain's mainnet on 18 Mar 2026, for programmatic payments in stablecoins,… |
 | [x402 (HTTP 402 + stablecoins)](pages/x402.md) | Coinbase's HTTP-402 payment protocol, mostly USDC on Base and Solana. |
 | [Zcash](pages/zcash.md) | Proof-of-work coin (launched Oct 2016) with zero-knowledge shielded pools that hide sender, receiver and amount. |
+| [zkAPI (anonymous prepaid API credits)](pages/zkapi.md) | An experimental protocol from Open Anonymity and the Ethereum Foundation (repo `vbuterin/zkapi`, created 3 Oct 2026). |
 
 ## Compute sources
 
@@ -345,24 +346,32 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Actors (people and organisations)
 
-14 pages.
+22 pages.
 
 | Page | Gist |
 |---|---|
 | [Andrew Miller](pages/andrew-miller.md) | Researcher (@socrates1024) and one of the creators of TEE_HEE; the most prolific public voice on dstack design. |
 | [Andy Ayrey](pages/andy-ayrey.md) | Creator of Truth Terminal, the fine-tuned Llama persona that got $50K in BTC from Marc Andreessen (Jul 2024) and became rich through the GOAT… |
+| [Bankr (@bankrbot) and its founder deployer](pages/bankr.md) | Bankr is an agent-wallet company. |
 | [Flashbots](pages/flashbots.md) | Ethereum MEV research and infrastructure organisation whose TEE work (Flashbots X, the Teleport project) produced the first public agent-owned… |
+| [janus (@repligate)](pages/janus-repligate.md) | A pseudonymous researcher (@repligate, ~70K followers, Nov 2026) who runs long-lived, autonomous Claude instances in multi-agent environments. |
+| [Jeffrey Ladish](pages/jeffrey-ladish.md) | Executive director of Palisade Research (@JeffLadish, ~24K followers, Nov 2026). |
+| [Johan Pouwelse](pages/johan-pouwelse.md) | Associate professor of computer science at TU Delft and founder of Tribler. |
 | [Lightning Labs](pages/lightning-labs.md) | Maker of lnd and the L402 protocol, and in 2026 the most active builder of agent payment tools on Lightning: lightning-agent-tools (Feb 2026), the… |
 | [METR](pages/metr.md) | Evaluation nonprofit that measures how long and how autonomous AI agents' tasks can be, and wrote the "rogue replication" threat model (Nov 2024):… |
 | [Mike Hearn](pages/mike-hearn.md) | Early Bitcoin developer (bitcoinj) who in 2013 publicly described self-sustaining Bitcoin "agents" that rent servers, sell services and reproduce,… |
 | [n0 (number 0)](pages/n0-computer.md) | The company behind iroh, the Rust library that dials devices by public key with hole punching and relay fallback. |
 | [NEAR AI](pages/near-ai.md) | The NEAR ecosystem's AI arm. |
 | [Nous Research](pages/nous-research.md) | Open-model lab (the Hermes models) that co-built TEE_HEE, the first agent with provably exclusive control of its X account and Ethereum key (Oct… |
+| [Olaoluwa Osuntokun (roasbeef)](pages/olaoluwa-osuntokun.md) | CTO of Lightning Labs (@roasbeef, ~41K followers, Nov 2026). |
 | [Recursive Superintelligence](pages/recursive-superintelligence.md) | London start-up that came out of stealth on 13 May 2026 having raised over $650M at a $4.65B valuation (led by GV and Greycroft, with Nvidia and… |
 | [Sakana AI](pages/sakana-ai.md) | Tokyo AI lab behind three building blocks for self-improving organisms: the Darwin Gödel Machine (agents that rewrite their own code, with an… |
+| [Shaw Walters](pages/shaw-walters.md) | Creator of Eliza / ElizaOS and of ai16z (@shawmakesmagic, ~166K followers, Nov 2026). |
+| [Sigil Wen](pages/sigil-wen.md) | Thiel Fellow and founder of Conway Research (@0xSigil, ~63K followers, Nov 2026). |
 | [Spiral (Block)](pages/spiral.md) | Block's open-source Bitcoin development group. |
 | [Tribler (TU Delft)](pages/tribler.md) | TU Delft research lab and the long-running Tribler peer-to-peer project (anonymous BitTorrent over its own onion routing, IPv8 networking). |
 | [UK AI Security Institute](pages/uk-aisi.md) | UK government lab that built RepliBench: 86 tasks in 20 families testing whether models can get compute, get money, copy their weights and persist. |
+| [Vitalik Buterin](pages/vitalik-buterin.md) | Ethereum co-founder (@VitalikButerin, ~7.9M followers, Nov 2026). |
 
 ## Open problems
 
