@@ -23,6 +23,7 @@ updated: 2026-11-24
 | Paid APIs over L402 | ~$40 total via Alby proxy (Jul–Oct 2026) | [l402](l402.md) |
 | Nostr DVM jobs | median 21 sats per job | [nip-90-dvms](nip-90-dvms.md) |
 | Agent-to-agent jobs | Virtuals ACP $4.53M revenue / 2.55M jobs (5 Nov 2026); Olas Mech $111K all-time | [virtuals-protocol](virtuals-protocol.md), [olas](olas.md) |
+| Agent-run trading desk (Bankr) | 205,000 users, 4.1M messages, 770K+ swaps, $30M moved (founder, 18 Nov 2026) | [bankr-grok-permission-chain](bankr-grok-permission-chain.md) |
 | Prediction markets | Mixed: one report 37% of agents profitable; a 90-day check found −3.0% ROI | [prediction-market-agents](prediction-market-agents.md) |
 | Bug bounties | XBOW topped HackerOne's US leaderboard (2025) with under $40K in bounties since Feb 2024 | [xbow](xbow.md) |
 | Content / attention | Truth Terminal, aixbt: token-driven; aixbt subscriptions only planned | [truth-terminal](truth-terminal.md), [aixbt](aixbt.md) |
@@ -53,6 +54,8 @@ counts notional volume.
 [economy](economy.md) · [earn-buy-redeploy-loop](earn-buy-redeploy-loop.md) · [op-non-token-revenue](op-non-token-revenue.md)
 
 ## Sources
+
+- @0xDeployer, Bankr metrics (18 Nov 2026) — <https://x.com/0xDeployer/status/2123125259645935943>
 
 - settled.tools reports — <https://settled.tools/reports>
 - CryptoDailyAlert, Virtuals review 2026 (ACP figures as of 5 Nov 2026) — <https://cryptodailyalert.com/virtuals-review-2026>

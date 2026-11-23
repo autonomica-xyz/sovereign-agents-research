@@ -58,11 +58,18 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Reference (timeline, matrix, checklist, glossary, reading list, people)
 
-1 pages.
+8 pages.
 
 | Page | Gist |
 |---|---|
+| [Most promising build path (Nov 2026)](pages/build-path.md) | Assemble an organism from pieces that already work and avoid the single points that failed in 2026: one TEE vendor, one host company, one master… |
+| [Glossary](pages/glossary.md) | Short definitions of terms used across the wiki, each pointing to its page. |
+| [L5 capabilities checklist vs state of the art](pages/l5-capabilities-checklist.md) | Each capability an L5 organism needs, with the best existing piece (Nov 2026) and the gap. |
+| [Organism comparison matrix](pages/organism-comparison-matrix.md) | Every known attempt at an agent that holds its own money, scored on the five axes from sovereignty-levels. |
+| [People and accounts directory](pages/people-directory.md) | Who matters for digital organisms and what each contributes. |
+| [Reading list](pages/reading-list.md) | The shortest path to understanding digital organisms, in reading order. |
 | [TEE landscape (Nov 2026)](pages/tee-landscape.md) | Every hardware enclave on the market has been broken at least once, and all fall to an attacker with physical access to memory. |
+| [Timeline of digital organisms (1940s–2026)](pages/timeline.md) | From von Neumann's self-reproducing automaton to agents that pay for their own compute. |
 
 ## Concepts
 
