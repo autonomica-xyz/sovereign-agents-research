@@ -35,7 +35,7 @@ puppeteer.
 
 ## Related
 
-[signed-code-distribution](signed-code-distribution.md) · [eternalseedbox](eternalseedbox.md) · [nsyte-nsite](nsyte-nsite.md) · [blossom](blossom.md) · [arweave-ao](arweave-ao.md)
+[chaindrop-npm-worm](chaindrop-npm-worm.md) · [hugging-face](hugging-face.md) · [signed-code-distribution](signed-code-distribution.md) · [eternalseedbox](eternalseedbox.md) · [nsyte-nsite](nsyte-nsite.md) · [blossom](blossom.md) · [arweave-ao](arweave-ao.md)
 
 ## Sources
 

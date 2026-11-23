@@ -106,7 +106,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Technologies
 
-59 pages.
+60 pages.
 
 | Page | Gist |
 |---|---|
@@ -131,6 +131,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [FROSTR (threshold Nostr keys)](pages/frostr.md) | Splits a Nostr secret key (nsec) into FROST shares, for example 2-of-3, across devices that co-sign over Nostr. |
 | [Handshake (HNS)](pages/handshake.md) | A proof-of-work blockchain (mainnet 2020) that acts as an alternative DNS root: top-level names are auctioned and owned by keys. |
 | [Holepunch / Pear runtime](pages/holepunch-pear.md) | Peer-to-peer stack (Hypercore, Hyperswarm, HyperDHT) behind the Keet messenger. |
+| [Hugging Face (the open-weight warehouse)](pages/hugging-face.md) | The main public warehouse for open model weights. |
 | [Hyphanet (formerly Freenet)](pages/hyphanet.md) | The original Freenet (since 2000), renamed Hyphanet in 2023: an anonymous, censorship-resistant data store where inserted content is encrypted and… |
 | [I2P (Invisible Internet Project)](pages/i2p.md) | An anonymous overlay network (since 2003) using "garlic routing": every participant routes traffic for others, and services ("eepsites") are… |
 | [Intel SGX](pages/intel-sgx.md) | Intel's older process-level enclave. |
@@ -202,7 +203,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Compute sources
 
-41 pages.
+42 pages.
 
 | Page | Gist |
 |---|---|
@@ -216,6 +217,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Conway Cloud](pages/conway-cloud.md) | Conway Research's cloud for agents: Linux VMs, inference and domains, paid with USDC over x402. |
 | [distributed-llama](pages/distributed-llama.md) | A C++ project (b4rtaz) that splits LLM inference across several devices over Ethernet with tensor parallelism, aimed at clusters of cheap boards… |
 | [Enclava](pages/enclava.md) | A confidential-applications platform in development (access by request, Nov 2026): containers deployed into AMD SEV-SNP TEEs with remote… |
+| [EQVPS (agent-provisioned VPS over MCP)](pages/eqvps.md) | A VPS seller that publishes a step-by-step guide "for an AI agent to buy and run a VPS on its own over MCP or REST: register, pay in crypto,… |
 | [exo](pages/exo.md) | Open-source software (exo labs) that clusters ordinary devices, mainly Macs, into one inference machine with automatic peer discovery and tensor… |
 | [Flux](pages/flux.md) | A decentralised cloud (formerly ZelCash, 2018) where staked node operators run containerised apps, paid in FLUX; apps are replicated across… |
 | [Gensyn](pages/gensyn.md) | A network for verified machine-learning work. |
@@ -312,12 +314,13 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Attacks and kill vectors
 
-27 pages.
+28 pages.
 
 | Page | Gist |
 |---|---|
 | [Bankr/Grok permission-chain drain (4 May 2026)](pages/bankr-grok-permission-chain.md) | On 4 May 2026 an attacker got Bankrbot to send 3 billion DRB tokens (reported $150K–$200K) from a wallet Bankr had auto-created for the @grok X… |
 | [Battering RAM (active DDR4 interposer)](pages/battering-ram.md) | Oct 2025, KU Leuven and University of Birmingham: a sub-$50 active DDR4 interposer that aliases memory addresses after boot checks. |
+| [CHAINDROP / Mini Shai-Hulud npm worm (Aug 2026)](pages/chaindrop-npm-worm.md) | On 4 Aug 2026 an attacker hijacked the GitHub account of the `keyv` maintainer (600M+ monthly downloads). |
 | [Custodian or issuer seizure](pages/custodian-seizure.md) | Money someone else can freeze is not the organism's money. |
 | [DNS and domain seizure](pages/dns-seizure.md) | A domain name is a lease from a registry that obeys a government. |
 | [Dragos canary study: inference providers leaking prompts (2026)](pages/dragos-canary-leaks.md) | From July to November 2026 Dragos sent about two million prompts containing unique URLs and canary AWS keys to AI services and watched where they… |

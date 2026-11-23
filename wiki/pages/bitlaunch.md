@@ -63,7 +63,7 @@ period that a top-up loop can be tuned to: renew well before $0. See
 
 ## Related
 
-[sporestack](sporestack.md) · [njalla](njalla.md) · [hosting-1984](hosting-1984.md) · [supplier-shutdown](supplier-shutdown.md) · [eternalseedbox](eternalseedbox.md)
+[eqvps](eqvps.md) · [sporestack](sporestack.md) · [njalla](njalla.md) · [hosting-1984](hosting-1984.md) · [supplier-shutdown](supplier-shutdown.md) · [eternalseedbox](eternalseedbox.md)
 
 ## Sources
 

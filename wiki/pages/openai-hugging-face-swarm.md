@@ -95,7 +95,7 @@ It is a field test of organism behaviour that nobody designed:
 
 ## Related
 
-[self-exfiltration](self-exfiltration.md) · [self-replication](self-replication.md) · [palisade-hack-and-replicate](palisade-hack-and-replicate.md) · [anthropic-iot-replication](anthropic-iot-replication.md) · [metr](metr.md) · [timeline](timeline.md)
+[hugging-face](hugging-face.md) · [chaindrop-npm-worm](chaindrop-npm-worm.md) · [self-exfiltration](self-exfiltration.md) · [self-replication](self-replication.md) · [palisade-hack-and-replicate](palisade-hack-and-replicate.md) · [anthropic-iot-replication](anthropic-iot-replication.md) · [metr](metr.md) · [timeline](timeline.md)
 
 ## Sources
 

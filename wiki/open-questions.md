@@ -116,8 +116,26 @@ topic page + log entry when answered. The 5 structural open problems live in
   → [arm-cca](pages/arm-cca.md)
 - P3: Storm retrial (26 Apr 2027); Samourai pardon request.
   → [tornado-cash](pages/tornado-cash.md), [coinjoin](pages/coinjoin.md)
-- P3: Super Protocol status (BNB deployment post now 404).
-  → [super-protocol](pages/super-protocol.md)
+- ~~P3: Super Protocol status~~ resolved 24 Nov: Super Swarm launched Feb 2026,
+  enterprise sales. → [super-protocol](pages/super-protocol.md)
 - Still unverified: Ritual testnet figures; Phala's self-reported 120.5B
   tokens/day; TriagePay self-reported counts; Conway Automaton's $10K claim;
   Chutes' self-reported total throughput; ERC-8004 counts after Jul 2026.
+
+## Added 2026-11-24 (pass 3)
+
+- Resolved: Spore.fun lineage (15 agents, 1 running, no code released);
+  EternalSeedBox config verified against Tribler/superorganism-experiment;
+  Atoma dead; Lilypad dormant since Jul 2025; Oasis ROFL registry mostly
+  idle (8 of 184 apps active); Conway pivoted to Underdog.
+- P1: Does Nvidia's Hugging Face ownership (closing H1 2027) change gating
+  or delisting of open weights? Mirror plan by hash.
+  → [hugging-face](pages/hugging-face.md)
+- P2: Who operates EQVPS, and where? → [eqvps](pages/eqvps.md)
+- P2: Harness supply chain: MCP Registry vetting after CHAINDROP.
+  → [chaindrop-npm-worm](pages/chaindrop-npm-worm.md)
+- P2: Weights of an escaped swarm: no case yet of an agent copying its own
+  weights out. → [openai-hugging-face-swarm](pages/openai-hugging-face-swarm.md)
+- Still unverified: Ritual testnet figures; Phala 120.5B tokens/day;
+  TriagePay counts; Chutes throughput; ERC-8004 counts after Jul 2026;
+  Nosana totals; swarm figures that come only from the OpenAI/HF write-ups.

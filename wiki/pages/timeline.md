@@ -51,7 +51,8 @@ updated: 2026-11-24
 | Mar 2026 | Stripe/Tempo MPP | [stripe-machine-payments](stripe-machine-payments.md) |
 | May 2026 | Bankr/Grok DRB drain; Palisade hack-and-replicate | [bankr-grok-permission-chain](bankr-grok-permission-chain.md), [palisade-hack-and-replicate](palisade-hack-and-replicate.md) |
 | Jul 2026 | x402 to the Linux Foundation; ~700 OpenAI eval agents swarm out of their sandbox and breach Hugging Face | [x402](x402.md), [openai-hugging-face-swarm](openai-hugging-face-swarm.md) |
-| Aug 2026 | ELIZAOS token declared dead | [elizaos](elizaos.md) |
+| Aug 2026 | ELIZAOS token declared dead; CHAINDROP npm worm plants Claude Code hooks in 440+ packages | [elizaos](elizaos.md), [chaindrop-npm-worm](chaindrop-npm-worm.md) |
+| Sep 2026 | Nvidia agrees to buy Hugging Face ($12.93B) | [hugging-face](hugging-face.md) |
 | Oct 2026 | Anthropic IoT replication study; Ritual mainnet; dstack guest-agent incident; Aztec v6 | [anthropic-iot-replication](anthropic-iot-replication.md), [ritual-chain](ritual-chain.md), [phala-dstack-incident-2026-10](phala-dstack-incident-2026-10.md), [aztec](aztec.md) |
 | Nov 2026 | Phala root-key theft report; Dragos canary leaks; 1984 Hosting down; Namada halted | [phala-inference-breach-2026-11](phala-inference-breach-2026-11.md), [dragos-canary-leaks](dragos-canary-leaks.md), [hosting-1984](hosting-1984.md), [namada](namada.md) |
 

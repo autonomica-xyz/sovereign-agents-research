@@ -35,7 +35,7 @@ reseller's abuse response ended reproduction for an entire lineage
 
 ## Related
 
-[supplier-shutdown](supplier-shutdown.md) · [bitlaunch](bitlaunch.md) · [op-anonymous-confidential-compute](op-anonymous-confidential-compute.md)
+[eqvps](eqvps.md) · [supplier-shutdown](supplier-shutdown.md) · [bitlaunch](bitlaunch.md) · [op-anonymous-confidential-compute](op-anonymous-confidential-compute.md)
 
 ## Sources
 
