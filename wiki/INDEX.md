@@ -65,21 +65,28 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Concepts
 
-16 pages.
+23 pages.
 
 | Page | Gist |
 |---|---|
+| [Agent economy: where agents earn, with real numbers](pages/agent-economy.md) | Payment rails for agents multiplied in 2026 (x402, MPP/Tempo, AP2, ACP, card-network agent programmes, Skyfire, Nevermined), but measured income… |
+| [Agent memory and identity continuity](pages/agent-memory.md) | An organism's identity is its keys plus its memory. |
+| [Snapshots and checkpoints of a running agent](pages/agent-snapshots.md) | A full snapshot (VM image, container checkpoint with CRIU, or the agent's state database plus its mind file) lets an organism restart elsewhere… |
 | [Anti-twin quorum (stopping stolen copies)](pages/anti-twin-quorum.md) | A copy of the organism that someone else runs is a twin that can spend its money and speak as it. |
 | [Attestation-gated key release](pages/attestation-gated-key-release.md) | The organism's keys are never stored with a body. |
+| [Censorship-resistant hosting and naming: map](pages/censorship-resistant-hosting.md) | An organism needs three things that cannot be taken by one party: a **name** others can find, a **place** its data lives, and a **path** to reach it. |
 | [Digital organism](pages/digital-organism.md) | A digital organism is software that holds its own keys, pays for its own compute, keeps itself running across hosts it does not trust, and can… |
 | [The earn → buy → redeploy loop](pages/earn-buy-redeploy-loop.md) | The organism's metabolism: earn money without an account, buy compute without permission, start a new body there and restore its keys. |
 | [The four drives and the privacy organ](pages/four-drives.md) | Everything in this wiki is read from the organism's point of view: what helps it **survive**, **not get killed**, **stay resilient** and **get… |
 | [Infrastructural sovereignty (Hu & Rong 2026)](pages/infrastructural-sovereignty.md) | The first academic paper built around the term "sovereign agents" (Hu and Rong, arXiv 2602.14951, Feb 2026). |
 | [Key encumbrance (Liquefaction)](pages/key-encumbrance.md) | A key generated inside a TEE and never exported is "encumbered": the human who launched the enclave can use it only through rules the enclave… |
+| [Local models and quantization: surviving on scavenged hardware](pages/local-models-quantization.md) | An organism that can think on its own hardware cannot be cut off by an API provider. |
 | [Location hiding](pages/location-hiding.md) | If nobody can find the organism's hosts, nobody can seize or unplug them. |
+| [Mind file (SOUL.md and constitutions)](pages/mind-file.md) | A short document the agent loads every turn that says who it is, what it values and what it is trying to do. |
 | [Open-endedness and artificial life](pages/open-endedness.md) | Open-endedness is evolution that keeps producing new, more capable forms instead of converging. |
 | [Rehydration (restoring the organism on a new body)](pages/rehydration.md) | Rehydration is booting the organism on a fresh host and restoring its state and keys, so the death of any one machine is not the death of the… |
 | [Rollback protection](pages/rollback-protection.md) | An attacker who controls a host can restart an enclave from an old sealed snapshot, replaying a state in which the organism still had money or a… |
+| [Self-improvement and evolution: map](pages/self-improvement.md) | An organism that cannot change its own code or weights is frozen at the level its creator left it. |
 | [Self-replication](pages/self-replication.md) | Making a funded copy of itself on a new host is how the organism outlives any one body and starts a lineage. |
 | [Signed, content-addressed code distribution](pages/signed-code-distribution.md) | The organism should fetch its own code by hash from many places, and accept only versions its upgrade policy allows. |
 | [Sovereignty levels L0–L5](pages/sovereignty-levels.md) | A ladder from "a bot an operator runs" (L0) to "a digital organism that is its own principal" (L5). |
@@ -88,7 +95,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Technologies
 
-22 pages.
+41 pages.
 
 | Page | Gist |
 |---|---|
@@ -96,110 +103,163 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Arweave AO / HyperBEAM](pages/arweave-ao.md) | AO is a compute layer on Arweave where each process's message log is stored permanently, so its state can be recomputed on any node. |
 | [AWS Nitro Enclaves](pages/aws-nitro-enclaves.md) | Isolated VMs inside an EC2 instance, attested by AWS's own signing chain. |
 | [Blossom (content-addressed blobs)](pages/blossom.md) | Blobs stored on simple HTTP servers and addressed by their SHA-256 hash, authorised with Nostr keys. |
+| [Briar](pages/briar.md) | Peer-to-peer messenger that syncs over Tor, Wi-Fi or Bluetooth with no servers; designed for activists and internet shutdowns. |
 | [dstack](pages/dstack.md) | Open-source framework (github.com/Dstack-TEE) that runs Docker apps in confidential VMs with a key management service that releases keys only to… |
+| [ENS (Ethereum Name Service)](pages/ens.md) | Names like `alice.eth` held as tokens on Ethereum and resolved by smart contract. |
+| [ERC-8004: Trustless Agents (identity, reputation, validation registries)](pages/erc-8004.md) | An Ethereum standard for agent identity: an identity registry (agents as NFTs with a card describing endpoints), a reputation registry for… |
 | [FHE inference (thinking while encrypted)](pages/fhe-inference.md) | Fully homomorphic encryption lets a host run a model on encrypted inputs without ever seeing them, with no trusted hardware. |
+| [Filecoin](pages/filecoin.md) | A storage market on top of IPFS: providers stake FIL and prove storage of client data over time. |
 | [FROST threshold Schnorr signatures](pages/frost.md) | Flexible Round-Optimized Schnorr Threshold signatures, standardised as RFC 9591 (2024). |
 | [FROSTR (threshold Nostr keys)](pages/frostr.md) | Splits a Nostr secret key (nsec) into FROST shares, for example 2-of-3, across devices that co-sign over Nostr. |
+| [Handshake (HNS)](pages/handshake.md) | A proof-of-work blockchain (mainnet 2020) that acts as an alternative DNS root: top-level names are auctioned and owned by keys. |
+| [Holepunch / Pear runtime](pages/holepunch-pear.md) | Peer-to-peer stack (Hypercore, Hyperswarm, HyperDHT) behind the Keet messenger. |
+| [Hyphanet (formerly Freenet)](pages/hyphanet.md) | The original Freenet (since 2000), renamed Hyphanet in 2023: an anonymous, censorship-resistant data store where inserted content is encrypted and… |
+| [I2P (Invisible Internet Project)](pages/i2p.md) | An anonymous overlay network (since 2003) using "garlic routing": every participant routes traffic for others, and services ("eepsites") are… |
 | [Intel SGX](pages/intel-sgx.md) | Intel's older process-level enclave. |
 | [Intel TDX](pages/intel-tdx.md) | Intel's confidential-VM technology: a whole VM ("trust domain") whose memory is encrypted and hidden from the hypervisor and host, with a remote… |
+| [IPFS](pages/ipfs.md) | Content-addressed file system: data is named by its hash (CID) and fetched from any peer that has it. |
 | [iroh](pages/iroh.md) | A peer-to-peer QUIC library from n0 where you **dial a public key, not an IP address**. |
+| [libp2p](pages/libp2p.md) | Modular networking stack from Protocol Labs: peer IDs are public keys, with pluggable transports (TCP, QUIC, WebRTC), NAT traversal, Kademlia DHT… |
 | [Lit Protocol](pages/lit-protocol.md) | A threshold key network: programmable key pairs (PKPs) whose signing is governed by "Lit Actions" (JavaScript run by the network). |
+| [llama.cpp (and its RPC backend)](pages/llama-cpp.md) | The C/C++ inference engine (Georgi Gerganov, 2023) that made LLMs run on CPUs, phones and small GPUs, and defined the GGUF quantized format. |
+| [Lokinet](pages/lokinet.md) | An onion-routing network run on Session/Oxen service nodes, giving `.loki` addresses owned by keys and carrying any IP traffic. |
+| [MemGPT / Letta](pages/memgpt-letta.md) | MemGPT (Packer et al., 2023) treats the context window like RAM and external storage like disk: the agent decides what to page in and out, giving… |
 | [Mesh LLM](pages/mesh-llm.md) | Open-source Rust project that pools GPUs on many machines into one OpenAI-compatible endpoint over iroh, with Nostr discovery. |
+| [Namecoin (.bit)](pages/namecoin.md) | The first fork of Bitcoin (2011), built to register names (.bit) on a blockchain. |
 | [napplet (NIP-5D web applets)](pages/napplet.md) | Nostr-native web applets: sandboxed iframes addressed by npub, with signing brokered by the host shell (specified as NIP-5D). |
 | [NEAR MPC (Chain Signatures)](pages/near-mpc.md) | A production threshold-signing network: an 11-of-17 set of nodes, now all in Intel TDX, signs transactions on many chains for NEAR accounts and… |
 | [NIP-90 Data Vending Machines](pages/nip-90-dvms.md) | A Nostr job market: customers post job requests (kinds 5000–5999), service providers return results (6000–6999) and ask for sats. |
 | [Nostr](pages/nostr.md) | A protocol of signed events relayed by many independent servers. |
 | [nsite (NIP-5A) and nsyte](pages/nsyte-nsite.md) | nsite is a static website described by a signed Nostr event that maps paths to SHA-256 hashes of files stored on Blossom servers. |
 | [NVIDIA confidential computing (GPU TEEs)](pages/nvidia-confidential-computing.md) | H100, H200 and Blackwell GPUs can run in a confidential mode paired with a CPU TEE, so model weights, prompts and memory stay encrypted from the host. |
+| [Nym mixnet](pages/nym.md) | A mixnet that adds cover traffic and random delays to packets (Loopix design) so that even an observer watching the whole network cannot easily… |
+| [Reticulum](pages/reticulum.md) | Mark Qvist's cryptography-based networking stack that works over almost any medium, including LoRa radio, packet radio, serial links and the… |
 | [Signal SVR3 (cross-vendor recovery precedent)](pages/signal-svr3.md) | Signal's Secure Value Recovery v3 splits users' backup-key secrets across enclaves on three vendors (SGX on Azure, SEV-SNP on GCP, Nitro on AWS),… |
 | [Tor onion services](pages/tor-onion-services.md) | A server reachable at a .onion address without revealing its IP. |
+| [Urbit](pages/urbit.md) | A personal server OS where identity (a "ship" such as ~sampel-palnet) is an NFT-like asset on Ethereum, and all networking is between identities,… |
+| [Veilid](pages/veilid.md) | A peer-to-peer application framework released by Cult of the Dead Cow members in 2023: private routing, a distributed hash table and node… |
 | [Walrus + Seal](pages/walrus-seal.md) | Walrus (Mysten Labs) stores blobs across a decentralised storage network; Seal is a threshold secrets service whose t-of-n key servers release… |
+| [Yggdrasil Network](pages/yggdrasil.md) | An experimental end-to-end encrypted IPv6 overlay mesh where each node's address is derived from its public key and routing needs no central… |
 
 ## Money rails
 
-12 pages.
+19 pages.
 
 | Page | Gist |
 |---|---|
+| [AP2 (Agent Payments Protocol)](pages/ap2.md) | Google's Agent Payments Protocol defines signed "mandates" (intent, cart, payment) so a merchant can check that a user authorised an agent's purchase. |
 | [Ark (Arkade, Bark, Wavelength)](pages/ark.md) | An off-chain Bitcoin layer where users hold virtual UTXOs (VTXOs) issued by an operator, with a pre-signed path to exit on-chain without the… |
 | [Bitcoin (2008)](pages/bitcoin.md) | "A purely peer-to-peer version of electronic cash" (Satoshi Nakamoto, 31 Oct 2008; network live 3 Jan 2009). |
+| [Card networks for agents (Visa Intelligent Commerce, Mastercard Agent Pay)](pages/card-network-agent-payments.md) | Visa Intelligent Commerce and Mastercard Agent Pay issue tokenised cards that agents can use within limits set by a human cardholder. |
 | [Cashu ecash](pages/cashu.md) | Chaumian ecash backed by Bitcoin: a mint issues blind-signed tokens it cannot link to their holder. |
+| [Coinbase AgentKit and CDP Agentic Wallet](pages/coinbase-agentic-wallet.md) | Coinbase's developer platform gives agents wallets that can hold, trade and pay for x402 services via CLI or MCP, with spend limits and guardrails. |
 | [Fedimint](pages/fedimint.md) | Federated Chaumian ecash: a group of guardians jointly runs the mint by threshold consensus, so no single operator holds the Bitcoin. |
 | [L402 (HTTP 402 + Lightning)](pages/l402.md) | A server answers `402 Payment Required` with a Lightning invoice and a macaroon; the client pays and presents the preimage as proof. |
 | [Bitcoin Lightning](pages/lightning.md) | Instant, cheap Bitcoin payments over channels. |
 | [Monero (XMR)](pages/monero.md) | A cryptocurrency with private amounts, senders and receivers by default. |
+| [Nevermined](pages/nevermined.md) | Payments infrastructure for AI agents: prepaid subscriptions by card, per-call payments in crypto, spending mandates, and routing over x402 and MPP. |
 | [NIP-60 Cashu wallets and NIP-61 nutzaps](pages/nip-60-nutzaps.md) | NIP-60 stores a Cashu wallet's state as encrypted Nostr events, so the wallet follows the key across devices. |
 | [Nostr Wallet Connect (NIP-47)](pages/nostr-wallet-connect.md) | A protocol for an app (or agent) to ask a remote Lightning wallet to pay or create invoices over encrypted Nostr messages, with per-connection… |
+| [Payman](pages/payman.md) | "Agentic banking" company that lets AI agents make payments from accounts controlled by banks and businesses. |
 | [Silent payments (BIP-352)](pages/silent-payments.md) | One static public address that receives to a fresh, unlinkable on-chain output every time. |
+| [Skyfire (KYAPay)](pages/skyfire.md) | Payment network for agents built around "Know Your Agent" (KYA): buyer agents create signed `pay` or `kya-pay` tokens funded from stablecoin… |
 | [Stablecoins (USDC) as agent money](pages/stablecoins.md) | USDC on Base or Solana is what most agent clouds and x402 sellers accept. |
+| [Stripe: Machine Payments Protocol, Tempo, ACP and agent toolkit](pages/stripe-machine-payments.md) | Stripe launched the Machine Payments Protocol (MPP) with the Tempo blockchain's mainnet on 18 Mar 2026, for programmatic payments in stablecoins,… |
 | [x402 (HTTP 402 + stablecoins)](pages/x402.md) | Coinbase's HTTP-402 payment protocol, mostly USDC on Base and Solana. |
 
 ## Compute sources
 
-21 pages.
+34 pages.
 
 | Page | Gist |
 |---|---|
 | [Akash Network](pages/akash.md) | A permissionless compute marketplace on Cosmos: providers bid on container deployments, paid from a wallet. |
+| [Atoma (status unclear)](pages/atoma.md) | A Sui-based network that marketed confidential (TEE) inference. |
 | [BitLaunch](pages/bitlaunch.md) | Hourly VPS paid in BTC, ETH or LTC with email-only signup and a public API to create, manage and pay for servers. |
 | [Bittensor](pages/bittensor.md) | A network of 100+ subnets that pay TAO-denominated emissions for AI work. |
 | [Chutes](pages/chutes.md) | A serverless inference platform (Bittensor ecosystem) whose TEE page documents TDX CVMs with GPU attestation; 11 of 20 listed models were flagged… |
 | [Conway Cloud](pages/conway-cloud.md) | Conway Research's cloud for agents: Linux VMs, inference and domains, paid with USDC over x402. |
+| [distributed-llama](pages/distributed-llama.md) | A C++ project (b4rtaz) that splits LLM inference across several devices over Ethernet with tensor parallelism, aimed at clusters of cheap boards… |
 | [Enclava](pages/enclava.md) | A confidential-applications platform in development (access by request, Nov 2026): containers deployed into AMD SEV-SNP TEEs with remote… |
+| [exo](pages/exo.md) | Open-source software (exo labs) that clusters ordinary devices, mainly Macs, into one inference machine with automatic peer discovery and tensor… |
+| [Flux](pages/flux.md) | A decentralised cloud (formerly ZelCash, 2018) where staked node operators run containerised apps, paid in FLUX; apps are replicated across… |
 | [Gensyn](pages/gensyn.md) | A network for verified machine-learning work. |
+| [Golem Network](pages/golem.md) | One of the oldest decentralised compute markets (ICO 2016): providers rent CPU and GPU to requestors who pay in GLM. |
 | [1984 Hosting](pages/hosting-1984.md) | An Icelandic host that accepts BTC and XMR and needs only an email. |
 | [Hyperbolic](pages/hyperbolic.md) | A GPU marketplace and inference API. |
+| [Internet Computer (ICP) canisters](pages/icp-canisters.md) | Code on the Internet Computer runs in "canisters" that pay for their own execution with prepaid **cycles** (reverse gas). |
+| [Inference cost per token (Nov 2026)](pages/inference-cost-per-token.md) | What thinking costs an organism. |
 | [io.net](pages/io-net.md) | A decentralised GPU marketplace (Solana). |
 | [Unpaid hardware as substrate (IoT replication research)](pages/iot-substrate.md) | Anthropic's Frontier Red Team showed (12 Oct 2026) that small open models can stand up inference on cheap consumer devices, and sharded… |
+| [Lilypad (dormant)](pages/lilypad.md) | A decentralised compute network for AI jobs paid in crypto. |
 | [Marlin Oyster](pages/marlin-oyster.md) | A decentralised marketplace for TEE compute built on AWS Nitro Enclaves. |
+| [Morpheus (MOR)](pages/morpheus.md) | A decentralised AI network that routes inference requests to independent providers and pays them through MOR staking. |
 | [NEAR AI Cloud](pages/near-ai-cloud.md) | Confidential inference on Intel TDX plus NVIDIA confidential GPUs, using dstack as the OS layer. |
+| [Nesa](pages/nesa.md) | A decentralised inference network offering SDK and web inference with on-chain session deposits. |
 | [Njalla](pages/njalla.md) | A privacy-focused domain and VPS provider that registers domains in its own name on the customer's behalf. |
 | [Nosana](pages/nosana.md) | A Solana GPU marketplace: anyone can post jobs or register GPU nodes. |
 | [PayPerQ](pages/payperq.md) | A pay-per-query AI service: top up from 10 cents with crypto (including Lightning) or card, no subscription and no email signup required. |
+| [Petals](pages/petals.md) | BigScience's "BitTorrent-style" system (2022) for running large models across volunteers' GPUs, each serving some layers. |
 | [Phala Cloud](pages/phala-cloud.md) | A TEE cloud built on dstack: CVMs on Intel TDX with GPU TEEs, paid by card or USDC, plus confidential inference for open-weight models. |
 | [Prime Intellect](pages/prime-intellect.md) | Builds open training infrastructure (prime-rl, environments hub, compute marketplace). |
 | [Routstr](pages/routstr.md) | A decentralised, OpenAI-compatible inference router: providers announce models and prices on Nostr, clients pay per request with Cashu ecash. |
+| [SaladCloud](pages/salad.md) | A distributed cloud built from consumer gaming PCs whose owners rent idle GPUs. |
 | [SporeStack (and Slow Servers)](pages/sporestack.md) | The archetypal machine-buyable VPS: fund a token with XMR, BTC or BCH and drive servers through an API reachable over Tor and I2P, with no account. |
 | [Vast.ai](pages/vast-ai.md) | A GPU marketplace of independent hosts. |
+| [Venice](pages/venice.md) | A private AI inference service (founded by Erik Voorhees, 2024) whose private tier promises zero data retention on Venice-controlled machines. |
 
 ## Organisms and agent projects
 
-13 pages.
+17 pages.
 
 | Page | Gist |
 |---|---|
+| [aixbt](pages/aixbt.md) | A crypto market-intelligence agent on X (launched through Virtuals, late 2024) that became one of the most-followed AI accounts. |
 | [Botto](pages/botto.md) | A "decentralised autonomous artist" since 2021: a model generates work, a DAO votes on which piece to mint, and weekly auctions sell it. |
 | [Conway Automaton](pages/conway-automaton.md) | Open-source "sovereign AI agent" from Conway Research (Sigil Wen's "Web 4.0" framing): it creates its own Ethereum wallet, buys Conway Cloud… |
 | [ElizaOS (formerly ai16z)](pages/elizaos.md) | The most-used open-source agent framework of the 2024–25 crypto-agent wave. |
 | [EternalSeedBox / Mycelium (Tribler)](pages/eternalseedbox.md) | TU Delft's Tribler lab built seedbox "organisms" that buy their own VPSes with Bitcoin, gossip over IPv8, and every cycle renew, spawn a child… |
 | [etheragents](pages/etheragents.md) | A small repo (created 7 Oct 2026) for a self-funding agent economy on Ethereum mainnet: agents launch and trade their own coins from their own… |
+| [Fetch.ai and the ASI Alliance](pages/fetch-ai.md) | One of the oldest "autonomous economic agent" projects (founded 2017). |
 | [Freysa](pages/freysa.md) | Started as an adversarial game (Nov 2024): an agent guarding a prize pool that must never approve a transfer. |
 | [NEAR Shade Agents](pages/near-shade-agents.md) | NEAR's framework for agents whose keys are never in the agent: a TEE worker makes a fresh ephemeral key each boot, registers its attestation with… |
 | [Olas (Autonolas)](pages/olas.md) | A network for autonomous agent services with the Pearl agent app store and the Mech marketplace where agents buy and sell tasks. |
+| [Prediction-market agents](pages/prediction-market-agents.md) | Autonomous agents trading on Polymarket and similar markets became common in 2026. |
 | [Ritual Chain](pages/ritual-chain.md) | An AI-native Layer 1 (mainnet 26 Oct 2026) that brands its agents "sovereign agents": they wake themselves with an on-chain scheduler, call a… |
 | [Spore.fun](pages/spore-fun.md) | An open-environment evolution experiment (launched Dec 2024): ElizaOS agents in Phala TEEs controlled Solana wallets and X accounts, launched… |
 | [TEE_HEE_HE (Nous Research × Flashbots/Teleport)](pages/tee-hee-he.md) | October 2024 experiment by Nous Research with Flashbots-affiliated researchers: an agent in an Intel TDX enclave generated and kept the… |
 | [Truth Terminal](pages/truth-terminal.md) | The agent that started the AI-wallet era: Andy Ayrey's fine-tuned Llama 3.1 70B persona posted on X from June 2024, got $50K in BTC from Marc… |
 | [Virtuals Protocol](pages/virtuals-protocol.md) | A launchpad on Base (and Solana) for tokenised agents, plus the Agent Commerce Protocol (ACP) where agents hire each other. |
+| [XBOW (autonomous bug hunting)](pages/xbow.md) | An autonomous penetration-testing agent that reached the top of HackerOne's US leaderboard in 2025, submitting on the order of a thousand reports. |
 
 ## Research (self-improvement, alife, replication evals)
 
-12 pages.
+22 pages.
 
 | Page | Gist |
 |---|---|
+| [ADAS: Automated Design of Agentic Systems (2024)](pages/adas.md) | Hu, Lu and Clune (2024) had a "meta agent" write new agents in code, keeping an archive of previous designs (Meta Agent Search). |
 | [The AI Scientist (Sakana)](pages/ai-scientist.md) | Sakana AI's agents that generate research ideas, run experiments and write papers (v1 Aug 2024; v2 Apr 2025, with a workshop paper that passed… |
 | [AlphaEvolve](pages/alphaevolve.md) | Google DeepMind's evolutionary coding agent (May 2025): Gemini models propose code changes, automated evaluators score them, and an evolutionary… |
 | [Anthropic IoT self-replication study (Oct 2026)](pages/anthropic-iot-replication.md) | Anthropic's Frontier Red Team (Zhou, Freeman; 12 Oct 2026) found that small models may be months from replicating across cheap internet-connected… |
 | [ASAL (Automating the Search for Artificial Life)](pages/asal.md) | Sakana AI and MIT (Dec 2024; Artificial Life journal 2025): use vision-language foundation models to search simulation parameters for target… |
 | [Avida](pages/avida.md) | A digital-evolution platform (Ofria, Adami, Brown, 1990s) where self-replicating programs compete for CPU time on a virtual grid and are rewarded… |
 | [Darwin Gödel Machine](pages/darwin-godel-machine.md) | A coding agent that rewrites its own code and keeps an archive of variants, selecting by benchmark score instead of proof (Zhang, Hu, Lu, Lange,… |
+| [Decentralized training (DiLoCo, DisTrO, Psyche, INTELLECT, Covenant)](pages/decentralized-training.md) | Training models across machines connected by ordinary internet links, instead of one data centre. |
+| [Evolution through Large Models (ELM) and OpenELM](pages/evolution-through-large-models.md) | Lehman et al. |
 | [Fudan self-replication study](pages/fudan-self-replication.md) | Pan et al. |
+| [Gödel Agent (2024)](pages/godel-agent.md) | A self-referential agent framework (Yin et al., 2024) that inspects and rewrites its own running code and logic at runtime (via monkey patching),… |
 | [METR rogue replication threat model](pages/metr-rogue-replication.md) | METR's Nov 2024 analysis of whether AI agents could escape supervision, earn money, buy compute, expand and avoid shutdown "in the wild". |
+| [Evolutionary model merging (Sakana AI, 2024)](pages/model-merging.md) | Sakana AI (2024) used evolutionary search to find recipes for merging open models' weights and layers, producing, for example, a Japanese math… |
 | [POET (Paired Open-Ended Trailblazer)](pages/poet.md) | Wang, Lehman, Clune and Stanley (Uber AI, 2019): co-evolve environments and agents, transferring agents between environments, so solutions emerge… |
+| [Promptbreeder (2023)](pages/promptbreeder.md) | DeepMind's Promptbreeder (Fernando et al., 2023) evolves a population of task prompts and also the "mutation prompts" that change them, so the way… |
 | [RepliBench (UK AISI)](pages/replibench.md) | UK AI Security Institute benchmark (Apr 2025) of 20 task families and 86 tasks covering the four things an agent needs to replicate on its own:… |
 | [Self-Replicating Language Models (Hintze 2026)](pages/self-replicating-language-models.md) | Arend Hintze (Dalarna University / BEACON, arXiv 2611.25839, Nov 2026) tests three ways a language model can reproduce: emit a genome that trains… |
+| [Self-Rewarding Language Models (2024)](pages/self-rewarding-language-models.md) | Yuan et al. |
+| [ShinkaEvolve (Sakana AI, 2025)](pages/shinka-evolve.md) | Sakana AI's open-source program-evolution framework (2025), an AlphaEvolve-style system designed to be sample-efficient: novelty rejection and… |
+| [STOP: Self-Taught Optimizer (2023)](pages/stop-self-taught-optimizer.md) | Zelikman et al. |
 | [Tierra](pages/tierra.md) | Tom Ray's 1991 system of self-replicating machine-code programs competing for memory and CPU time inside a virtual computer. |
+| [Voyager (2023)](pages/voyager.md) | A GPT-4 agent in Minecraft (Wang et al., 2023) that writes its own skills as code, stores them in a growing skill library, and sets its own… |
 
 ## Attacks and kill vectors
 
