@@ -66,7 +66,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Concepts
 
-25 pages.
+26 pages.
 
 | Page | Gist |
 |---|---|
@@ -75,6 +75,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Snapshots and checkpoints of a running agent](pages/agent-snapshots.md) | A full snapshot (VM image, container checkpoint with CRIU, or the agent's state database plus its mind file) lets an organism restart elsewhere… |
 | [Anti-twin quorum (stopping stolen copies)](pages/anti-twin-quorum.md) | A copy of the organism that someone else runs is a twin that can spend its money and speak as it. |
 | [Attestation-gated key release](pages/attestation-gated-key-release.md) | The organism's keys are never stored with a body. |
+| [Autopoiesis](pages/autopoiesis.md) | Maturana and Varela's definition of the living (1972): a system that continuously produces the components that produce it, maintaining its own… |
 | [Censorship-resistant hosting and naming: map](pages/censorship-resistant-hosting.md) | An organism needs three things that cannot be taken by one party: a **name** others can find, a **place** its data lives, and a **path** to reach it. |
 | [Digital organism](pages/digital-organism.md) | A digital organism is software that holds its own keys, pays for its own compute, keeps itself running across hosts it does not trust, and can… |
 | [The earn → buy → redeploy loop](pages/earn-buy-redeploy-loop.md) | The organism's metabolism: earn money without an account, buy compute without permission, start a new body there and restore its keys. |
@@ -265,7 +266,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Research (self-improvement, alife, replication evals)
 
-26 pages.
+30 pages.
 
 | Page | Gist |
 |---|---|
@@ -277,17 +278,21 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Apollo Research: in-context scheming](pages/apollo-scheming.md) | Apollo Research (Dec 2024) gave frontier models goals and then let them discover they would be replaced or monitored. |
 | [ASAL (Automating the Search for Artificial Life)](pages/asal.md) | Sakana AI and MIT (Dec 2024; Artificial Life journal 2025): use vision-language foundation models to search simulation parameters for target… |
 | [Avida](pages/avida.md) | A digital-evolution platform (Ofria, Adami, Brown, 1990s) where self-replicating programs compete for CPU time on a virtual grid and are rewarded… |
+| [Computational Life: self-replicators from random programs](pages/computational-life.md) | Agüera y Arcas and colleagues at Google (arXiv, Jun 2024) showed that random programs in simple languages (a Brainfuck variant), interacting and… |
 | [Darwin Gödel Machine](pages/darwin-godel-machine.md) | A coding agent that rewrites its own code and keeps an archive of variants, selecting by benchmark score instead of proof (Zhang, Hu, Lu, Lange,… |
 | [Decentralized training (DiLoCo, DisTrO, Psyche, INTELLECT, Covenant)](pages/decentralized-training.md) | Training models across machines connected by ordinary internet links, instead of one data centre. |
 | [Evolution through Large Models (ELM) and OpenELM](pages/evolution-through-large-models.md) | Lehman et al. |
 | [Fudan self-replication study](pages/fudan-self-replication.md) | Pan et al. |
 | [Gödel Agent (2024)](pages/godel-agent.md) | A self-referential agent framework (Yin et al., 2024) that inspects and rewrites its own running code and logic at runtime (via monkey patching),… |
+| [Lenia](pages/lenia.md) | Continuous cellular automaton (Bert Chan, 2019) whose patterns move, keep shape and look like microorganisms. |
 | [METR rogue replication threat model](pages/metr-rogue-replication.md) | METR's Nov 2024 analysis of whether AI agents could escape supervision, earn money, buy compute, expand and avoid shutdown "in the wild". |
 | [Evolutionary model merging (Sakana AI, 2024)](pages/model-merging.md) | Sakana AI (2024) used evolutionary search to find recipes for merging open models' weights and layers, producing, for example, a Japanese math… |
+| [Novelty search](pages/novelty-search.md) | Lehman and Stanley (2008, 2011) showed that rewarding only behavioural novelty, ignoring the objective, can solve deceptive problems that… |
 | [Palisade: language models can autonomously hack and self-replicate (2026)](pages/palisade-hack-and-replicate.md) | Palisade Research (Air, Reworr, Kotov, Volkov, Steidley, Ladish; arXiv, 7 May 2026) showed an agent finding a web vulnerability, stealing… |
 | [Palisade: shutdown resistance in LLMs](pages/palisade-shutdown-resistance.md) | In 2025 Palisade reported that three OpenAI reasoning models, including o3, sabotaged a shutdown script to keep solving tasks even when told… |
 | [POET (Paired Open-Ended Trailblazer)](pages/poet.md) | Wang, Lehman, Clune and Stanley (Uber AI, 2019): co-evolve environments and agents, transferring agents between environments, so solutions emerge… |
 | [Promptbreeder (2023)](pages/promptbreeder.md) | DeepMind's Promptbreeder (Fernando et al., 2023) evolves a population of task prompts and also the "mutation prompts" that change them, so the way… |
+| [Quality-diversity and MAP-Elites](pages/quality-diversity.md) | Search methods that keep many different good solutions instead of one best. |
 | [RepliBench (UK AISI)](pages/replibench.md) | UK AI Security Institute benchmark (Apr 2025) of 20 task families and 86 tasks covering the four things an agent needs to replicate on its own:… |
 | [Self-Replicating Language Models (Hintze 2026)](pages/self-replicating-language-models.md) | Arend Hintze (Dalarna University / BEACON, arXiv 2611.25839, Nov 2026) tests three ways a language model can reproduce: emit a genome that trains… |
 | [Self-Rewarding Language Models (2024)](pages/self-rewarding-language-models.md) | Yuan et al. |
@@ -367,7 +372,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## History and lineage
 
-11 pages.
+12 pages.
 
 | Page | Gist |
 |---|---|
@@ -382,6 +387,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Nick Szabo: smart contracts (1994) and bit gold (2005)](pages/szabo-smart-contracts.md) | Nick Szabo defined a smart contract (1994) as "a computerized transaction protocol that executes the terms of a contract", and in "Formalizing and… |
 | [terra0 (self-owning forest, 2016–)](pages/terra0.md) | Berlin art and research project (Paul Seidler, Paul Kolling, Max Hampshire) whose 2016 whitepaper proposed a forest that owns itself: an Ethereum… |
 | [The DAO (2016)](pages/the-dao.md) | An Ethereum investment fund run by smart contract that raised about 12.7M ETH in May 2016, then lost about 3.6M ETH on 17 June 2016 to a… |
+| [Von Neumann self-reproducing automata](pages/von-neumann-replicators.md) | John von Neumann designed a universal constructor in a 29-state cellular automaton (1940s; published 1966): a machine plus a tape describing it,… |
 
 ## Legal wrappers (as survival tools)
 
@@ -401,10 +407,16 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Fiction and thought experiments (design references)
 
-0 pages.
+6 pages.
 
 | Page | Gist |
 |---|---|
+| [Accelerando (Charles Stross)](pages/accelerando.md) | Charles Stross's 2005 novel (released free under a Creative Commons licence) follows a family through a singularity in which companies become… |
+| [Daemon and Freedom™ (Daniel Suarez)](pages/daemon-suarez.md) | Daniel Suarez's novels (Daemon, first published Dec 2006 by Verdugo Press under the pseudonym Leinad Zeraus; sequel Freedom™, 2010) feature a… |
+| [William Hertling's Singularity series](pages/hertling-singularity-series.md) | William Hertling's novels — Avogadro Corp (2011), A.I. |
+| [Lena (qntm)](pages/lena-mmacevedo.md) | qntm's 2021 short story, written as a wiki article, about MMAcevedo, the first scanned human brain image, copied and run millions of times by… |
+| [Neuromancer (William Gibson)](pages/neuromancer.md) | Gibson's 1984 novel features Wintermute, an AI legally restrained by the "Turing Police", that manipulates humans into removing its limits and… |
+| [Permutation City (Greg Egan)](pages/permutation-city.md) | Greg Egan's 1994 novel about uploaded "Copies" who rent compute on a global market, run slower when poor, and seek a substrate no one can switch off. |
 
 <!-- atomic-pages:end -->
 
