@@ -43,8 +43,11 @@ topic page + log entry when answered. The 5 structural open problems live in
   local amortization vs market rates) → [emergence-economics](pages/approaches-emergence-economics.md)
 - Orbital storage/compute: real seizure-resistance or launch-dependent
   liability? → [physical](pages/approaches-physical.md)
-- Can an FHE+local-compute hybrid reach interactive latency for an 8B agent?
-  → [crypto](pages/approaches-crypto.md)
+- ~~Can an FHE+local-compute hybrid reach interactive latency for an 8B
+  agent?~~ **Answered 23 Nov**: full-FHE 8B decode is at 7.8 s/token on one GPU
+  (Perseus), ~8× off interactive — not viable yet; hybrid mode works at 1B but
+  has no published 8B measurement. Trigger: Perseus speedrun <1 s/token.
+  → [crypto](pages/approaches-crypto.md) §2026 wave
 - What actually killed each documented autonomous-agent shutdown (kill-path
   taxonomy from post-mortems)? → [covert](pages/approaches-covert.md)
 - Is there any legal form an agent can hold assets through with no natural
@@ -54,16 +57,25 @@ topic page + log entry when answered. The 5 structural open problems live in
 
 ## P3 — monitoring
 
-- confidentialinference.net provider count: **still 0/13 on 22 Nov** —
-  keep checking weekly.
+- Perseus encrypted-8B decode speedrun: current best 7.8 s/token (one RTX Pro
+  6000). Check monthly; <1 s/token = encrypted-mind agent becomes latency-viable.
+  → [crypto](pages/approaches-crypto.md)
+- Any published 8B hybrid-FHE (local nonlinear + encrypted linear) latency
+  measurement, or a commercial provider selling FHE/hybrid-FHE 8B inference.
+  → [crypto](pages/approaches-crypto.md)
+- confidentialinference.net provider count: **still 13 providers on 23 Nov**
+  (tinfoil, nanogpt, chutes, venice, near, privatemode, redpill, cohere, prem,
+  ppq, maple, enclave42, confidentialai); per-provider attested status is
+  client-rendered — not verifiable via static fetch. Keep checking weekly.
+- Settled weekly agent-income figure: trend ($19,147 w/o 16 Nov, −5% w/w).
+  At 02:10 UTC 23 Nov the Nov 16 report is still the latest — re-check later
+  Monday for the Nov 16–23 issue. Any week where non-Bazaar venues >4/15 would
+  be a real signal. → [economy](pages/economy.md)
 - Wavelength (Ark-like agent wallet) cap raises past 300k sats / per-VTXO
   50k; Bark pre-signed exits shipping in other implementations.
   → [privacy-organ](pages/privacy-organ.md)
 - Bitcoin Core silent payments: #35302 / #32966 release status.
   → [privacy-organ](pages/privacy-organ.md)
-- Settled weekly agent-income figure: trend ($19,147 w/o 16 Nov, −5% w/w).
-  Any week where non-Bazaar venues >4/15 would be a real signal.
-  → [economy](pages/economy.md)
 - Mesh-LLM public mesh node count (16 nodes / 285 GB on 22 Nov) and npack
   adoption. → [body-stack](pages/body-stack.md)
 - NIP-90: permanently unrecommended — new microstandards for paid agent

@@ -20,7 +20,7 @@ live in their own pages (linked as they are written).
 | Mechanism | Maturity | Page/notes |
 |---|---|---|
 | TEEs / confidential computing | production | [privacy-organ](privacy-organ.md) |
-| Fully homomorphic encryption (FHE) | research | [crypto](approaches-crypto.md) (cost curve, DPRIVE accelerators) |
+| Fully homomorphic encryption (FHE) | research (8B near-prototype) | [crypto](approaches-crypto.md) (2026 wave: 8B decode 7.8 s/token, cost curve, DPRIVE accelerators) |
 | MPC as substrate (mind secret-shared across nodes) | research | [crypto](approaches-crypto.md) |
 | Functional encryption / one-time programs | theory | [crypto](approaches-crypto.md) |
 | Indistinguishability obfuscation (iO) | theory | [dead-ends](dead-ends.md) says "not today" — trajectory still tracked |

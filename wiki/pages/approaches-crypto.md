@@ -2,7 +2,7 @@
 title: "Cryptographic alternatives to trusted hardware"
 status: seed
 sources: []
-updated: 2026-11-22
+updated: 2026-11-23
 ---
 
 # Cryptographic alternatives to trusted hardware
@@ -47,3 +47,22 @@ Raw verified findings from the horizon scan of 22 Nov 2026 (one stream per axis;
 - **Hybrid design evidence (FHE for memory/linear layers + local compute): Zama Concrete ML's HybridFHEModel splits LLM inference - client performs nonlinear layers (attention, activations) locally, server runs only linear layers on encrypted activations; encrypted transfer ~18 MB/token for Llama-1B, ~2.2 MB/token for GPT-2. The FHE-for-data-at-rest/transfer pattern is the only FHE-LLM mode that runs today, and generalizes to a sovereign agent keeping weights encrypted on hostile storage while thinking locally.** (prototype | 2025-04-10) — <https://docs.zama.org/concrete-ml/llms/inference>
 - **HE+TEE hybrid designs reintroduce hardware: THEF (IEEE TrustCom 2024) uses homomorphic encryption for confidentiality plus a TEE to avoid HE's polynomial-approximation cost of nonlinearities, cutting end-to-end communication 80% - informative for the design space, but not an alternative to trusted hardware, only a cheaper use of it.** (research | 2024) — <https://www.computer.org/csdl/proceedings-article/trustcom/2024/062000b693/25DHWSBe9nG>
 - **MPC tooling benchmark maturity: a 2026 ScienceDirect study benchmarks 65 real-world MPC applications across four frameworks (HPMPC, MPyC, MP-SPDZ, MOTION) under bandwidth/latency/loss conditions - MPC for ML-shaped workloads is measurable engineering, with WAN latency (not CPU) the dominant cost, the binding constraint for a secret-shared agent mind spread across nodes.** (research | 2026) — <https://www.sciencedirect.com/science/article/pii/S2214212626002012>
+
+## 2026 wave: FHE reaches 8B scale (rotation 23 Nov 2026)
+
+Findings from a 23 Nov sweep; each number was read from the linked paper's own text.
+
+- **Perseus (Zirilli, Marincione, Kornaropoulos, Ateniese, Rodolà; arXiv 2611.04488 + eprint 2026/2735, Nov 2026): state-of-the-art encrypted single-token decode of Llama-3-8B at 7.8 s/token at 512-token context on a single RTX Pro 6000 GPU — its Table 1 ladder: AR-HE 1569 s/tok (H100), ROSETTA 311 s/tok (A100), Cachemir 97 s/tok (A100), Sylph 31 s/tok (RTX Pro 6000), Perseus 7.8 s/tok. Open Python library on a Rust/CUDA CKKS 32-bit backend (BUSL 1.1), with a public single-token-decode speedrun leaderboard intended to compound progress.** (prototype | 2026-11-03) — <https://arxiv.org/abs/2611.04488>
+- **Sylph (arXiv 2601.18511, Jan 2026): FHE Llama-3-8B prefill of a 128-token private prompt in 20 s on 8× RTX Pro 6000 (26 s on 4× B200); first heterogeneous public/private prompt design — thousands of plaintext context tokens ride along free while only the sensitive tail is encrypted.** That public-context/private-state split matches an agent's actual workload (public docs + private state) far better than fully-encrypted prompts. (research | 2026-01) — <https://arxiv.org/html/2601.18511>
+- **Cerium (CMU CAOS, arXiv 2512.11269, open-source): first GPU CKKS bootstrapping under 10 ms (7.5 ms) and Llama-3-8B prefill in 43 s; the compiler/runtime gets GPUs within 4.4× of the CraterLake FHE ASIC — commodity GPUs are closing on dedicated silicon.** (prototype | 2025-12) — <https://arxiv.org/html/2512.11269v2>
+- **Odin (arXiv 2609.12378, Sep 2026): first open-source end-to-end GPU CKKS Llama-3-8B — 366.4 s for a 128-token input on one H100 (58.9 GiB device memory), 4.51× over the THOR baseline on identical settings; packing co-design (feature-major cross-layer layout) is where the win comes from.** (research | 2026-09-11) — <https://arxiv.org/abs/2609.12378v3>
+- **ATLAS (arXiv 2607.23478): automated search for polynomial approximations of transformer nonlinearities — ~35% multiplicative-depth and latency reduction on Llama-3-8B with negligible accuracy loss, search completing in under one hour; removes the expert-manual bottleneck in every FHE-LLM pipeline above.** (research | 2026-08-27) — <https://arxiv.org/html/2607.23478v2>
+- **Bifrost (arXiv 2606.17421): hybrid TEE–FHE serving — linear layers on encrypted accelerator CKKS, nonlinear/KV/refresh inside an attested CPU TEE; projected 9.91× latency reduction on Llama-3-8B vs FHE-only. Recorded here as the design-space boundary: it is a cheaper use of trusted hardware, not an alternative to it (defender note in the TEE cell).** (research | 2026-06) — <https://arxiv.org/html/2606.17421>
+
+### Answered P1b cell: can an FHE+local-compute hybrid reach interactive latency for an 8B agent?
+
+- **Interactive** = ~1 s/token (chat-grade). **Best full-FHE 8B decode: 7.8 s/token on one datacenter GPU** (Perseus, Nov 2026). Two-year software-only trajectory: 181.5 s/tok (Llama-2-7B, Sep 2024) → 31 s/tok (Sylph) → 7.8 s/tok — roughly 20× per two years from packing/bootstrapping/approximation work alone. Verdict: **not interactive yet, but ~8× away, not 100× away** — and multi-GPU decode scaling plus the speedrun leaderboard make <2 s/token a plausible 2027 milestone. The falsifiable trigger: Perseus's public speedrun crossing ~1 s/token on one GPU marks an encrypted-mind agent as latency-viable for interactive use.
+- **The hybrid (local nonlinear + FHE linear) mode works today** (Concrete ML HybridFHEModel at 1B, ~18 MB encrypted transfer/token) and 2026 packing advances shrink its dominant cost (ciphertext transfer + weight encoding), but **no published 8B hybrid number exists** — that remains the measurement gap. The pragmatic near-term configuration for a sovereign agent is Sylph-shaped: public context in plaintext, only private state encrypted.
+- **What would have to be true**: (a) decode <1 s/token via speedrun compounding or CraterLake-class ASIC availability (Cerium shows GPUs at 4.4× of ASIC); (b) a published 8B hybrid-FHE latency measurement; (c) weights-at-rest under FHE is already deployable — the open frontier is the thinking loop, not storage.
+
+Rotated-axis note: this fills the crypto-axis P1b cell from [open-questions](../open-questions.md); next crypto rotation claims a fresh crypto cell (e.g. smart-contract vaults with policy, section D).
