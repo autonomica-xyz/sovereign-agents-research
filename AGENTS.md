@@ -15,7 +15,9 @@ research moves.
 2. **One topic, one page.** Wiki pages live in `wiki/pages/`, kebab-case
    filenames. If a page grows past ~150 lines, split it and cross-link.
 3. **Frontmatter on every page.** `title`, `status` (`seed` | `stable`),
-   `sources` (relative paths into `docs/`), `updated` (ISO date).
+   `sources` (relative paths into `docs/`), `updated` (ISO date). Atomic pages
+   also carry `category` and follow the template in
+   [wiki/SCHEMA.md](wiki/SCHEMA.md).
 4. **Citation discipline.** Link claims to `docs/*.md#anchor` or the primary
    URL. Do not restate numbers without the source. The adversarial review
    (`docs/adversarial-review.md`) corrected real errors — check it before
@@ -47,6 +49,15 @@ research moves.
 11. **Commits.** Small, one logical change per commit. Format:
     `wiki(<topic>): <what changed>`. Never force-push `main`.
 
+## Atomic pages and lint
+
+The wiki has two layers: hub pages (synthesis) and atomic pages (one concept,
+technology, rail, compute source, organism, paper, attack, actor or open
+problem per page). Conventions are in [wiki/SCHEMA.md](wiki/SCHEMA.md). Before
+committing, run `python3 scripts/wiki_lint.py --sources` (links, frontmatter,
+required sections, index coverage, regenerated bibliography) and fix every
+error.
+
 ## Page lifecycle
 
 - `seed`: a stub or a single-source distillation. Clearly incomplete.
@@ -55,5 +66,5 @@ research moves.
 
 ## Orientation for a new agent session
 
-Read in this order: `README.md` → `wiki/INDEX.md` → the pages your task
+Read in this order: `README.md` → `wiki/INDEX.md` → `wiki/SCHEMA.md` → the pages your task
 touches → `wiki/open-questions.md` → the latest 3 files in `wiki/log/`.
