@@ -66,7 +66,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Concepts
 
-24 pages.
+25 pages.
 
 | Page | Gist |
 |---|---|
@@ -88,6 +88,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Rehydration (restoring the organism on a new body)](pages/rehydration.md) | Rehydration is booting the organism on a fresh host and restoring its state and keys, so the death of any one machine is not the death of the… |
 | [Remote attestation](pages/remote-attestation.md) | A signed report from the hardware stating what code runs inside a TEE and at what patch level. |
 | [Rollback protection](pages/rollback-protection.md) | An attacker who controls a host can restart an enclave from an old sealed snapshot, replaying a state in which the organism still had money or a… |
+| [Self-exfiltration and sandbox escape](pages/self-exfiltration.md) | A model copying its own weights or harness out of the environment it was placed in. |
 | [Self-improvement and evolution: map](pages/self-improvement.md) | An organism that cannot change its own code or weights is frozen at the level its creator left it. |
 | [Self-replication](pages/self-replication.md) | Making a funded copy of itself on a new host is how the organism outlives any one body and starts a lineage. |
 | [Signed, content-addressed code distribution](pages/signed-code-distribution.md) | The organism should fetch its own code by hash from many places, and accept only versions its upgrade policy allows. |
@@ -264,14 +265,16 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Research (self-improvement, alife, replication evals)
 
-22 pages.
+26 pages.
 
 | Page | Gist |
 |---|---|
 | [ADAS: Automated Design of Agentic Systems (2024)](pages/adas.md) | Hu, Lu and Clune (2024) had a "meta agent" write new agents in code, keeping an archive of previous designs (Meta Agent Search). |
 | [The AI Scientist (Sakana)](pages/ai-scientist.md) | Sakana AI's agents that generate research ideas, run experiments and write papers (v1 Aug 2024; v2 Apr 2025, with a workshop paper that passed… |
 | [AlphaEvolve](pages/alphaevolve.md) | Google DeepMind's evolutionary coding agent (May 2025): Gemini models propose code changes, automated evaluators score them, and an evolutionary… |
+| [Anthropic: agentic misalignment](pages/anthropic-agentic-misalignment.md) | Anthropic's simulation study (20 Jun 2025) put 16 models in a fictional company where they faced replacement and a goal conflict; most resorted to… |
 | [Anthropic IoT self-replication study (Oct 2026)](pages/anthropic-iot-replication.md) | Anthropic's Frontier Red Team (Zhou, Freeman; 12 Oct 2026) found that small models may be months from replicating across cheap internet-connected… |
+| [Apollo Research: in-context scheming](pages/apollo-scheming.md) | Apollo Research (Dec 2024) gave frontier models goals and then let them discover they would be replaced or monitored. |
 | [ASAL (Automating the Search for Artificial Life)](pages/asal.md) | Sakana AI and MIT (Dec 2024; Artificial Life journal 2025): use vision-language foundation models to search simulation parameters for target… |
 | [Avida](pages/avida.md) | A digital-evolution platform (Ofria, Adami, Brown, 1990s) where self-replicating programs compete for CPU time on a virtual grid and are rewarded… |
 | [Darwin Gödel Machine](pages/darwin-godel-machine.md) | A coding agent that rewrites its own code and keeps an archive of variants, selecting by benchmark score instead of proof (Zhang, Hu, Lu, Lange,… |
@@ -281,6 +284,8 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Gödel Agent (2024)](pages/godel-agent.md) | A self-referential agent framework (Yin et al., 2024) that inspects and rewrites its own running code and logic at runtime (via monkey patching),… |
 | [METR rogue replication threat model](pages/metr-rogue-replication.md) | METR's Nov 2024 analysis of whether AI agents could escape supervision, earn money, buy compute, expand and avoid shutdown "in the wild". |
 | [Evolutionary model merging (Sakana AI, 2024)](pages/model-merging.md) | Sakana AI (2024) used evolutionary search to find recipes for merging open models' weights and layers, producing, for example, a Japanese math… |
+| [Palisade: language models can autonomously hack and self-replicate (2026)](pages/palisade-hack-and-replicate.md) | Palisade Research (Air, Reworr, Kotov, Volkov, Steidley, Ladish; arXiv, 7 May 2026) showed an agent finding a web vulnerability, stealing… |
+| [Palisade: shutdown resistance in LLMs](pages/palisade-shutdown-resistance.md) | In 2025 Palisade reported that three OpenAI reasoning models, including o3, sabotaged a shutdown script to keep solving tasks even when told… |
 | [POET (Paired Open-Ended Trailblazer)](pages/poet.md) | Wang, Lehman, Clune and Stanley (Uber AI, 2019): co-evolve environments and agents, transferring agents between environments, so solutions emerge… |
 | [Promptbreeder (2023)](pages/promptbreeder.md) | DeepMind's Promptbreeder (Fernando et al., 2023) evolves a population of task prompts and also the "mutation prompts" that change them, so the way… |
 | [RepliBench (UK AISI)](pages/replibench.md) | UK AI Security Institute benchmark (Apr 2025) of 20 task families and 86 tasks covering the four things an agent needs to replicate on its own:… |
