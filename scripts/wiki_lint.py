@@ -17,7 +17,8 @@ import os, re, sys, glob, datetime, collections, urllib.request, urllib.error, c
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAGES = os.path.join(ROOT, "wiki", "pages")
 CATEGORIES = ["concept", "technology", "money-rail", "compute", "organism",
-              "research", "attack", "actor", "open-problem"]
+              "research", "attack", "actor", "open-problem", "history",
+              "legal", "fiction", "reference"]
 REQUIRED_SECTIONS = ["## How it serves the organism", "## How it fails",
                      "## Related", "## Sources"]
 FORBIDDEN = [r"[Bb]itstamp", r"/workspace/", r"/cursor/stores", r"/home/box",

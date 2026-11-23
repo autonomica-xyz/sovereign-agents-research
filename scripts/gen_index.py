@@ -7,13 +7,17 @@ Replaces everything between the atomic-pages:start/end markers.
 import glob, os, re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CATS = [("concept", "Concepts"), ("technology", "Technologies"),
+CATS = [("reference", "Reference (timeline, matrix, checklist, glossary, reading list, people)"),
+        ("concept", "Concepts"), ("technology", "Technologies"),
         ("money-rail", "Money rails"), ("compute", "Compute sources"),
         ("organism", "Organisms and agent projects"),
         ("research", "Research (self-improvement, alife, replication evals)"),
         ("attack", "Attacks and kill vectors"),
         ("actor", "Actors (people and organisations)"),
-        ("open-problem", "Open problems")]
+        ("open-problem", "Open problems"),
+        ("history", "History and lineage"),
+        ("legal", "Legal wrappers (as survival tools)"),
+        ("fiction", "Fiction and thought experiments (design references)")]
 
 def gist(text):
     blk = []

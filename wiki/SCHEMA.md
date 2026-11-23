@@ -20,7 +20,7 @@ scope (see [direction](../docs/direction.md)).
 ```markdown
 ---
 title: "Human-readable title"
-category: concept | technology | money-rail | compute | organism | research | attack | actor | open-problem
+category: concept | technology | money-rail | compute | organism | research | attack | actor | open-problem | history | legal | fiction | reference
 status: seed | stable
 sources: [docs/state-of-the-art.md]   # long-form docs this page draws on (may be [])
 updated: YYYY-MM-DD
@@ -62,6 +62,10 @@ to the organism and the defences.
 | attack | Kill vectors and real incidents |
 | actor | People and organisations |
 | open-problem | Unsolved problems, file names prefixed `op-` |
+| history | Precursors and lineage (cypherpunks, DACs, Plantoid) |
+| legal | Legal wrappers seen as survival tools (DAO LLCs, foundations) |
+| fiction | Novels and thought experiments used as design references |
+| reference | Synthesis and navigation: timeline, comparison matrix, checklist, glossary, reading list, people directory |
 
 ## Naming
 
