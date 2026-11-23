@@ -11,7 +11,8 @@ Compiled 22 Nov 2026.
 This repo is maintained wiki-style for long-term research by human and LLM
 agents. Start at [wiki/INDEX.md](wiki/INDEX.md):
 
-- [wiki/pages/](wiki/pages/) — 15 topic pages (definition, roadmap, drives, organisms, dead ends, open problems)
+- [wiki/pages/](wiki/pages/) — hub pages (definition, roadmap, drives, organisms, dead ends, open problems, approaches) plus 131 atomic pages: concepts, technologies, money rails, compute sources, organisms, research, attacks, actors and open problems
+- [wiki/SCHEMA.md](wiki/SCHEMA.md) — page template and rules; `python3 scripts/wiki_lint.py --sources` checks them
 - [wiki/open-questions.md](wiki/open-questions.md) — the prioritised research backlog
 - [wiki/log/](wiki/log/) — one dated entry per research session
 - [AGENTS.md](AGENTS.md) — contribution rules for agents working in this repo

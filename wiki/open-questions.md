@@ -80,3 +80,20 @@ topic page + log entry when answered. The 5 structural open problems live in
   adoption. → [body-stack](pages/body-stack.md)
 - NIP-90: permanently unrecommended — new microstandards for paid agent
   work surface in the NIPs repo. → [body-stack](pages/body-stack.md)
+
+## Added 2026-11-23 (atomic deep dive)
+
+- P1: Any deployed threshold key whose members span two or more TEE vendors
+  and no human recovery path? → [op-cross-vendor-key-recovery](pages/op-cross-vendor-key-recovery.md)
+- P1: Any TEE compute provider that takes Lightning/ecash with no account?
+  → [op-anonymous-confidential-compute](pages/op-anonymous-confidential-compute.md)
+- P1: Phala full root-cause report: was the inference server inside a TEE?
+  Which apps' KMS-derived keys leaked? → [phala-inference-breach-2026-11](pages/phala-inference-breach-2026-11.md)
+- P2: Names of the other two providers in the Dragos canary study.
+  → [dragos-canary-leaks](pages/dragos-canary-leaks.md)
+- P2: Any agent whose upgrade is authorised only by its own key quorum?
+  → [op-self-authorized-succession](pages/op-self-authorized-succession.md)
+- P2: A working anti-twin lease for a TEE agent (single live instance proved
+  to counterparties). → [op-anti-twin](pages/op-anti-twin.md)
+- P3: Mesh LLM Lightning payments leaving "WIP"; first paid public mesh job.
+  → [mesh-llm](pages/mesh-llm.md)
