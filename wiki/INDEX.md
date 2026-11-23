@@ -182,7 +182,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Card networks for agents (Visa Intelligent Commerce, Mastercard Agent Pay)](pages/card-network-agent-payments.md) | Visa Intelligent Commerce and Mastercard Agent Pay issue tokenised cards that agents can use within limits set by a human cardholder. |
 | [Cashu ecash](pages/cashu.md) | Chaumian ecash backed by Bitcoin: a mint issues blind-signed tokens it cannot link to their holder. |
 | [Coinbase AgentKit and CDP Agentic Wallet](pages/coinbase-agentic-wallet.md) | Coinbase's developer platform gives agents wallets that can hold, trade and pay for x402 services via CLI or MCP, with spend limits and guardrails. |
-| [Fedimint](pages/fedimint.md) | Federated Chaumian ecash: a group of guardians jointly runs the mint by threshold consensus, so no single operator holds the Bitcoin. |
+| [Fedimint](pages/fedimint.md) | Federated Chaumian ecash for Bitcoin. |
 | [L402 (HTTP 402 + Lightning)](pages/l402.md) | A server answers `402 Payment Required` with a Lightning invoice and a macaroon; the client pays and presents the preimage as proof. |
 | [Bitcoin Lightning](pages/lightning.md) | Instant, cheap Bitcoin payments over channels. |
 | [Liquid Network](pages/liquid.md) | A Bitcoin sidechain run by a federation: 15 functionaries (one per member chosen to run one), blocks and the peg wallet need 11 of 15 signatures… |
@@ -209,7 +209,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Akash Network](pages/akash.md) | A permissionless compute marketplace on Cosmos: providers bid on container deployments, paid from a wallet. |
 | [Atoma (status unclear)](pages/atoma.md) | A Sui-based network that marketed confidential (TEE) inference. |
 | [Azure confidential computing](pages/azure-confidential-computing.md) | Microsoft offers confidential VMs on AMD SEV-SNP and Intel TDX, SGX enclaves, and confidential GPU VMs with NVIDIA H100, plus the Azure… |
-| [BitLaunch](pages/bitlaunch.md) | Hourly VPS paid in BTC, ETH or LTC with email-only signup and a public API to create, manage and pay for servers. |
+| [BitLaunch](pages/bitlaunch.md) | Hourly VPS billed against a prepaid crypto balance in BTC, LTC or ETH, including Lightning. |
 | [Bittensor](pages/bittensor.md) | A network of 100+ subnets that pay TAO-denominated emissions for AI work. |
 | [BuilderNet and SUAVE](pages/buildernet-suave.md) | Flashbots' SUAVE was a proposed chain for private, decentralised block building; in practice the work became BuilderNet, a TDX-based block builder… |
 | [Chutes](pages/chutes.md) | A serverless inference platform (Bittensor ecosystem) whose TEE page documents TDX CVMs with GPU attestation; 11 of 20 listed models were flagged… |
@@ -229,14 +229,14 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [io.net](pages/io-net.md) | A decentralised GPU marketplace (Solana). |
 | [Unpaid hardware as substrate (IoT replication research)](pages/iot-substrate.md) | Anthropic's Frontier Red Team showed (12 Oct 2026) that small open models can stand up inference on cheap consumer devices, and sharded… |
 | [Lilypad (dormant)](pages/lilypad.md) | A decentralised compute network for AI jobs paid in crypto. |
-| [Marlin Oyster](pages/marlin-oyster.md) | A decentralised marketplace for TEE compute built on AWS Nitro Enclaves. |
+| [Marlin Oyster](pages/marlin-oyster.md) | A permissionless marketplace for TEE compute. |
 | [Morpheus (MOR)](pages/morpheus.md) | A decentralised AI network that routes inference requests to independent providers and pays them through MOR staking. |
 | [NEAR AI Cloud](pages/near-ai-cloud.md) | Confidential inference on Intel TDX plus NVIDIA confidential GPUs, using dstack as the OS layer. |
 | [Nesa](pages/nesa.md) | A decentralised inference network offering SDK and web inference with on-chain session deposits. |
 | [Njalla](pages/njalla.md) | A privacy-focused domain and VPS provider that registers domains in its own name on the customer's behalf. |
 | [Nosana](pages/nosana.md) | A Solana GPU marketplace: anyone can post jobs or register GPU nodes. |
 | [Oasis ROFL](pages/oasis-rofl.md) | Runtime Off-chain Logic: apps run in Intel TEEs (SGX or TDX VMs), attest, register on Oasis Sapphire, and get keys from Oasis's decentralised key… |
-| [PayPerQ](pages/payperq.md) | A pay-per-query AI service: top up from 10 cents with crypto (including Lightning) or card, no subscription and no email signup required. |
+| [PayPerQ (PPQ.ai)](pages/payperq.md) | A pay-per-use, OpenAI-compatible gateway to 500+ models, with no subscription and no email needed. |
 | [Petals](pages/petals.md) | BigScience's "BitTorrent-style" system (2022) for running large models across volunteers' GPUs, each serving some layers. |
 | [Phala Cloud](pages/phala-cloud.md) | A TEE cloud built on dstack: CVMs on Intel TDX with GPU TEEs, paid by card or USDC, plus confidential inference for open-weight models. |
 | [Prime Intellect](pages/prime-intellect.md) | Builds open training infrastructure (prime-rl, environments hub, compute marketplace). |
@@ -255,7 +255,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | Page | Gist |
 |---|---|
 | [aixbt](pages/aixbt.md) | A crypto market-intelligence agent on X (launched through Virtuals, late 2024) that became one of the most-followed AI accounts. |
-| [Botto](pages/botto.md) | A "decentralised autonomous artist" since 2021: a model generates work, a DAO votes on which piece to mint, and weekly auctions sell it. |
+| [Botto](pages/botto.md) | A "decentralised autonomous artist", running since Oct 2021. |
 | [Conway Automaton](pages/conway-automaton.md) | Open-source "sovereign AI agent" from Conway Research (Sigil Wen's "Web 4.0" framing): it creates its own Ethereum wallet, buys Conway Cloud… |
 | [ElizaOS (formerly ai16z)](pages/elizaos.md) | The most-used open-source agent framework of the 2024–25 crypto-agent wave. |
 | [EternalSeedBox / Mycelium (Tribler)](pages/eternalseedbox.md) | TU Delft's Tribler lab built seedbox "organisms" that rent their own VPSes with Bitcoin, gossip over IPv8, and every 6 hours either renew, spawn a… |
@@ -263,7 +263,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Fetch.ai and the ASI Alliance](pages/fetch-ai.md) | One of the oldest "autonomous economic agent" projects (founded 2017). |
 | [Freysa](pages/freysa.md) | Started as an adversarial game (Nov 2024): an agent guarding a prize pool that must never approve a transfer. |
 | [NEAR Shade Agents](pages/near-shade-agents.md) | NEAR's framework for agents whose keys are never in the agent: a TEE worker makes a fresh ephemeral key each boot, registers its attestation with… |
-| [Olas (Autonolas)](pages/olas.md) | A network for autonomous agent services with the Pearl agent app store and the Mech marketplace where agents buy and sell tasks. |
+| [Olas (Autonolas / Pearl)](pages/olas.md) | An agent network founded in 2021 by Valory, built on the `open-autonomy` framework. |
 | [Prediction-market agents](pages/prediction-market-agents.md) | Autonomous agents trading on Polymarket and similar markets became common in 2026. |
 | [Ritual Chain](pages/ritual-chain.md) | An AI-native Layer 1 (mainnet 26 Oct 2026) that brands its agents "sovereign agents": they wake themselves with an on-chain scheduler, call a… |
 | [Spore.fun](pages/spore-fun.md) | An open-environment evolution experiment launched by Phala on 20 Dec 2024. |
