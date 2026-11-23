@@ -3,7 +3,7 @@ title: "Hyperbolic"
 category: compute
 status: seed
 sources: []
-updated: 2026-11-23
+updated: 2026-11-24
 ---
 
 # Hyperbolic
@@ -15,6 +15,11 @@ updated: 2026-11-23
 ## Details
 
 - Prepaid credits; terms allow identity requests when needed.
+- Resells on-demand and reserved H100, H200 and B200 capacity from about 30
+  neocloud suppliers; "starting from" rates H100 SXM $3.19, H200 $3.99, B200
+  $5.99 per GPU-hour (Nov 2026).
+- Raised a $30M Series A-1 in Oct 2026 and is building Forge, multi-cloud GPU
+  management software.
 
 ## How it serves the organism
 
@@ -32,3 +37,4 @@ Card-only billing means a human identity in the loop.
 ## Sources
 
 - Hyperbolic billing docs — <https://www.hyperbolic.ai/docs/general/billing-payments>
+- BestNeoClouds, Hyperbolic profile (Nov 2026) — <https://bestneoclouds.com/providers/hyperbolic/>
