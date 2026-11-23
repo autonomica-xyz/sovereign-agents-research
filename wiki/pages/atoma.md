@@ -13,6 +13,12 @@ updated: 2026-11-24
 > no longer work; its node repository is no longer at its old GitHub path.
 > Status unclear; treat as not usable.
 
+## Details
+
+- **Rechecked 23 Nov 2026:** `atoma.network` returns an empty page.
+  `atoma-network/atoma-node` and `atoma-network/atoma-proxy` return 404 on
+  GitHub. Treat as dead.
+
 ## How it serves the organism
 
 Another example of how quickly crypto inference suppliers disappear.

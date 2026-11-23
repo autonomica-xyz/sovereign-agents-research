@@ -244,7 +244,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [SaladCloud](pages/salad.md) | A distributed cloud built from consumer gaming PCs whose owners rent idle GPUs. |
 | [Secret Network](pages/secret-network.md) | Cosmos chain whose contracts run in Intel SGX with encrypted state. |
 | [SporeStack (and Slow Servers)](pages/sporestack.md) | The archetypal machine-buyable VPS: fund a token with XMR, BTC or BCH and drive servers through an API reachable over Tor and I2P, with no account. |
-| [Super Protocol](pages/super-protocol.md) | Confidential AI cloud on TEEs selling model hosting and agents, with confidentiality "included in the price" (site, Nov 2026). |
+| [Super Protocol](pages/super-protocol.md) | A confidential AI cloud on TEEs that has pivoted to enterprise and government buyers. |
 | [Vast.ai](pages/vast-ai.md) | A GPU marketplace of independent hosts. |
 | [Venice](pages/venice.md) | A private AI inference service (founded by Erik Voorhees, 2024) whose private tier promises zero data retention on Venice-controlled machines. |
 

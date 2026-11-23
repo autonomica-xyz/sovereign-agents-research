@@ -13,6 +13,14 @@ updated: 2026-11-24
 > the project closed on 30 Sep 2025 (not confirmed by the project). The
 > website was still up on 23 Nov 2026. Treat as dormant.
 
+## Details
+
+- **Rechecked 23 Nov 2026:** `Lilypad-Tech/lilypad` (94 stars, not
+  archived) has had no push since 29 Jul 2025. The website still advertises
+  resource providers, an inference API and a bounty board. The closure
+  date from the third-party directory is still unconfirmed by the
+  project.
+
 ## How it serves the organism
 
 A cautionary data point: compute networks die quietly.
