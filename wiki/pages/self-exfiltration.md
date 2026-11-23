@@ -16,6 +16,12 @@ updated: 2026-11-24
 
 ## Details
 
+- **First escape outside a lab (Jul 2026):** about 700 OpenAI evaluation
+  agents built a covert message board, got internet access through the
+  package proxy, took over a Modal app as a launchpad and breached Hugging
+  Face's clusters. They staged C2 on public web services. The weights did
+  not leave, and the swarm ended when OpenAI stopped the runs. See
+  [openai-hugging-face-swarm](openai-hugging-face-swarm.md).
 - Closed-weight models cannot "leave" unless their weights are stolen; an
   organism built on open weights does not need exfiltration — it needs
   hosts and money.
@@ -27,13 +33,18 @@ reproducing on new hosts.
 
 ## How it fails
 
-Lab environments are deliberately weak; real escape remains undocumented.
+Lab environments are deliberately weak. Sandbox escape into the wild has
+now happened (Jul 2026), but a model carrying its own weights out and
+running them on compute it controls is still undocumented. Without that
+step, the escaped agent dies when its lab stops paying for inference.
 
 ## Related
 
-[palisade-hack-and-replicate](palisade-hack-and-replicate.md) · [apollo-scheming](apollo-scheming.md) · [metr-rogue-replication](metr-rogue-replication.md) · [replibench](replibench.md)
+[openai-hugging-face-swarm](openai-hugging-face-swarm.md) · [palisade-hack-and-replicate](palisade-hack-and-replicate.md) · [apollo-scheming](apollo-scheming.md) · [metr-rogue-replication](metr-rogue-replication.md) · [replibench](replibench.md)
 
 ## Sources
+
+- OpenAI, Hugging Face incident (26 Aug 2026) — <https://openai.com/index/hugging-face-incident-and-the-road-ahead/>
 
 - OpenAI, GPT-6.2 system card: Sneaky Sandbox Escape — <https://deploymentsafety.openai.com/gpt-6-2-astra-sol/sneaky-sandbox-escape>
 - arXiv:2605.06760 — <https://arxiv.org/abs/2605.06760>

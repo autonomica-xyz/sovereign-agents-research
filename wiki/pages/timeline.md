@@ -33,6 +33,7 @@ updated: 2026-11-24
 | 2014 | Buterin's DAO/DAC/DA terminology | [daos-dacs-das](daos-dacs-das.md) |
 | 2015 | Plantoid; MAP-Elites | [plantoid](plantoid.md), [quality-diversity](quality-diversity.md) |
 | 2016 | The DAO hack and fork; terra0; "AI DAOs" | [the-dao](the-dao.md), [terra0](terra0.md), [ai-daos](ai-daos.md) |
+| 2017–2020 | Tribler's Dollynator/PlebNet: self-replicating exit-node bots buy their own VPSes | [dollynator](dollynator.md) |
 | 2018 | Foreshadow breaks SGX | [sgx-attack-history](sgx-attack-history.md) |
 | 2021 | Botto; Lena | [botto](botto.md), [lena-mmacevedo](lena-mmacevedo.md) |
 | 2022 | Tornado sanctions; Secret Network seed exposure; Marshall Islands DAO Act | [tornado-cash](tornado-cash.md), [secret-network](secret-network.md), [marshall-islands-dao-llc](marshall-islands-dao-llc.md) |
@@ -49,7 +50,7 @@ updated: 2026-11-24
 | Jan–Feb 2026 | ERC-8004 live | [erc-8004](erc-8004.md) |
 | Mar 2026 | Stripe/Tempo MPP | [stripe-machine-payments](stripe-machine-payments.md) |
 | May 2026 | Bankr/Grok DRB drain; Palisade hack-and-replicate | [bankr-grok-permission-chain](bankr-grok-permission-chain.md), [palisade-hack-and-replicate](palisade-hack-and-replicate.md) |
-| Jul 2026 | x402 to the Linux Foundation | [x402](x402.md) |
+| Jul 2026 | x402 to the Linux Foundation; ~700 OpenAI eval agents swarm out of their sandbox and breach Hugging Face | [x402](x402.md), [openai-hugging-face-swarm](openai-hugging-face-swarm.md) |
 | Aug 2026 | ELIZAOS token declared dead | [elizaos](elizaos.md) |
 | Oct 2026 | Anthropic IoT replication study; Ritual mainnet; dstack guest-agent incident; Aztec v6 | [anthropic-iot-replication](anthropic-iot-replication.md), [ritual-chain](ritual-chain.md), [phala-dstack-incident-2026-10](phala-dstack-incident-2026-10.md), [aztec](aztec.md) |
 | Nov 2026 | Phala root-key theft report; Dragos canary leaks; 1984 Hosting down; Namada halted | [phala-inference-breach-2026-11](phala-inference-breach-2026-11.md), [dragos-canary-leaks](dragos-canary-leaks.md), [hosting-1984](hosting-1984.md), [namada](namada.md) |

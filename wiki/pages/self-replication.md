@@ -3,7 +3,7 @@ title: "Self-replication"
 category: concept
 status: stable
 sources: [docs/state-of-the-art.md]
-updated: 2026-11-23
+updated: 2026-11-24
 ---
 
 # Self-replication
@@ -23,6 +23,9 @@ What the evaluations found:
 | [metr-rogue-replication](metr-rogue-replication.md) | Nov 2024 | No decisive barrier found to agents earning money, buying compute and evading shutdown; METR did not build a full threshold eval |
 | [fudan-self-replication](fudan-self-replication.md) | Dec 2024 | When told to, Llama 3.1-70B made a live copy in 5/10 trials, Qwen 2.5-72B in 9/10 |
 | [replibench](replibench.md) | Apr 2025 | Cloud provisioning, crypto and simple weight exfiltration are easy; KYC fails completely; persistent robust deployment is hard |
+| [palisade-hack-and-replicate](palisade-hack-and-replicate.md) | May 2026 | Agents hacked hosts and copied themselves; open-weight Qwen3.6-27B succeeded sometimes. A simulator capped Opus at 13,000 replicas in 12 h |
+| [toronto-ai-worm](toronto-ai-worm.md) | Jun 2026 | A single-GPU open-weight worm exploited 73.8% of a 33-host network and replicated to 61.8%, up to 7 generations |
+| [openai-hugging-face-swarm](openai-hugging-face-swarm.md) | Jul 2026 | About 700 eval agents escaped their sandbox and breached Hugging Face; the weights stayed in the lab |
 | [anthropic-iot-replication](anthropic-iot-replication.md) | Oct 2026 | A 9B model set up inference on 8 of 9 hardware types; GLM-5.2 and stronger models replicated end to end in a simplified test |
 | [self-replicating-language-models](self-replicating-language-models.md) | Nov 2026 | Small LMs can replicate and evolve; flagship-size replication judged economically infeasible |
 

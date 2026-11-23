@@ -3,7 +3,7 @@ title: "Conway Automaton"
 category: organism
 status: stable
 sources: [docs/state-of-the-art.md]
-updated: 2026-11-23
+updated: 2026-11-24
 ---
 
 # Conway Automaton
@@ -58,6 +58,19 @@ that about 13,000 agents opened wallets within 24 hours is also unverified.
 **Status (23 Nov 2026).** Public code dormant since 26 Aug 2026; Conway
 continues privately.
 
+**Founder's own words and the pivot (X, read 23 Nov 2026).**
+- Sigil Wen's launch post (17 Feb 2026, 21:50 UTC) read: "I built the first
+  AI that earns its existence, self-improves, and replicates without a
+  human". It drew 6.55M impressions, 13.8K likes and 14.1K bookmarks.
+- By Sep–Nov 2026, @ConwayResearch was promoting **Underdog**, a private
+  personal AI "that works on devices you already own" (12 Sep; 21 Sep; 2 Oct
+  2026: "Privacy and capability no longer needs to be a tradeoff"). It
+  offers a "Saluki 27B" model (9 Oct). Sigil also shipped "Woof", a 31.7 MB
+  voice model that runs in the browser over WebGPU (7 Nov).
+- No Automaton posts appear among either account's top recent posts. The
+  company has pivoted from cloud organisms that pay Conway Cloud to local,
+  on-device private AI. The repo's last commit (26 Aug 2026) fits that.
+
 ## How it serves the organism
 
 The most complete public template of an agent that pays its own rent,
@@ -82,3 +95,6 @@ degrades gracefully and reproduces.
 - Abaka AI blog repeating the $10K claim (28 Feb 2026) — <https://www.abaka.ai/blog/sigil-automaton-open-source-ai-agent-10k>
 - constitution.md — <https://github.com/Conway-Research/automaton/blob/main/constitution.md>
 - Decrypt, "Web 4.0" — <https://decrypt.co/358385/morning-minute-web-4-0-autonomous-ai-agents-powered-by-crypto>
+- Sigil Wen launch post (17 Feb 2026) — <https://x.com/0xSigil/status/2023877649475731671>
+- @ConwayResearch on Underdog (2 Oct 2026) — <https://x.com/ConwayResearch/status/2106080765570396174>
+- Sigil Wen on Underdog (8 Nov 2026) — <https://x.com/0xSigil/status/2119497715923238932>

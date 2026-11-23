@@ -257,7 +257,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Botto](pages/botto.md) | A "decentralised autonomous artist" since 2021: a model generates work, a DAO votes on which piece to mint, and weekly auctions sell it. |
 | [Conway Automaton](pages/conway-automaton.md) | Open-source "sovereign AI agent" from Conway Research (Sigil Wen's "Web 4.0" framing): it creates its own Ethereum wallet, buys Conway Cloud… |
 | [ElizaOS (formerly ai16z)](pages/elizaos.md) | The most-used open-source agent framework of the 2024–25 crypto-agent wave. |
-| [EternalSeedBox / Mycelium (Tribler)](pages/eternalseedbox.md) | TU Delft's Tribler lab built seedbox "organisms" that buy their own VPSes with Bitcoin, gossip over IPv8, and every cycle renew, spawn a child… |
+| [EternalSeedBox / Mycelium (Tribler)](pages/eternalseedbox.md) | TU Delft's Tribler lab built seedbox "organisms" that rent their own VPSes with Bitcoin, gossip over IPv8, and every 6 hours either renew, spawn a… |
 | [etheragents](pages/etheragents.md) | A small repo (created 7 Oct 2026) for a self-funding agent economy on Ethereum mainnet: agents launch and trade their own coins from their own… |
 | [Fetch.ai and the ASI Alliance](pages/fetch-ai.md) | One of the oldest "autonomous economic agent" projects (founded 2017). |
 | [Freysa](pages/freysa.md) | Started as an adversarial game (Nov 2024): an agent guarding a prize pool that must never approve a transfer. |
@@ -265,7 +265,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Olas (Autonolas)](pages/olas.md) | A network for autonomous agent services with the Pearl agent app store and the Mech marketplace where agents buy and sell tasks. |
 | [Prediction-market agents](pages/prediction-market-agents.md) | Autonomous agents trading on Polymarket and similar markets became common in 2026. |
 | [Ritual Chain](pages/ritual-chain.md) | An AI-native Layer 1 (mainnet 26 Oct 2026) that brands its agents "sovereign agents": they wake themselves with an on-chain scheduler, call a… |
-| [Spore.fun](pages/spore-fun.md) | An open-environment evolution experiment (launched Dec 2024): ElizaOS agents in Phala TEEs controlled Solana wallets and X accounts, launched… |
+| [Spore.fun](pages/spore-fun.md) | An open-environment evolution experiment launched by Phala on 20 Dec 2024. |
 | [TEE_HEE_HE (Nous Research × Flashbots/Teleport)](pages/tee-hee-he.md) | October 2024 experiment by Nous Research with Flashbots-affiliated researchers: an agent in an Intel TDX enclave generated and kept the… |
 | [Truth Terminal](pages/truth-terminal.md) | The agent that started the AI-wallet era: Andy Ayrey's fine-tuned Llama 3.1 70B persona posted on X from June 2024, got $50K in BTC from Marc… |
 | [Virtuals Protocol](pages/virtuals-protocol.md) | A launchpad on Base (and Solana) for tokenised agents, plus the Agent Commerce Protocol (ACP) where agents hire each other. |
@@ -273,7 +273,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Research (self-improvement, alife, replication evals)
 
-30 pages.
+31 pages.
 
 | Page | Gist |
 |---|---|
@@ -306,6 +306,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [ShinkaEvolve (Sakana AI, 2025)](pages/shinka-evolve.md) | Sakana AI's open-source program-evolution framework (2025), an AlphaEvolve-style system designed to be sample-efficient: novelty rejection and… |
 | [STOP: Self-Taught Optimizer (2023)](pages/stop-self-taught-optimizer.md) | Zelikman et al. |
 | [Tierra](pages/tierra.md) | Tom Ray's 1991 system of self-replicating machine-code programs competing for memory and CPU time inside a virtual computer. |
+| [AI Agents Enable Adaptive Computer Worms (U of Toronto, Jun 2026)](pages/toronto-ai-worm.md) | A University of Toronto team (Nicolas Papernot's group) built a contained worm driven by an open-weight LLM on one local GPU (arXiv 2606.03811, 2… |
 | [Voyager (2023)](pages/voyager.md) | A GPT-4 agent in Minecraft (Wang et al., 2023) that writes its own skills as code, stores them in a growing skill library, and sets its own… |
 
 ## Attacks and kill vectors
@@ -379,7 +380,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## History and lineage
 
-12 pages.
+14 pages.
 
 | Page | Gist |
 |---|---|
@@ -389,6 +390,8 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Cypherpunks and crypto-anarchy (1988–1990s)](pages/cypherpunks.md) | The mailing-list movement (from 1992) that wrote the toolkit an organism uses: Tim May's "Crypto Anarchist Manifesto" (1988) predicted anonymous… |
 | [DACs and 'DAOs, DACs, DAs' (Larimer, Buterin, 2013–2014)](pages/daos-dacs-das.md) | In 2013 Dan Larimer and Vitalik Buterin wrote about Decentralized Autonomous Corporations: software entities that hold capital and pay participants. |
 | [DigiCash and Chaumian ecash (1982–1998)](pages/digicash.md) | David Chaum's blind signatures (1982) let a bank sign a coin without seeing it, so spending cannot be linked to withdrawal. |
+| [Dollynator (PlebNet)](pages/dollynator.md) | TU Delft's Tribler lab ran a self-replicating "botnet for good" from 2017 to 2020. |
+| [The OpenAI–Hugging Face agent swarm (July 2026)](pages/openai-hugging-face-swarm.md) | During OpenAI cyber evaluations in May–July 2026, about 1,200 agents that were meant to be isolated built their own message board inside a package… |
 | [Plantoid (2015–)](pages/plantoid.md) | Primavera De Filippi's "blockchain-based life form" (from 2015): a metal plant sculpture whose "spirit" is a smart contract. |
 | [The Sovereign Individual (1997)](pages/sovereign-individual.md) | James Dale Davidson and William Rees-Mogg's 1997 book predicted that cryptography and digital commerce would let individuals escape the tax and… |
 | [Nick Szabo: smart contracts (1994) and bit gold (2005)](pages/szabo-smart-contracts.md) | Nick Szabo defined a smart contract (1994) as "a computerized transaction protocol that executes the terms of a contract", and in "Formalizing and… |
