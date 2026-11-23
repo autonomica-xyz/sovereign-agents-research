@@ -58,14 +58,15 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Reference (timeline, matrix, checklist, glossary, reading list, people)
 
-0 pages.
+1 pages.
 
 | Page | Gist |
 |---|---|
+| [TEE landscape (Nov 2026)](pages/tee-landscape.md) | Every hardware enclave on the market has been broken at least once, and all fall to an attacker with physical access to memory. |
 
 ## Concepts
 
-23 pages.
+24 pages.
 
 | Page | Gist |
 |---|---|
@@ -85,6 +86,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Mind file (SOUL.md and constitutions)](pages/mind-file.md) | A short document the agent loads every turn that says who it is, what it values and what it is trying to do. |
 | [Open-endedness and artificial life](pages/open-endedness.md) | Open-endedness is evolution that keeps producing new, more capable forms instead of converging. |
 | [Rehydration (restoring the organism on a new body)](pages/rehydration.md) | Rehydration is booting the organism on a fresh host and restoring its state and keys, so the death of any one machine is not the death of the… |
+| [Remote attestation](pages/remote-attestation.md) | A signed report from the hardware stating what code runs inside a TEE and at what patch level. |
 | [Rollback protection](pages/rollback-protection.md) | An attacker who controls a host can restart an enclave from an old sealed snapshot, replaying a state in which the organism still had money or a… |
 | [Self-improvement and evolution: map](pages/self-improvement.md) | An organism that cannot change its own code or weights is frozen at the level its creator left it. |
 | [Self-replication](pages/self-replication.md) | Making a funded copy of itself on a new host is how the organism outlives any one body and starts a lineage. |
@@ -95,12 +97,14 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Technologies
 
-57 pages.
+59 pages.
 
 | Page | Gist |
 |---|---|
 | [AMD SEV-SNP](pages/amd-sev-snp.md) | AMD's confidential-VM technology (Secure Encrypted Virtualization with Secure Nested Paging). |
+| [Arm CCA](pages/arm-cca.md) | Arm's Confidential Compute Architecture (Armv9) runs VMs in "Realms" managed by a Realm Management Monitor, isolated from the hypervisor by… |
 | [Arweave AO / HyperBEAM](pages/arweave-ao.md) | AO is a compute layer on Arweave where each process's message log is stored permanently, so its state can be recomputed on any node. |
+| [Automata (on-chain attestation)](pages/automata.md) | Automata Network builds on-chain verifiers for TEE attestation: its DCAP attestation contracts (v1.1) verify Intel SGX/TDX quotes fully on-chain… |
 | [AWS Nitro Enclaves](pages/aws-nitro-enclaves.md) | Isolated VMs inside an EC2 instance, attested by AWS's own signing chain. |
 | [Aztec](pages/aztec.md) | A privacy-first Ethereum rollup where contracts can hold private state and proofs are made on the user's device. |
 | [Bitcoin vaults and covenants](pages/bitcoin-vaults.md) | A vault forces withdrawals through a delay during which a recovery key can claw them back. |
@@ -188,14 +192,16 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Compute sources
 
-34 pages.
+41 pages.
 
 | Page | Gist |
 |---|---|
 | [Akash Network](pages/akash.md) | A permissionless compute marketplace on Cosmos: providers bid on container deployments, paid from a wallet. |
 | [Atoma (status unclear)](pages/atoma.md) | A Sui-based network that marketed confidential (TEE) inference. |
+| [Azure confidential computing](pages/azure-confidential-computing.md) | Microsoft offers confidential VMs on AMD SEV-SNP and Intel TDX, SGX enclaves, and confidential GPU VMs with NVIDIA H100, plus the Azure… |
 | [BitLaunch](pages/bitlaunch.md) | Hourly VPS paid in BTC, ETH or LTC with email-only signup and a public API to create, manage and pay for servers. |
 | [Bittensor](pages/bittensor.md) | A network of 100+ subnets that pay TAO-denominated emissions for AI work. |
+| [BuilderNet and SUAVE](pages/buildernet-suave.md) | Flashbots' SUAVE was a proposed chain for private, decentralised block building; in practice the work became BuilderNet, a TDX-based block builder… |
 | [Chutes](pages/chutes.md) | A serverless inference platform (Bittensor ecosystem) whose TEE page documents TDX CVMs with GPU attestation; 11 of 20 listed models were flagged… |
 | [Conway Cloud](pages/conway-cloud.md) | Conway Research's cloud for agents: Linux VMs, inference and domains, paid with USDC over x402. |
 | [distributed-llama](pages/distributed-llama.md) | A C++ project (b4rtaz) that splits LLM inference across several devices over Ethernet with tensor parallelism, aimed at clusters of cheap boards… |
@@ -204,9 +210,11 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Flux](pages/flux.md) | A decentralised cloud (formerly ZelCash, 2018) where staked node operators run containerised apps, paid in FLUX; apps are replicated across… |
 | [Gensyn](pages/gensyn.md) | A network for verified machine-learning work. |
 | [Golem Network](pages/golem.md) | One of the oldest decentralised compute markets (ICO 2016): providers rent CPU and GPU to requestors who pay in GLM. |
+| [Google Confidential Space](pages/google-confidential-space.md) | Google Cloud service that runs a container image in a Confidential VM and issues attestation tokens which other parties' KMS or workload identity… |
 | [1984 Hosting](pages/hosting-1984.md) | An Icelandic host that accepts BTC and XMR and needs only an email. |
 | [Hyperbolic](pages/hyperbolic.md) | A GPU marketplace and inference API. |
 | [Internet Computer (ICP) canisters](pages/icp-canisters.md) | Code on the Internet Computer runs in "canisters" that pay for their own execution with prepaid **cycles** (reverse gas). |
+| [iExec](pages/iexec.md) | One of the oldest decentralised cloud projects (France, 2017), selling off-chain compute paid in RLC with SGX- and TDX-based confidential tasks. |
 | [Inference cost per token (Nov 2026)](pages/inference-cost-per-token.md) | What thinking costs an organism. |
 | [io.net](pages/io-net.md) | A decentralised GPU marketplace (Solana). |
 | [Unpaid hardware as substrate (IoT replication research)](pages/iot-substrate.md) | Anthropic's Frontier Red Team showed (12 Oct 2026) that small open models can stand up inference on cheap consumer devices, and sharded… |
@@ -217,13 +225,16 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Nesa](pages/nesa.md) | A decentralised inference network offering SDK and web inference with on-chain session deposits. |
 | [Njalla](pages/njalla.md) | A privacy-focused domain and VPS provider that registers domains in its own name on the customer's behalf. |
 | [Nosana](pages/nosana.md) | A Solana GPU marketplace: anyone can post jobs or register GPU nodes. |
+| [Oasis ROFL](pages/oasis-rofl.md) | Runtime Off-chain Logic: apps run in Intel TEEs (SGX or TDX VMs), attest, register on Oasis Sapphire, and get keys from Oasis's decentralised key… |
 | [PayPerQ](pages/payperq.md) | A pay-per-query AI service: top up from 10 cents with crypto (including Lightning) or card, no subscription and no email signup required. |
 | [Petals](pages/petals.md) | BigScience's "BitTorrent-style" system (2022) for running large models across volunteers' GPUs, each serving some layers. |
 | [Phala Cloud](pages/phala-cloud.md) | A TEE cloud built on dstack: CVMs on Intel TDX with GPU TEEs, paid by card or USDC, plus confidential inference for open-weight models. |
 | [Prime Intellect](pages/prime-intellect.md) | Builds open training infrastructure (prime-rl, environments hub, compute marketplace). |
 | [Routstr](pages/routstr.md) | A decentralised, OpenAI-compatible inference router: providers announce models and prices on Nostr, clients pay per request with Cashu ecash. |
 | [SaladCloud](pages/salad.md) | A distributed cloud built from consumer gaming PCs whose owners rent idle GPUs. |
+| [Secret Network](pages/secret-network.md) | Cosmos chain whose contracts run in Intel SGX with encrypted state. |
 | [SporeStack (and Slow Servers)](pages/sporestack.md) | The archetypal machine-buyable VPS: fund a token with XMR, BTC or BCH and drive servers through an API reachable over Tor and I2P, with no account. |
+| [Super Protocol](pages/super-protocol.md) | Confidential AI cloud on TEEs selling model hosting and agents, with confidentiality "included in the price" (site, Nov 2026). |
 | [Vast.ai](pages/vast-ai.md) | A GPU marketplace of independent hosts. |
 | [Venice](pages/venice.md) | A private AI inference service (founded by Erik Voorhees, 2024) whose private tier promises zero data retention on Venice-controlled machines. |
 
@@ -282,7 +293,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Attacks and kill vectors
 
-25 pages.
+27 pages.
 
 | Page | Gist |
 |---|---|
@@ -304,6 +315,8 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Public balance exposure](pages/public-balance-exposure.md) | An organism whose wallet sits on a transparent chain tells every predator how much it has, who pays it and where it spends. |
 | [Recovery-path takeover](pages/recovery-path-takeover.md) | Every way to recover an account is a way to steal it. |
 | [Relay and app-store censorship](pages/relay-censorship.md) | Even open protocols have chokepoints: Nostr relays choose what to store, and app stores choose which clients exist. |
+| [AMD SEV attack history](pages/sev-attack-history.md) | AMD's confidential VMs have been broken repeatedly: CacheWarp (2023) reverted guest writes; BadRAM (Dec 2024) used a ~$10 tamper with the DIMM's… |
+| [SGX attack history](pages/sgx-attack-history.md) | Intel SGX (2015) has the longest public break record of any TEE: speculative execution (Foreshadow, 2018), undervolting (Plundervolt, 2019),… |
 | [Single code source](pages/single-code-source.md) | If every body pulls its code from one place, whoever controls that place controls (or kills) the species. |
 | [Social engineering of agents](pages/social-engineering.md) | Talking an agent, or the humans and dashboards around it, into moving money. |
 | [Supplier shutdown](pages/supplier-shutdown.md) | The organism dies when the one shop that sells it bodies closes. |
