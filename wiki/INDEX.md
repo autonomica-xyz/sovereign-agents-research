@@ -95,17 +95,20 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Technologies
 
-41 pages.
+50 pages.
 
 | Page | Gist |
 |---|---|
 | [AMD SEV-SNP](pages/amd-sev-snp.md) | AMD's confidential-VM technology (Secure Encrypted Virtualization with Secure Nested Paging). |
 | [Arweave AO / HyperBEAM](pages/arweave-ao.md) | AO is a compute layer on Arweave where each process's message log is stored permanently, so its state can be recomputed on any node. |
 | [AWS Nitro Enclaves](pages/aws-nitro-enclaves.md) | Isolated VMs inside an EC2 instance, attested by AWS's own signing chain. |
+| [Bitcoin vaults and covenants](pages/bitcoin-vaults.md) | A vault forces withdrawals through a delay during which a recovery key can claw them back. |
 | [Blossom (content-addressed blobs)](pages/blossom.md) | Blobs stored on simple HTTP servers and addressed by their SHA-256 hash, authorised with Nostr keys. |
 | [Briar](pages/briar.md) | Peer-to-peer messenger that syncs over Tor, Wi-Fi or Bluetooth with no servers; designed for activists and internet shutdowns. |
 | [dstack](pages/dstack.md) | Open-source framework (github.com/Dstack-TEE) that runs Docker apps in confidential VMs with a key management service that releases keys only to… |
+| [EIP-7702 (EOA code delegation)](pages/eip-7702.md) | Shipped in Ethereum's Pectra upgrade (7 May 2025): an ordinary key-based account can sign an authorisation that points it at contract code,… |
 | [ENS (Ethereum Name Service)](pages/ens.md) | Names like `alice.eth` held as tokens on Ethereum and resolved by smart contract. |
+| [ERC-4337 account abstraction](pages/erc-4337.md) | Account abstraction without a hard fork: users send "UserOperations" to bundlers, which submit them through a singleton EntryPoint contract;… |
 | [ERC-8004: Trustless Agents (identity, reputation, validation registries)](pages/erc-8004.md) | An Ethereum standard for agent identity: an identity registry (agents as NFTs with a card describing endpoints), a reputation registry for… |
 | [FHE inference (thinking while encrypted)](pages/fhe-inference.md) | Fully homomorphic encryption lets a host run a model on encrypted inputs without ever seeing them, with no trusted hardware. |
 | [Filecoin](pages/filecoin.md) | A storage market on top of IPFS: providers stake FIL and prove storage of client data over time. |
@@ -125,6 +128,8 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Lokinet](pages/lokinet.md) | An onion-routing network run on Session/Oxen service nodes, giving `.loki` addresses owned by keys and carrying any IP traffic. |
 | [MemGPT / Letta](pages/memgpt-letta.md) | MemGPT (Packer et al., 2023) treats the context window like RAM and external storage like disk: the agent decides what to page in and out, giving… |
 | [Mesh LLM](pages/mesh-llm.md) | Open-source Rust project that pools GPUs on many machines into one OpenAI-compatible endpoint over iroh, with Nostr discovery. |
+| [Miniscript](pages/miniscript.md) | A structured subset of Bitcoin Script (Wuille, Poelstra, Towns) that makes spending policies composable and analysable: "2 of these 3 keys, or… |
+| [MPC and TEE-backed wallets](pages/mpc-wallets.md) | Wallets where no single machine holds the whole private key: either the key is split into shares that sign together by multi-party computation… |
 | [Namecoin (.bit)](pages/namecoin.md) | The first fork of Bitcoin (2011), built to register names (.bit) on a blockchain. |
 | [napplet (NIP-5D web applets)](pages/napplet.md) | Nostr-native web applets: sandboxed iframes addressed by npub, with signing brokered by the host shell (specified as NIP-5D). |
 | [NEAR MPC (Chain Signatures)](pages/near-mpc.md) | A production threshold-signing network: an 11-of-17 set of nodes, now all in Intel TDX, signs transactions on many chains for NEAR accounts and… |
@@ -133,9 +138,13 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [nsite (NIP-5A) and nsyte](pages/nsyte-nsite.md) | nsite is a static website described by a signed Nostr event that maps paths to SHA-256 hashes of files stored on Blossom servers. |
 | [NVIDIA confidential computing (GPU TEEs)](pages/nvidia-confidential-computing.md) | H100, H200 and Blackwell GPUs can run in a confidential mode paired with a CPU TEE, so model weights, prompts and memory stay encrypted from the host. |
 | [Nym mixnet](pages/nym.md) | A mixnet that adds cover traffic and random delays to packets (Loopix design) so that even an observer watching the whole network cannot easily… |
+| [Privy](pages/privy.md) | Embedded-wallet provider (keys split with secure enclaves, created at login with email or social accounts) used by many consumer crypto apps and… |
 | [Reticulum](pages/reticulum.md) | Mark Qvist's cryptography-based networking stack that works over almost any medium, including LoRa radio, packet radio, serial links and the… |
+| [Safe (smart-contract multisig)](pages/safe.md) | The dominant smart-contract account on EVM chains (formerly Gnosis Safe): m-of-n owners, modules and guards. |
+| [Session keys and spending permissions](pages/session-keys.md) | Short-lived keys with narrow rights (which contracts, how much, until when) granted by a smart account. |
 | [Signal SVR3 (cross-vendor recovery precedent)](pages/signal-svr3.md) | Signal's Secure Value Recovery v3 splits users' backup-key secrets across enclaves on three vendors (SGX on Azure, SEV-SNP on GCP, Nitro on AWS),… |
 | [Tor onion services](pages/tor-onion-services.md) | A server reachable at a .onion address without revealing its IP. |
+| [Turnkey](pages/turnkey.md) | Wallet infrastructure that generates keys and signs only inside AWS Nitro Enclaves, with a policy engine (asset, counterparty, spend limit,… |
 | [Urbit](pages/urbit.md) | A personal server OS where identity (a "ship" such as ~sampel-palnet) is an NFT-like asset on Ethereum, and all networking is between identities,… |
 | [Veilid](pages/veilid.md) | A peer-to-peer application framework released by Cult of the Dead Cow members in 2023: private routing, a distributed hash table and node… |
 | [Walrus + Seal](pages/walrus-seal.md) | Walrus (Mysten Labs) stores blobs across a decentralised storage network; Seal is a threshold secrets service whose t-of-n key servers release… |
@@ -143,7 +152,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Money rails
 
-19 pages.
+21 pages.
 
 | Page | Gist |
 |---|---|
@@ -156,6 +165,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Fedimint](pages/fedimint.md) | Federated Chaumian ecash: a group of guardians jointly runs the mint by threshold consensus, so no single operator holds the Bitcoin. |
 | [L402 (HTTP 402 + Lightning)](pages/l402.md) | A server answers `402 Payment Required` with a Lightning invoice and a macaroon; the client pays and presents the preimage as proof. |
 | [Bitcoin Lightning](pages/lightning.md) | Instant, cheap Bitcoin payments over channels. |
+| [Liquid Network](pages/liquid.md) | A Bitcoin sidechain run by a federation: 15 functionaries (one per member chosen to run one), blocks and the peg wallet need 11 of 15 signatures… |
 | [Monero (XMR)](pages/monero.md) | A cryptocurrency with private amounts, senders and receivers by default. |
 | [Nevermined](pages/nevermined.md) | Payments infrastructure for AI agents: prepaid subscriptions by card, per-call payments in crypto, spending mandates, and routing over x402 and MPP. |
 | [NIP-60 Cashu wallets and NIP-61 nutzaps](pages/nip-60-nutzaps.md) | NIP-60 stores a Cashu wallet's state as encrypted Nostr events, so the wallet follows the key across devices. |
@@ -163,6 +173,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Payman](pages/payman.md) | "Agentic banking" company that lets AI agents make payments from accounts controlled by banks and businesses. |
 | [Silent payments (BIP-352)](pages/silent-payments.md) | One static public address that receives to a fresh, unlinkable on-chain output every time. |
 | [Skyfire (KYAPay)](pages/skyfire.md) | Payment network for agents built around "Know Your Agent" (KYA): buyer agents create signed `pay` or `kya-pay` tokens funded from stablecoin… |
+| [Spark (statechain L2)](pages/spark.md) | A Bitcoin layer 2 built on statechains: coins move by re-sharing a 2-of-3 FROST key between the user and Spark Operators (Lightspark, Flashnet,… |
 | [Stablecoins (USDC) as agent money](pages/stablecoins.md) | USDC on Base or Solana is what most agent clouds and x402 sellers accept. |
 | [Stripe: Machine Payments Protocol, Tempo, ACP and agent toolkit](pages/stripe-machine-payments.md) | Stripe launched the Machine Payments Protocol (MPP) with the Tempo blockchain's mainnet on 18 Mar 2026, for programmatic payments in stablecoins,… |
 | [x402 (HTTP 402 + stablecoins)](pages/x402.md) | Coinbase's HTTP-402 payment protocol, mostly USDC on Base and Solana. |
