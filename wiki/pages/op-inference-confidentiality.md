@@ -48,5 +48,5 @@ when the router, logs or management plane read everything.
 
 - confidentialinference.net — <https://confidentialinference.net/>
 - Dragos canary study (Nov 2026) — <https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens>
-- Phala November preliminary report — <https://phala.com/posts/phala-november-preliminary-incident-report>
+- Phala November detailed report (23 Nov 2026) — <https://phala.com/posts/phala-november-detailed-incident-report>
 - Chutes TEE page — <https://chutes.ai/tee>

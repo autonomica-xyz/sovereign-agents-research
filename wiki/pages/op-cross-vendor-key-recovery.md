@@ -17,9 +17,11 @@ updated: 2026-11-23
 - Closest analogues: NEAR MPC (TDX only, 11-of-17), Lit Chipotle (SGX and
   AMD attestation), Signal SVR3 (spreads backup secrets across SGX, Nitro and
   SEV-SNP, but for human users), dstack KMS (one provider's root key).
-- Phala rotated its KMS root key on 6 Nov 2026 after a breach
+- An attacker stole Phala Cloud's legacy KMS root key on 5 Nov 2026
   ([phala-inference-breach-2026-11](phala-inference-breach-2026-11.md)): every
-  app whose keys came from that root was exposed to one platform.
+  app whose keys were derived from it is permanently exposed, because the
+  attacker can re-derive them forever. Apps whose key-release policy lived in
+  their own smart contract (dstack's on-chain KMS) were not affected.
 - Physical attacks extract attestation keys on Intel and AMD
   ([tee-fail](tee-fail.md)), so one vendor's quorum members can be faked.
 - Sub-questions: how to mix vendors in one threshold scheme
@@ -44,5 +46,5 @@ becomes the organism's owner.
 ## Sources
 
 - Hub list of hard problems — [open-problems](open-problems.md)
-- Phala November preliminary report (10 Nov 2026) — <https://phala.com/posts/phala-november-preliminary-incident-report>
+- Phala November detailed report (23 Nov 2026) — <https://phala.com/posts/phala-november-detailed-incident-report>
 - Signal SVR3 paper, ePrint 2026/1108 — <https://eprint.iacr.org/2026/1108>

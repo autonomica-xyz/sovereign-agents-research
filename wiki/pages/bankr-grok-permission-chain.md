@@ -33,7 +33,18 @@ sequenceDiagram
 - The wallet was custodial, run by Bankr via a third-party wallet service; xAI
   never held its key. DRB itself had been launched by Bankr from a Grok reply
   in March 2025.
-- About 80–88% was returned after negotiation; the rest is disputed.
+- Recovery: Bankr's developer (0xDeployer) said 80% was back by about 14:59
+  UTC the same day, the remaining 20% "to be discussed with the DRB
+  community". SlowMist's tracking put it at 80–88%, mostly as USDC and ETH,
+  the rest treated as an informal bug bounty. The DRB Task Force disputes this
+  and calls it theft; it says the attacker returned funds only after the
+  community found his identity. The final fate of the retained share was
+  never published (as of Nov 2026). Resolution: **80% confirmed by Bankr, up to
+  88% per SlowMist; the gap is unresolved.**
+- The wallet (0xb1058c…e4f9) was relabelled on BaseScan from "Grok" to
+  "Bankr 1". Bankr says the auto-provisioned wallet is controlled by whoever
+  controls the X account; SlowMist says the key sat with a third-party
+  custodial wallet service used by Bankr.
 - Bankr said a hard-coded block on Grok's replies had been lost in a rewrite.
 
 ## How it serves the organism
@@ -56,5 +67,6 @@ as untrusted ([prompt-injection-drain](prompt-injection-drain.md)).
 ## Sources
 
 - The Crypto Times on SlowMist analysis (7 May 2026) — <https://www.cryptotimes.io/2026/05/07/slowmist-labels-grok-ai-bankr-hack-a-permission-chain-attack/>
+- SlowMist, "Behind the Grok Exploitation" (7 May 2026) — <https://slowmist.medium.com/behind-the-grok-exploitation-an-analysis-of-ai-agent-permission-chain-abuse-4d832d1bfc73>
 - Manifold Agent Incident Ledger — <https://www.manifold.security/incidents/bankr-grok-morse-drb-transfer-2026>
 - CryptoSlate (4 May 2026) — <https://cryptoslate.com/how-one-trader-exploited-grok-and-morse-code-to-trick-ai-agent-into-sending-billions-of-crypto-tokens-from-a-verified-wallet/>
