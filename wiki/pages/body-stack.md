@@ -2,7 +2,7 @@
 title: "Body stack: Nostr + Blossom + iroh + Mesh-LLM"
 status: stable
 sources: [docs/nostr-blossom-iroh.md]
-updated: 2026-11-22
+updated: 2026-11-23
 ---
 
 # Nostr + Blossom + iroh as the body of a digital organism
@@ -39,12 +39,13 @@ not agent-specific:
   artifacts on Blossom servers, kind-9901 revocations. Early prototype; wire
   format not yet a registered NIP. Adopted as the distribution path by
   fleetmesh's spec.
-- **ngit 3.1.0** (14 Nov) dogfoods it: builds and publishes its own tagged
-  releases to Nostr/Blossom with checksum verification, GitHub demoted to
-  mirror — [changelog](https://ngit.dev/ngit/changelog/). Its
-  software-publishing protocol (NIP-82-style records, kind 3063 assets by
+- **ngit 3.2.0** (19 Nov, was 3.1.0 on 14 Nov) dogfoods it: builds and publishes
+  its own tagged releases to Nostr/Blossom with checksum verification, GitHub
+  demoted to mirror — [changelog](https://ngit.dev/ngit/changelog/). 3.2.0 adds
+  secure remote-signer pairing with a fix for NIP-46 client-initiated spoofing.
+  Its software-publishing protocol (NIP-82-style records, kind 3063 assets by
   SHA-256, "ncontainer" for OCI digests) is **not yet merged** into the
-  canonical NIPs repo.
+  canonical NIPs repo (82.md still 404 on 23 Nov).
 - **NIP-5A nsites** (signed path→SHA-256 manifests over Blossom blobs, kinds
   15128/35128/5128) are canonical —
   [5A.md](https://github.com/nostr-protocol/nips/blob/master/5A.md).
