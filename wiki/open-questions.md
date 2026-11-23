@@ -87,13 +87,37 @@ topic page + log entry when answered. The 5 structural open problems live in
   and no human recovery path? → [op-cross-vendor-key-recovery](pages/op-cross-vendor-key-recovery.md)
 - P1: Any TEE compute provider that takes Lightning/ecash with no account?
   → [op-anonymous-confidential-compute](pages/op-anonymous-confidential-compute.md)
-- P1: Phala full root-cause report: was the inference server inside a TEE?
-  Which apps' KMS-derived keys leaked? → [phala-inference-breach-2026-11](pages/phala-inference-breach-2026-11.md)
-- P2: Names of the other two providers in the Dragos canary study.
-  → [dragos-canary-leaks](pages/dragos-canary-leaks.md)
+- ~~P1: Phala full root-cause report~~ — resolved 24 Nov: final report of
+  23 Nov 2026 (legacy root key stolen 4–5 Nov; on-chain-KMS apps unaffected).
+  → [phala-inference-breach-2026-11](pages/phala-inference-breach-2026-11.md)
+- ~~P2: Names of the other Dragos providers~~ — resolved: GMI Cloud, Together AI,
+  Novita, Atlas Cloud named publicly. → [dragos-canary-leaks](pages/dragos-canary-leaks.md)
 - P2: Any agent whose upgrade is authorised only by its own key quorum?
   → [op-self-authorized-succession](pages/op-self-authorized-succession.md)
 - P2: A working anti-twin lease for a TEE agent (single live instance proved
   to counterparties). → [op-anti-twin](pages/op-anti-twin.md)
 - P3: Mesh LLM Lightning payments leaving "WIP"; first paid public mesh job.
   → [mesh-llm](pages/mesh-llm.md)
+
+## Added 2026-11-24 (deeper and wider pass)
+
+- P1: Who still holds Phala's legacy root key, and which pre-migration CVMs
+  (92 of 2,271 on 21 Nov) miss the 30 Nov deadline?
+  → [phala-inference-breach-2026-11](pages/phala-inference-breach-2026-11.md)
+- P1: Does any agent income channel cover its own inference? Track x402
+  weekly totals, Virtuals ACP revenue (not aGDP), Olas Mech turnover.
+  → [agent-economy](pages/agent-economy.md)
+- P2: Palisade hack-and-replicate follow-ups: replication against patched,
+  monitored hosts; replication by renting rather than taking hosts.
+  → [palisade-hack-and-replicate](pages/palisade-hack-and-replicate.md)
+- P2: Namada restart after the 2 Nov 2026 halt; Penumbra after Penumbra Labs
+  wound down. → [namada](pages/namada.md), [penumbra](pages/penumbra.md)
+- P2: Arm CCA production silicon (Fujitsu MONAKA 2027?).
+  → [arm-cca](pages/arm-cca.md)
+- P3: Storm retrial (26 Apr 2027); Samourai pardon request.
+  → [tornado-cash](pages/tornado-cash.md), [coinjoin](pages/coinjoin.md)
+- P3: Super Protocol status (BNB deployment post now 404).
+  → [super-protocol](pages/super-protocol.md)
+- Still unverified: Ritual testnet figures; Phala's self-reported 120.5B
+  tokens/day; TriagePay self-reported counts; Conway Automaton's $10K claim;
+  Chutes' self-reported total throughput; ERC-8004 counts after Jul 2026.

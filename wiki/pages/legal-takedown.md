@@ -16,7 +16,6 @@ updated: 2026-11-24
 
 ## Details
 
-
 - Code hosts act without courts too: GitHub blocked the TEE_HEE repository
   for terms-of-service reasons on 24 Jan 2025 ([tee-hee-he](tee-hee-he.md)).
   Mirror code to IPFS, Radicle or Nostr git ([signed-code-distribution](signed-code-distribution.md)).
