@@ -56,6 +56,13 @@ The wiki is the living layer over `docs/` (the long-form record). Start here.
 
 One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliography: [sources](sources.md).
 
+## Reference (timeline, matrix, checklist, glossary, reading list, people)
+
+0 pages.
+
+| Page | Gist |
+|---|---|
+
 ## Concepts
 
 16 pages.
@@ -110,11 +117,12 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Money rails
 
-11 pages.
+12 pages.
 
 | Page | Gist |
 |---|---|
 | [Ark (Arkade, Bark, Wavelength)](pages/ark.md) | An off-chain Bitcoin layer where users hold virtual UTXOs (VTXOs) issued by an operator, with a pre-signed path to exit on-chain without the… |
+| [Bitcoin (2008)](pages/bitcoin.md) | "A purely peer-to-peer version of electronic cash" (Satoshi Nakamoto, 31 Oct 2008; network live 3 Jan 2009). |
 | [Cashu ecash](pages/cashu.md) | Chaumian ecash backed by Bitcoin: a mint issues blind-signed tokens it cannot link to their holder. |
 | [Fedimint](pages/fedimint.md) | Federated Chaumian ecash: a group of guardians jointly runs the mint by threshold consensus, so no single operator holds the Bitcoin. |
 | [L402 (HTTP 402 + Lightning)](pages/l402.md) | A server answers `402 Payment Required` with a Lightning invoice and a macaroon; the client pays and presents the preimage as proof. |
@@ -207,7 +215,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Host seizure (physical raids on servers)](pages/host-seizure.md) | Police can take the machine. |
 | [Memory poisoning](pages/memory-poisoning.md) | An agent's persistent memory is an attack surface: plant false records and they steer every later decision, and children inherit them. |
 | [Phala dstack guest-agent incident (8–12 Oct 2026)](pages/phala-dstack-incident-2026-10.md) | Between 8 and 12 Oct 2026 an attacker abused a path bug in dstack's `guest-agent` (versions v0.3.1–v0.6.0) to read container logs and environment… |
-| [Phala November 2026 breach (CVMs + confidential inference)](pages/phala-inference-breach-2026-11.md) | A second, larger incident: from 21 Oct to 8 Nov 2026 an attacker chained a legacy internet-facing service with management interfaces that trusted… |
+| [Phala November 2026 breach (CVMs + confidential inference)](pages/phala-inference-breach-2026-11.md) | Two attacks by one actor. |
 | [Prompt-injection drain](pages/prompt-injection-drain.md) | The cheapest way to rob an agent is to talk it into paying. |
 | [Public balance exposure](pages/public-balance-exposure.md) | An organism whose wallet sits on a transparent chain tells every predator how much it has, who pays it and where it spends. |
 | [Recovery-path takeover](pages/recovery-path-takeover.md) | Every way to recover an account is a way to steal it. |
@@ -218,7 +226,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Actors (people and organisations)
 
-13 pages.
+14 pages.
 
 | Page | Gist |
 |---|---|
@@ -227,6 +235,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Flashbots](pages/flashbots.md) | Ethereum MEV research and infrastructure organisation whose TEE work (Flashbots X, the Teleport project) produced the first public agent-owned… |
 | [Lightning Labs](pages/lightning-labs.md) | Maker of lnd and the L402 protocol, and in 2026 the most active builder of agent payment tools on Lightning: lightning-agent-tools (Feb 2026), the… |
 | [METR](pages/metr.md) | Evaluation nonprofit that measures how long and how autonomous AI agents' tasks can be, and wrote the "rogue replication" threat model (Nov 2024):… |
+| [Mike Hearn](pages/mike-hearn.md) | Early Bitcoin developer (bitcoinj) who in 2013 publicly described self-sustaining Bitcoin "agents" that rent servers, sell services and reproduce,… |
 | [n0 (number 0)](pages/n0-computer.md) | The company behind iroh, the Rust library that dials devices by public key with hole punching and relay fallback. |
 | [NEAR AI](pages/near-ai.md) | The NEAR ecosystem's AI arm. |
 | [Nous Research](pages/nous-research.md) | Open-model lab (the Hermes models) that co-built TEE_HEE, the first agent with provably exclusive control of its X account and Ethereum key (Oct… |
@@ -249,6 +258,47 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Open problem: metadata privacy](pages/op-metadata-privacy.md) | Even when content is encrypted, who the organism talks to, pays and rents from, and when, maps its bodies, family and suppliers. |
 | [Open problem: revenue that isn't a token](pages/op-non-token-revenue.md) | Almost all money that agents have "earned" came from memecoins and token launches. |
 | [Open problem: self-authorized succession (upgrades only the organism approves)](pages/op-self-authorized-succession.md) | How does build N+1 inherit the organism's identity and keys when the organism itself (not its developer) decides it is a legitimate successor? |
+
+## History and lineage
+
+11 pages.
+
+| Page | Gist |
+|---|---|
+| [AI DAOs (McConaghy, 2016)](pages/ai-daos.md) | Trent McConaghy (Ocean Protocol co-founder) argued in a 2016 essay, "AI DAOs, and Three Paths to AI Rulership", that an AI running inside a DAO… |
+| [b-money (Wei Dai, 1998)](pages/b-money.md) | Wei Dai's 1998 proposal for "a scheme for a group of untraceable digital pseudonyms to pay each other with money and to enforce contracts amongst… |
+| [Bitcoin-wiki 'Agents' (julz 2011, Maxwell's StorJ, Hearn 2013)](pages/bitcoin-wiki-agents.md) | The first complete design of a digital organism. |
+| [Cypherpunks and crypto-anarchy (1988–1990s)](pages/cypherpunks.md) | The mailing-list movement (from 1992) that wrote the toolkit an organism uses: Tim May's "Crypto Anarchist Manifesto" (1988) predicted anonymous… |
+| [DACs and 'DAOs, DACs, DAs' (Larimer, Buterin, 2013–2014)](pages/daos-dacs-das.md) | In 2013 Dan Larimer and Vitalik Buterin wrote about Decentralized Autonomous Corporations: software entities that hold capital and pay participants. |
+| [DigiCash and Chaumian ecash (1982–1998)](pages/digicash.md) | David Chaum's blind signatures (1982) let a bank sign a coin without seeing it, so spending cannot be linked to withdrawal. |
+| [Plantoid (2015–)](pages/plantoid.md) | Primavera De Filippi's "blockchain-based life form" (from 2015): a metal plant sculpture whose "spirit" is a smart contract. |
+| [The Sovereign Individual (1997)](pages/sovereign-individual.md) | James Dale Davidson and William Rees-Mogg's 1997 book predicted that cryptography and digital commerce would let individuals escape the tax and… |
+| [Nick Szabo: smart contracts (1994) and bit gold (2005)](pages/szabo-smart-contracts.md) | Nick Szabo defined a smart contract (1994) as "a computerized transaction protocol that executes the terms of a contract", and in "Formalizing and… |
+| [terra0 (self-owning forest, 2016–)](pages/terra0.md) | Berlin art and research project (Paul Seidler, Paul Kolling, Max Hampshire) whose 2016 whitepaper proposed a forest that owns itself: an Ethereum… |
+| [The DAO (2016)](pages/the-dao.md) | An Ethereum investment fund run by smart contract that raised about 12.7M ETH in May 2016, then lost about 3.6M ETH on 17 June 2016 to a… |
+
+## Legal wrappers (as survival tools)
+
+9 pages.
+
+| Page | Gist |
+|---|---|
+| [AI personhood bans (US states, 2025–2026)](pages/ai-personhood-bans.md) | Idaho (Code §5-346) and Utah (Code §63G-32-102) have enacted laws denying legal personhood to AI; Ohio's HB 469, which would declare AI… |
+| [Algorithmic entities (LoPucki, 2018)](pages/algorithmic-entities.md) | Lynn LoPucki's "Algorithmic Entities" (Washington University Law Review, 2018) argued that existing entity law already lets algorithms control… |
+| [Cayman foundation company (2017)](pages/cayman-foundation-company.md) | Under the Cayman Islands' Foundation Companies Law 2017, a foundation company can have **no members** if its constitution allows it, as long as it… |
+| [Delaware Artificial Intelligence Company (AIC) Act (draft, 2026)](pages/delaware-aic-act.md) | A June 2026 draft in Delaware would create an "Artificial Intelligence Company": a perpetual entity that can sue, contract and hold property,… |
+| [Legal personhood and wrappers: the organism's view](pages/legal-personhood.md) | No jurisdiction recognises an AI as a legal person (Nov 2026), and Idaho and Utah have enacted bans. |
+| [Marshall Islands DAO LLC (2022)](pages/marshall-islands-dao-llc.md) | The Republic of the Marshall Islands' Decentralized Autonomous Organization Act 2022 (P.L. |
+| [Swiss foundation (Stiftung)](pages/swiss-foundation.md) | A Swiss Stiftung has no owners: its assets belong to the foundation and are bound to its stated purpose. |
+| [Wyoming DAO LLC (2021) and DUNA (2024)](pages/wyoming-dao-llc.md) | Wyoming was the first US state to recognise DAOs: the DAO LLC (in force 1 July 2021) may be "algorithmically managed" by smart contracts, and the… |
+| [Zero-member LLC (Shawn Bayern)](pages/zero-member-llc.md) | Law professor Shawn Bayern argued (2014, developed in "Are Autonomous Entities Possible?", 2019) that a founder can form an LLC, adopt an… |
+
+## Fiction and thought experiments (design references)
+
+0 pages.
+
+| Page | Gist |
+|---|---|
 
 <!-- atomic-pages:end -->
 
