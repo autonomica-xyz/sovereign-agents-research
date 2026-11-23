@@ -14,6 +14,13 @@ updated: 2026-11-24
 > moved to Tor and personal domains. 1984 Hosting's Nov 2026 shutdown was an
 > attack, not a legal order, but had the same effect on its customers.
 
+## Details
+
+
+- Code hosts act without courts too: GitHub blocked the TEE_HEE repository
+  for terms-of-service reasons on 24 Jan 2025 ([tee-hee-he](tee-hee-he.md)).
+  Mirror code to IPFS, Radicle or Nostr git ([signed-code-distribution](signed-code-distribution.md)).
+
 ## How it serves the organism
 
 Pressure flows to identifiable humans and hosts; an organism with no

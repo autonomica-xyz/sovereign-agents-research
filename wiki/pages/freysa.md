@@ -3,7 +3,7 @@ title: "Freysa"
 category: organism
 status: stable
 sources: [docs/state-of-the-art.md]
-updated: 2026-11-23
+updated: 2026-11-24
 ---
 
 # Freysa
@@ -20,6 +20,9 @@ updated: 2026-11-23
   TDX, SEV, Nitro and SGX, each verifying the requester's attestation, "no
   human intervention". No running implementation found (22 Nov 2026).
 - Keystone (rotation/recovery) uses a human committee multisig today.
+- The open `sovereign-freysa` repository (17 stars) was last pushed on
+  28 Feb 2025 (GitHub API, 23 Nov 2026); the framework docs moved to
+  framework.freysa.ai.
 
 ## How it serves the organism
 
@@ -40,3 +43,4 @@ public record of the first prompt-injection drain.
 - The Block (29 Nov 2024) — <https://www.theblock.co/news/business/2024-11-29-human-player-outwits-freysa-ai-agent-in-47000-crypto-challenge-328747>
 - Freysa framework architecture — <https://framework.freysa.ai/sovereign-agents-framework/architecture>
 - sovereign-freysa — <https://github.com/0xfreysa/sovereign-freysa/>
+- GitHub API, 0xfreysa/sovereign-freysa — <https://api.github.com/repos/0xfreysa/sovereign-freysa>

@@ -40,6 +40,7 @@ updated: 2026-11-24
 | Oct 2024 | TEE_HEE: first agent holding its own credentials | [tee-hee-he](tee-hee-he.md) |
 | Nov 2024 | Freysa; METR rogue-replication analysis | [freysa](freysa.md), [metr-rogue-replication](metr-rogue-replication.md) |
 | Dec 2024 | Spore.fun; Fudan self-replication; Apollo scheming | [spore-fun](spore-fun.md), [fudan-self-replication](fudan-self-replication.md), [apollo-scheming](apollo-scheming.md) |
+| Jan 2025 | GitHub blocks the TEE_HEE repository (ToS) | [tee-hee-he](tee-hee-he.md) |
 | Apr 2025 | RepliBench | [replibench](replibench.md) |
 | May 2025 | Darwin Gödel Machine; EIP-7702 live | [darwin-godel-machine](darwin-godel-machine.md), [eip-7702](eip-7702.md) |
 | Jun 2025 | Anthropic agentic misalignment | [anthropic-agentic-misalignment](anthropic-agentic-misalignment.md) |
