@@ -39,7 +39,7 @@ live in their own pages (linked as they are written).
 | Mesh/pooled compute (Mesh-LLM) | prototype | [body-stack](body-stack.md) |
 | Home-lab / self-hosted fleets | production | [physical](approaches-physical.md) |
 | Mobile/embedded hosts (vehicles, routers, phones) | prototype | [physical](approaches-physical.md) |
-| Orbital hosting (data centers / storage in space) | prototype | [physical](approaches-physical.md) |
+| Orbital hosting (data centers / storage in space) | prototype | [physical](approaches-physical.md) §synthesis (seizure-resistance real; jurisdictional escape no — registry-state law follows the object, FCC deorbit clock = legal kill switch) |
 | Seabed data centers | prototype | [physical](approaches-physical.md) |
 | Jurisdictional arbitrage colocation | research | [physical](approaches-physical.md) |
 | Stealth hosting (botnet-style scavenging) | production | TODO — covert axis, defender's view too |

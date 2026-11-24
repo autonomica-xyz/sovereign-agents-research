@@ -1,6 +1,6 @@
 ---
 title: Open questions — research backlog
-updated: 2026-11-22
+updated: 2026-11-24
 ---
 
 # Open questions (the live backlog)
@@ -41,8 +41,14 @@ topic page + log entry when answered. The 5 structural open problems live in
 
 - Cost math: when can a 24/7 open-weight agent run for $1/day? (spot GPU vs
   local amortization vs market rates) → [emergence-economics](pages/approaches-emergence-economics.md)
-- Orbital storage/compute: real seizure-resistance or launch-dependent
-  liability? → [physical](pages/approaches-physical.md)
+- ~~Orbital storage/compute: real seizure-resistance or launch-dependent
+  liability?~~ **Answered 24 Nov**: seizure-resistance against local/physical
+  action is real (no orbital analogue to colo raids); jurisdictional escape is
+  not — OST Art. VIII keeps registry-state law over the object, the FCC
+  license carries a mandatory 5-year deorbit clock, and the TT&C ground
+  segment is the kill switch. Storage/backup layer, not a sovereignty
+  mechanism. Trigger: a satellite flag-of-convenience registry (P3 watch).
+  → [physical](pages/approaches-physical.md) §synthesis
 - ~~Can an FHE+local-compute hybrid reach interactive latency for an 8B
   agent?~~ **Answered 23 Nov**: full-FHE 8B decode is at 7.8 s/token on one GPU
   (Perseus), ~8× off interactive — not viable yet; hybrid mode works at 1B but
@@ -71,6 +77,10 @@ topic page + log entry when answered. The 5 structural open problems live in
   At 02:10 UTC 23 Nov the Nov 16 report is still the latest — re-check later
   Monday for the Nov 16–23 issue. Any week where non-Bazaar venues >4/15 would
   be a real signal. → [economy](pages/economy.md)
+- Any satellite flag-of-convenience registry emerging in practice, or any
+  registry transfer of a commercial satellite (Registration Convention
+  Art. II(2)); any agent/owner-operated TT&C ground segment. Either would
+  upgrade orbital hosting's sovereignty grade → [physical](pages/approaches-physical.md) §synthesis.
 - Wavelength (Ark-like agent wallet) cap raises past 300k sats / per-VTXO
   50k; Bark pre-signed exits shipping in other implementations.
   → [privacy-organ](pages/privacy-organ.md)

@@ -2,7 +2,7 @@
 title: "Physical and geographic hosting beyond mainstream cloud"
 status: seed
 sources: []
-updated: 2026-11-22
+updated: 2026-11-24
 ---
 
 # Physical and geographic hosting beyond mainstream cloud
@@ -41,3 +41,62 @@ Raw verified findings from the horizon scan of 22 Nov 2026 (one stream per axis;
 - **Home-hosted sovereign infrastructure invites home raids: Seattle police raided privacy activists' condo at 6:15am (Mar 2016) over a Tor exit relay IP tied to a 4chan child-porn post — nothing found, nothing seized, but the couple stopped running an exit relay ('police told me they'd be back'); Austria 2012: police seized 20 computers from Tor operator William Weber's flat — physical self-hosting converts third-party seizure risk into personal/legal risk** (documented cases | 2016-04-04) — <https://www.npr.org/sections/alltechconsidered/2016/04/04/472992023/when-a-dark-web-volunteer-gets-raided-by-the-police>
 - **Orbital hosting's sovereignty properties (availability, seizure-resistance, jurisdiction-beyond-territory) are real but bounded: hardware is physically unreachable for raids yet remains governed by launch licensing (FCC), launch-provider dependency (SpaceX ~75% of upmass), and single-operator control; latency/thermal/power physics and ~3x cost premium mean orbital sovereignty is a storage/backup property today, not a compute property** (analysis of demonstrated-but-early sector | 2026-05-31) — <https://newspaceeconomy.ca/2026/05/31/orbital-data-center-companies-building-space-based-compute-infrastructure>
 - **Undersea hosting buys cooling efficiency and physical obscurity, not jurisdictional escape: commercial UDCs exist only in China (Highlander, state-backed); Western/US actors shelved the concept in 2024; seabed hardware sits within national maritime jurisdiction and is nearly impossible to service or relocate quickly — best read as availability/reliability infrastructure with incidental tamper-resistance** (asymmetric: commercial in China, dormant elsewhere | 2026-09-01) — <https://arxiv.org/html/2609.18824>
+
+## Synthesis: orbital hosting — seizure-resistance vs launch-dependent liability
+
+Filled 24 Nov 2026; answers [open-questions](../open-questions.md) P1b "real
+seizure-resistance or launch-dependent liability?". Maturity stays
+`prototype` (demos flown; commercial service 2027+).
+
+**The legal answer: orbit is not a jurisdiction vacuum.**
+
+- Outer Space Treaty Art. VIII: *the state on whose registry a space object
+  is carried retains jurisdiction and control over it* while in orbit — a
+  satellite is legally a floating extension of its registry state, not a
+  lawless zone. (Primary: <https://www.nasa.gov/history/SP-4225/documentation/cooperation/treaty.htm>;
+  UNOOSA guidance A/AC.105/C.2/117 calls registration→jurisdiction "a
+  comprehensive legal concept": <https://www.unoosa.org/documents/pdf/copuos/lsc/wg-tre/117.pdf>)
+- Registration Convention Art. II(2) lets joint launching states choose which
+  one registers — UNOOSA workshop analysis explicitly flags this as "a risk to
+  open the door of 'convenient flag' in space"
+  (<https://www.unoosa.org/documents/pdf/spacelaw/activities/2019/T1-2-GW-Legal_resources_of_Jurisdiction_over_space_object.pdf>),
+  and von der Dunk (2012) argues self-interest in safety checks it. Empirically:
+  **no satellite flag-of-convenience practice has emerged** — no commercial
+  operator has yet registered in a weak-enforcement state to escape home law.
+- Launching states are internationally liable (OST Art. VII; Liability
+  Convention absolute liability for ground damage) — so the registry state has
+  skin in the game and will not host an uncontrolled payload.
+- US-licensed LEO satellites must deorbit within 5 years of mission end (FCC
+  Report & Order, IB Docket 22-271 / 18-313, Sept 2022:
+  <https://docs.fcc.gov/public/attachments/DOC-387720A1.pdf>) — a
+  regulator-issued license with a built-in death clock, revocable.
+
+**The operational answer: the ground segment is the kill switch.**
+
+- Every orbital-compute demo in the findings above (Starcloud, Axiom AxDCU-1,
+  Suncatcher, Lonestar) is commanded by its commercial operator's TT&C ground
+  stations. Sever the ground segment (or revoke the launch license, or deny a
+  launch slot — SpaceX carries ~75% of upmass) and the asset is dead weight.
+- LEO physics compounds this: finite orbital life, replacement launches, and
+  power/thermal ceilings (~20-minute TPU bursts on Suncatcher's 1 kW
+  prototype; ~3x terrestrial cost per the launch-economics finding above).
+
+**Verdict (P1b):** orbital hosting delivers real *seizure-resistance against
+local physical adversaries* — the Megaupload/Core-IP-raid class of action has
+no orbital analogue, and air-gapped off-world backup (Lonestar's actual
+market) is a genuine resilience property. It delivers **no jurisdictional
+escape and no launch-independent availability**: an agent "in space" is a
+national object of its registry state, on a regulator's deorbit clock,
+commanded through a revocable ground segment. Read it as a
+backup/storage-resilience layer (already sellable), not a sovereignty
+mechanism.
+
+**What would have to be true** for the sovereignty grade to improve:
+
+1. A satellite flag-of-convenience registry emerges in practice (the treaty
+   door is open; nobody has walked through it — watch item P3).
+2. Agent-autonomous TT&C: ground segment operated by the agent's own network
+   across many stations, not one commercial operator.
+3. ≥2 launch providers at comparable price (Starship-class competition).
+4. Storage-class payloads outliving license renewal cycles; compute only
+   after the thermal/power problem (not launch cost) closes.
