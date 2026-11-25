@@ -1,6 +1,6 @@
 ---
 title: Open questions — research backlog
-updated: 2026-11-24
+updated: 2026-11-25
 ---
 
 # Open questions (the live backlog)
@@ -149,3 +149,14 @@ topic page + log entry when answered. The 5 structural open problems live in
 - Still unverified: Ritual testnet figures; Phala 120.5B tokens/day;
   TriagePay counts; Chutes throughput; ERC-8004 counts after Jul 2026;
   Nosana totals; swarm figures that come only from the OpenAI/HF write-ups.
+
+## Added 2026-11-25 (rotation)
+
+- P3: Any live LLM agent whose fork/spawn/weight-swap events are signed by its
+  own key and readable by third parties? (None found when filling the lineage
+  cell — first such record upgrades it toward `prototype`.)
+  → [approaches-distributed-mind](pages/approaches-distributed-mind.md) §lineage
+- P3: Avida dormancy watch — OpenSSF scorecard says 0 commits/90 days
+  (24 Aug 2026); check whether a fork/successor (or Phylotrack maintenance)
+  picks up if it ever becomes load-bearing for lineage tooling.
+  → [approaches-distributed-mind](pages/approaches-distributed-mind.md) §lineage

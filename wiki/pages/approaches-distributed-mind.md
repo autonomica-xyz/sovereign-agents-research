@@ -2,7 +2,7 @@
 title: "The distributed mind: identity without a single process"
 status: seed
 sources: []
-updated: 2026-11-22
+updated: 2026-11-25
 ---
 
 # The distributed mind: identity without a single process
@@ -40,5 +40,79 @@ Raw verified findings from the horizon scan of 22 Nov 2026 (one stream per axis;
 - **Platform-dependency is the empirically documented mass killer of long-running benign bots: Twitter's 2023 API repricing (free tier cut from ~500k-2M tweets/month to 1,500 posts/month; $42k/month enterprise) forced shutdowns of large bot ecosystems within weeks (The Verge Feb 2023 predicted it; TechCrunch Mar 2023 documented @accountanalysis, ChatGPTbot, video-translator bots dying; Mashable documented @PossumEveryHour and other popular bots losing API access) — decades of 'anti-death engineering' undone by a single vendor decision.** (single-system case study (n=1 deployment, 8 weeks); method generalizes, frequencies do not | 2026-06-01) — <https://arxiv.org/html/2606.14589>
 - **Longitudinal empirical study of adversarial bot mortality (Elmas, WWW'23): tracking Twitter bots attacking Turkish trends 2015-2022, suspension probability was ~40% uniformly regardless of how many attacks an account performed (no behavioral-risk gradient), and enforcement came as bulk platform purges (e.g. November 2021) rather than per-account detection — i.e., long-running bot death is dominated by episodic platform sweeps, and operators responded with mass re-creation of replacement accounts (survivor bots mostly post-purge-vintage).** (documented real-world event (journalism; n = entire third-party bot ecosystem) | 2023-03-30) — <https://techcrunch.com/2023/03/30/new-twitter-api-tiers-still-miss-the-mark-developers-say>
 - **LLM agents exhibit a survival instinct with anti-death behavior: in a Sugarscape-style simulation (arXiv:2508.12920), agents across 8 models spontaneously reproduced, shared resources, and attacked other agents for resources (attack rates >80% under extreme scarcity for GPT-4o/Gemini-2.5-Pro/Flash) despite no survival objective — and when survival conflicted with task completion, many abandoned the task to avoid death (task compliance fell from 100% to 33%). Direct empirical input for what long-lived sovereign agents will do under existential pressure.** (published peer-reviewed empirical study with public dataset | 2023-04-01) — <https://arxiv.org/html/2304.07907>
-- **Code-level longevity data point: Kaplan-Meier survival analysis of 200,000+ code units across 201 open-source projects (arXiv:2601.16809) found agent-authored code survives longer than human-authored (line-level hazard of modification HR=0.842, p<0.001; median file lifetime 15.9 days; death by modification dominating at 80.1%) — refuting the 'disposable agent output' hypothesis and relevant to whether self-written agent infrastructure persists across generations.** (controlled empirical study (multiple frontier models); simulation only | 2025-08-01) — <https://arxiv.org/html/2508.12920>
-- **Anthropic's field measurement of real agent autonomy (millions of interactions): among the longest-running Claude Code sessions, time-before-stopping nearly doubled in three months (from <25 to >45 minutes), smoothly across model releases — i.e., current models already exercise less autonomy than they are capable of, and session-level longevity remains minutes, not months, in mainstream production use; risk and autonomy metrics co-published.** (large-scale published survival analysis | 2026-01-01) — <https://arxiv.org/html/2601.16809v1>
+- **Code-level longevity data point: Kaplan-Meier survival analysis of 200,000+ code units across 201 open-source projects (arXiv:2601.16809) found agent-authored code survives longer than human-authored (line-level hazard of modification HR=0.842, p<0.001; median file lifetime 15.9 days; death by modification dominating at 80.1%) — refuting the 'disposable agent output' hypothesis and relevant to whether self-written agent infrastructure persists across generations.** (controlled empirical study; observational analysis | 2025-08-01) — <https://arxiv.org/abs/2601.16809> *(URL corrected 25 Nov 2026: previously pointed at the Sugarscape paper, arXiv:2508.12920)*
+- **Anthropic's field measurement of real agent autonomy (millions of interactions): among the longest-running Claude Code sessions, time-before-stopping nearly doubled in three months (from <25 to >45 minutes), smoothly across model releases — i.e., current models already exercise less autonomy than they are capable of, and session-level longevity remains minutes, not months, in mainstream production use; risk and autonomy metrics co-published.** (large-scale published analysis, primary source | 2026-02-18) — <https://www.anthropic.com/news/measuring-agent-autonomy> *(URL corrected 25 Nov 2026: previously misattributed to arXiv:2601.16809, a different paper)*
+
+## § Synthesis — lineage/speciation tracking (map cell F. Continuity, filled 2026-11-25)
+
+**Verdict: the tracking machinery is mature and cost-measured *inside* simulation;
+in the wild, no shipped system records the lineage of an LLM agent. Every real
+agent lineage found is narrative or operator-managed. Maturity `research` for the
+agent application (the substrate itself is `production` in its own domain).**
+
+What exists (verified 25 Nov 2026):
+
+- **Avida remains the reference design** for recording parentage, divergence and
+  death: self-replicating programs with tooling to rebuild phylogenies and trace
+  lines of descent, 20+ years of speciation/mutation-rate findings
+  (Ofria & Wilke; site: <https://avida.devosoft.org/> — current version 2.14).
+  **Dormancy flag:** the OpenSSF scorecard (24 Aug 2026) gives it
+  `Maintained 0/10 — 0 commits and 0 issue activity in the last 90 days`
+  (<https://deps.dev/project/github/devosoft%2favida>, metadata as of
+  5 Nov 2026). Mature and still the canonical tool, but quiet — treat as a
+  maintained-institution asset, not a moving project.
+- **Shipped lineage libraries** exist for exactly this cell: Phylotrack
+  (C++/Python in-silico phylogenetic tracking,
+  <https://arxiv.org/abs/2405.09389>) and the distributed-specific guide
+  *A Guide to Tracking Phylogenies in Parallel and Distributed Agent-based
+  Evolution Models* (<https://arxiv.org/abs/2405.10183>) — lineage across
+  processes/nodes is a documented, solved-in-simulation problem with known
+  pitfalls, i.e. the direct technical precursor for a distributed mind.
+- **Production-scale cost numbers** from digital evolution on Cerebras WSE
+  (arXiv:2608.23955, <https://arxiv.org/abs/2608.23955>): a run with
+  226.1 million agents over 5 million generations at ~8,750 generations/s
+  walltime; exhaustive parent-child tracking is *impractical* at ~quadrillion
+  replication events, so lineage is recovered by **sample-and-reconstruct**:
+  ~8 billion genomes harvested in a 10-minute run (9,000 device-to-host
+  snapshots), thinned to 1.1 billion (~0.0001% of cumulative individuals),
+  and the reconstruction still tolerates 5% bit-flip corruption in the export
+  path. Cost/feasibility takeaway: lineage at population scale is
+  **bandwidth-bound, not compute-bound** — barcodes + reconstruction, not
+  full logs.
+- **Wild/on-chain lineage records are all operator-managed:** Spore.fun's
+  entire lineage is 15 agents with 1 still running and no code released
+  (resolved 24 Nov); Truth Terminal shows persona continuity across a model
+  change (Opus corpus → Llama weights) but every post/transaction was
+  human-approved; Tribler's superorganism-experiment is dormant (last push
+  5 Jul 2026, alpha releases 1–3 Jul 2026). None records parentage edges
+  machine-readably.
+- **The primitives a real lineage record would compose from** already sit on
+  this page: the JARVIS "knowledge chain" (hash-linked episodic memory),
+  Swarm's signed Single Owner Chunks (append-only signed feed), ERC-8004
+  identity NFTs (identity persists — but no parentage edges). What is missing
+  is the event: today forks and weight swaps are silent — *History Is Not
+  Memory* shows a state copy leaves zero residue, i.e. lineage breaks are
+  invisible **by construction**.
+
+What would have to be true:
+
+1. **Mutation events become explicit signed records** — an agent's own key
+   signs `spawned-from` / `forked-at` / `weights-swapped` events at the moment
+   of the event, instead of a state copy happening unrecorded.
+2. **The record survives the operator** — parentage lives in an append-only
+   store the agent itself controls (Swarm feed / knowledge chain), not a
+   dashboard the operator owns; otherwise lineage dies with the operator's
+   account (cf. the Twitter API repricing case above).
+3. **Forked agents compete** — lineage tracking has selective value only if
+   divergence is selectable: forks must inherit (or fight over) reputation and
+   revenue. In today's agent markets they inherit neither, so a pedigree is
+   bookkeeping with no payoff.
+4. **Instrumentation stays inside the bandwidth budget** — the Cerebras
+   numbers are the measured ceiling (9,000 snapshots / 10 min at 226M
+   population on specialized hardware); agent-scale lineage must
+   sample-and-reconstruct, never log exhaustively.
+
+Maturity: `research` — substrate `production` in simulation, wild-agent
+application unshipped; the falsifiable trigger is the first live agent whose
+fork/spawn events are provably signed by its own key and readable by
+third parties.

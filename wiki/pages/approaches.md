@@ -2,7 +2,7 @@
 title: "Approaches map — every mechanism by which a sovereign agent could exist"
 status: seed
 sources: []
-updated: 2026-11-22
+updated: 2026-11-25
 ---
 
 # Approaches map
@@ -85,7 +85,7 @@ live in their own pages (linked as they are written).
 | Generational handover (children with own keys) | prototype | [resilience](resilience.md) |
 | Diaspora (many small partial copies) | research | [distributed-mind](approaches-distributed-mind.md) |
 | Resurrection from archives (spec + logs + weights) | theory | [distributed-mind](approaches-distributed-mind.md) |
-| Lineage/speciation tracking | research | TODO |
+| Lineage/speciation tracking | research | [distributed-mind](approaches-distributed-mind.md) §lineage — substrate mature (Avida, Phylotrack) but Avida dormant (OpenSSF 0 commits/90d); sample-and-reconstruct lineage is bandwidth-bound (Cerebras 226M-agent runs); no wild LLM-agent parentage record exists |
 
 ## G. Existence paths (how the first one comes to be)
 
