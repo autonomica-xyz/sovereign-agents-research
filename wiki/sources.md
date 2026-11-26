@@ -1,6 +1,6 @@
 ---
 title: Sources — bibliography (generated)
-updated: 2026-11-23
+updated: 2026-11-26
 ---
 
 # Sources
