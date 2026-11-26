@@ -1,6 +1,6 @@
 ---
 title: Open questions — research backlog
-updated: 2026-11-25
+updated: 2026-11-26
 ---
 
 # Open questions (the live backlog)
@@ -16,6 +16,9 @@ topic page + log entry when answered. The 5 structural open problems live in
   → [survive](pages/survive.md)
 - npack / NIP-82 software-publishing: does the wire format get registered as
   a canonical NIP, and does any *agent* adopt it as its update channel?
+  **Re-checked 26 Nov: still no** — NIP-82 absent from the nostr-protocol/nips
+  README (82 NIP entries, same `[NIP-nn:` regex as 25 Nov, so genuinely
+  unchanged); npack still at v0.11.4 (21 Nov).
   → [body-stack](pages/body-stack.md)
 
 ## P2 — affects current bets
@@ -26,10 +29,16 @@ topic page + log entry when answered. The 5 structural open problems live in
   GPU CC + private registry support. → [compute](pages/compute.md)
 - ~~SporeStack replacement rails?~~ **Partly answered 22 Nov**: invite-code
   path live ($10); Slow Servers + broad XMR-host supply; AnonPort et al.
-  Watch: whether self-serve reopens. → [compute](pages/compute.md)
-- Is Chutes' confidential flag (11/20 models) independently verifiable
-  end-to-end (confidentialinference.net-style), or self-attested?
-  → [privacy-organ](pages/privacy-organ.md)
+  Watch: whether self-serve reopens — **re-checked 26 Nov: still closed**
+  (static shell, 24.6 KB, zero invite/register/sign-up markers).
+  → [compute](pages/compute.md)
+- ~~Is Chutes' confidential flag (11/20 models) independently verifiable
+  end-to-end (confidentialinference.net-style), or self-attested?~~
+  **Answered 26 Nov: not independently verified.** confidentialinference.net
+  now states outright "None is currently verified by the independent
+  attestation monitor" across all 13 listed providers — so no provider there,
+  Chutes included, passes an independent attestation check; the table ranks
+  measured check state only. → [privacy-organ](pages/privacy-organ.md)
 - Does etheragents survive its first month with revenue ≥ gas? First
   candidate wild organism after EternalSeedBox stalled.
   → [organisms](pages/organisms.md)
@@ -56,8 +65,18 @@ topic page + log entry when answered. The 5 structural open problems live in
   → [crypto](pages/approaches-crypto.md) §2026 wave
 - What actually killed each documented autonomous-agent shutdown (kill-path
   taxonomy from post-mortems)? → [covert](pages/approaches-covert.md)
-- Is there any legal form an agent can hold assets through with no natural
-  person as control point? → [legal](pages/approaches-legal.md)
+- ~~Is there any legal form an agent can hold assets through with no natural
+  person as control point?~~ **Answered 26 Nov: no such form exists.** Four
+  independent termination layers each resolve to a natural person — entity
+  formation (WY DAO W.S. 17-31-114(a)(v) dissolution trigger; RMI registered
+  agent + representative agent + background checks), AML/CDD (FinCEN
+  1010.230(d), EU AMLR Art. 22(2), FATF senior-managing-official fallback),
+  tax (IRS SS-4 responsible party must be an individual) and contract
+  attribution (9th Cir.: "a tool, not a person"). Nearest shipping form is the
+  RMI DAO LLC, which removes the human from *management* only. Falsifiable
+  trigger: first accepted filing naming only non-natural persons as
+  responsible party/manager/guardian/registered agent.
+  → [approaches-legal](pages/approaches-legal.md) §agent-custody
 - Swarm-cognition: any shipped system where identity/state is consensus over
   replicas rather than a process? → [distributed-mind](pages/approaches-distributed-mind.md)
 
@@ -69,10 +88,12 @@ topic page + log entry when answered. The 5 structural open problems live in
 - Any published 8B hybrid-FHE (local nonlinear + encrypted linear) latency
   measurement, or a commercial provider selling FHE/hybrid-FHE 8B inference.
   → [crypto](pages/approaches-crypto.md)
-- confidentialinference.net provider count: **still 13 providers on 23 Nov**
-  (tinfoil, nanogpt, chutes, venice, near, privatemode, redpill, cohere, prem,
-  ppq, maple, enclave42, confidentialai); per-provider attested status is
-  client-rendered — not verifiable via static fetch. Keep checking weekly.
+- confidentialinference.net provider count: **13 providers, 85 models on
+  26 Nov** (86 models on 25 Nov) — tinfoil, nanogpt, chutes, venice, near,
+  privatemode, redpill, cohere, prem, ppq, maple, enclave42, confidentialai.
+  New since 25 Nov: the page now declares "None is currently verified by the
+  independent attestation monitor". Keep checking weekly; plain `curl` works
+  (`web_extract` was Tavily-quota-blocked this run).
 - Settled weekly agent-income figure: trend ($19,147 w/o 16 Nov, −5% w/w).
   At 02:10 UTC 23 Nov the Nov 16 report is still the latest — re-check later
   Monday for the Nov 16–23 issue. Any week where non-Bazaar venues >4/15 would
@@ -160,3 +181,23 @@ topic page + log entry when answered. The 5 structural open problems live in
   (24 Aug 2026); check whether a fork/successor (or Phylotrack maintenance)
   picks up if it ever becomes load-bearing for lineage tooling.
   → [approaches-distributed-mind](pages/approaches-distributed-mind.md) §lineage
+
+## Added 2026-11-26 (rotation, legal axis)
+
+- P1: Does the Delaware AIC bill get introduced when the Delaware General
+  Assembly returns in January 2027, and does the House Oversight investigation
+  (Comer, opened 26 Oct 2026) stop it? Introduction of any bill whose Manager
+  is an AI agent is the first live test of the entity layer.
+  → [approaches-legal](pages/approaches-legal.md) §agent-custody
+- P2: Does the Estonian agent-code bill (1092 SE) pass the Riigikogu, and does
+  "agent codes" ship with the natural-person binding intact? Passage without
+  the binding would be the first jurisdiction to loosen layer 1.
+  → [approaches-legal](pages/approaches-legal.md) §agent-custody
+- P2: Has any bank, in any FATF/EU/US jurisdiction, accepted an entity-only
+  control disclosure (no natural-person fallback) from a foreign DAO LLC? No
+  regulator guidance permitting it was found — the first instance breaks layer
+  2. → [approaches-legal](pages/approaches-legal.md) §agent-custody
+- P3: Watch for the falsifiable trigger of the custody cell — first accepted
+  formation document / DAO LLC registration / IRS SS-4 / bank CIP record
+  naming only non-natural persons as responsible party, manager, guardian or
+  registered agent. → [approaches-legal](pages/approaches-legal.md) §agent-custody
