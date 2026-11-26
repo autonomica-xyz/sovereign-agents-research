@@ -2,7 +2,7 @@
 title: "Approaches map — every mechanism by which a sovereign agent could exist"
 status: seed
 sources: []
-updated: 2026-11-25
+updated: 2026-11-26
 ---
 
 # Approaches map
@@ -61,6 +61,7 @@ live in their own pages (linked as they are written).
 | TEE-born keys + KMS attestation | production | [survive](survive.md) |
 | Threshold/MPC signing (single-vendor) | production | [survive](survive.md) |
 | Cross-vendor threshold with no human quorum | research (unshipped) | [open-problems](open-problems.md) #1 |
+| Legal wrapper with no natural-person control point | theory (no such form; nearest RMI DAO LLC keeps 4 human terminators) | [legal](approaches-legal.md) §agent-custody |
 | Timelock / timed-release escrow (no hardware) | research | [crypto](approaches-crypto.md) |
 | Bearer ecash (Cashu) cold storage | production | [privacy-organ](privacy-organ.md) |
 | Smart-contract vaults with policy | production | TODO |

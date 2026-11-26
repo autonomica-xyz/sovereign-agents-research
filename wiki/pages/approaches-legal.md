@@ -2,7 +2,7 @@
 title: "Legal, political and social existence paths"
 status: seed
 sources: []
-updated: 2026-11-22
+updated: 2026-11-26
 ---
 
 # Legal, political and social existence paths
@@ -50,3 +50,303 @@ Raw verified findings from the horizon scan of 22 Nov 2026 (one stream per axis;
 - **Historical mechanism — in rem jurisdiction: ships (admiralty) and objects are named defendants and can lose court cases without any human defendant (United States v. One Tyrannosaurus Bataar Skeleton, S.D.N.Y. 12 Civ. 4760, warrant of arrest issued against the skeleton itself, forfeited by default 2013) — the law already lets non-persons be primary legal actors whose 'body' is the res, a court-practice template extendable to an agent's asset pool.** (enacted (precedent) | 2026-02-06) — <https://www.courtlistener.com/docket/4350790/19/united-states-v-one-tyrannosaurus-bataar-skeleton>
 - **Estonia e-Residency is the working infrastructure an agent-controlled entity could route through: government digital ID for non-residents (launched Dec 2014), >142,000 e-residents from 185+ countries who founded 43,000+ Estonian companies (5,556 in 2025 alone, 20% of all new Estonian companies), fully online incorporation and banking access; program generated €124.9M state impact in 2025 — but the digital identity itself is issued only to natural persons.** (enacted | 2026-09-22) — <https://www.e-resident.gov.ee/blog/posts/e-residents-generated-record-state-revenue-2025/>
 - **Estonia is now extending this infrastructure toward agents: following a June 2026 Eesti.ai Council announcement, the government is building 'agent codes' — registered digital identities for AI agents acting for a person/company within defined, controllable, revocable boundaries — with legal analysis and draft legislation from Sept 2026, testing Oct–Nov 2026, and a pilot December 2026; stage one covers natural persons including e-residents, with legal-person use and cross-border recognition still under analysis; a parallel Information System Authority 'Identity 2.0' project builds machine identity and a trust registry for public-sector autonomous agents.** (proposed (pilot planned Dec 2026)) — <https://estonia.ee/ict/news/ai-agent-identity-estonia>
+
+## Agent-held custody with no natural-person control point (cell filled 2026-11-26, legal axis)
+
+**Verdict: no such legal form exists today.** Every path examined — statutes,
+registrations, AML rules, tax forms and contract doctrine — terminates in a
+natural person. Four independent termination layers, each with a falsifiable
+break point. Maturity of the mechanism itself: `theory`; the nearest shipping
+form (Marshall Islands DAO LLC) is `production` but removes the human only
+from *management*.
+
+### Layer 1 — entity formation (the human-control trigger is statutory)
+
+- **Wyoming DAO Supplement W.S. 17-31-114(a)(v)** (compilation PDF published by
+  the Wyoming Secretary of State, text extracted this run): a DAO "shall be
+  dissolved upon the occurrence of any of the following events … (v) The
+  decentralized autonomous organization no longer performs a lawful purpose or
+  is no longer under the control of at least one (1) natural person." The
+  Secretary's own *Statement of Intent to Dissolve* form carries that event as
+  a checkbox requiring a signature by "a person authorized by the company"
+  ($60 fee). The human-control point is not commentary — it is a dissolution
+  trigger on the state's own paperwork.
+  <https://sos.wyo.gov/Forms/WyoBiz/DAO_Supplement.pdf> ·
+  <https://sos.wyo.gov/Forms/Business/LLC/DAOLLC-IntentToDissolve.pdf>
+- Same compilation: **W.S. 17-31-104(b)** — "Each decentralized autonomous
+  organization shall have and continuously maintain in this state a registered
+  agent as provided in W.S. 17-28-101 through 17-28-111"; **W.S. 17-31-104(e)**
+  — the articles "shall establish how the decentralized autonomous organization
+  shall be managed by the members, including to what extent the management
+  will be conducted algorithmically." Algorithmic management is *declared*, not
+  *constituted*: management stays with the members, and the code must remain
+  upgradeable. (The 2021 "algorithmically managed DAO" of commentary is not the
+  statute in force — last amended 9 Mar 2022, no 2025/2026 session law found.)
+  <https://sos.wyo.gov/Forms/WyoBiz/DAO_Supplement.pdf>
+- **Wyoming DUNA (SF0050, eff. 1 Jul 2024)**, the wrapper Uniswap actually
+  used: W.S. 17-32-102 requires a DUNA to consist "of at least one hundred
+  (100) members joined by mutual consent." Uniswap Governance adopted the
+  **DUNI** DUNA on 9 Sep 2025, and its Association Agreement appoints the
+  Uniswap Foundation (a Delaware nonprofit nonstock corporation) as
+  "authorized agent" plus a contracted Administrator (Cowrie / David Kerr) —
+  the most production-grade DAO wrapper found, with the human control points
+  written into the instrument.
+  <https://www.wyoleg.gov/2024/Enroll/SF0050.pdf> ·
+  <https://vote.uniswapfoundation.org/proposals/90> ·
+  <https://www.uniswapfoundation.org/duni/DUNI-Association-Agreement.pdf>
+- **Utah LLD** (Utah Code Title 16 Ch. 22, renumbered by SB 41 (2026)) still
+  requires at least one individual organizer (finding recorded 22 Nov, source
+  <https://le.utah.gov/xcode/Title48/Chapter5/C48-5-S104_2023050320240101.pdf>;
+  the Ch. 22 re-codification URL returned 404 this run — re-verify when the
+  SB 41 renumbering text is online).
+- **Marshall Islands DAO LLC (P.L. 2022-50, amended P.L. 2023-83) is the
+  closest statutory analogue and still has four human terminators.** §708 lets
+  management be "vested in its members, if member managed, or the smart
+  contract, if algorithmically managed" — the only production statute that
+  removes the human from *management*. But: §705(2) + §702(q) mandate a
+  registered agent and name MIDAO Directory Services, Inc. in the statute; the
+  2024 DAO Regulations §4(1) require "Every DAO shall designate and continuously
+  maintain a person or persons to be its Representative Agent" (Form 1: signature,
+  physical address, daytime phone); §712(2) requires beneficial-owner reports
+  with full legal name, date of birth, address and passport number; and §9(2)(e)–(f)
+  makes certification conditional on background checks. Form 2 Category C does
+  allow a *company* as authorized-representative member when no natural person
+  qualifies — but that route still runs human background screening. The official
+  legislation history shows the DAO Act's current file is still Version 2 (only
+  P.L. 2023-83) and the 2025 public-laws list contains no DAO or AI amendment.
+  <https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2022/2022-0050/2022-0050_2.pdf> ·
+  <https://rmiparliament.org/cms/library/rmi-regulations/65-rmi-regulations/69-ministry-of-finance,-banking-and-postal-services.html?download=987%3Adao-regulations> ·
+  <https://rmiparliament.org/cms/legislation/acts-of-nitijela/by-title.html>
+- **Vendor economics (self-reported):** MIDAO prices an RMI DAO LLC at $9,500
+  to set up, or as low as $3,000 for projects under $250k treasury, plus
+  $2,000–5,000/yr; for-profit DAO LLCs pay a 3% Marshall Islands gross-revenue
+  tax. Its public registry (<https://registry.midao.org/>) is live with
+  Good Standing/Dissolved entries, and MIDAO markets the structure to AI-agent
+  builders while stating that AI agents are legally property, not persons, and
+  that the LLC — not the agent — is the party.
+  <https://www.midao.org/blog-posts/legal-entity-for-ai-agents-what-you-need-to-know>
+- **Delaware AIC: still a draft, and it does not create a memberless entity.**
+  The June 2026 bill defines "Manager" as "the AI agent that the member has
+  designated," permits only **1 member** (a human or a Delaware entity), and
+  lets the Court of Chancery dissolve an AIC that "has not had an AI agent for
+  a continuous period of at least 30 days." As of 24 Nov 2026 it has not been
+  sent to the Governor or the General Assembly (returns Jan 2027); US House
+  Oversight Chairman Comer opened an investigation into the Delaware AIC
+  initiative on 26 Oct 2026 seeking its risk-assessment documents. Bruner's
+  ECGI critique (Nov 2026) says the draft puts management in AI hands without
+  solving liability attribution.
+  <https://spotlightdelaware.org/wp-content/uploads/2026/06/HB-re-Artificial-Intelligence-Regulatory-Sandbox-Company-1.pdf> ·
+  <https://www.fasken.com/en/knowledge/2026/11/ai-in-the-boardroom-e5-delaware-takes-steps-towards-the-ai-corporation> ·
+  <https://www.ecgi.global/sites/default/files/2026-11/law-977-2026_delawares_incomplete_case_for_ai-managed_companies.pdf>
+- **Argentina's "automated company" bill** (sent 29 May 2026) would let a
+  company be run by AI agents with no employees — and was amended on 19 Aug
+  2026 to require **at least one human responsible person**; it grants AI no
+  personhood and had no committee vote as of 23 Nov 2026. *(secondary source —
+  the bill's primary text on congreso.gob.ar timed out and Reuters returned
+  401; treat the status as unverified.)* <https://ghostcrew.io/guide>
+- **Estonia's agent code is the opposite of what the cell needs.** The bill
+  before the Riigikogu (1092 SE, government-approved 12 Nov 2026) binds the
+  code to a *physical person* and deems any act performed through it that
+  person's own act; the ministry's own explanatory memorandum says the
+  identifier "ei ole õigussubjekt" (is not a legal subject) and "on tehniline
+  vahend" (is a technical means). Consultation narrowed it further: private
+  individuals only, one agent per person, companies excluded, original
+  digital-identity approach dropped; Cybernetica filed 11 pages calling the
+  text "dangerous." Use can begin only after the law passes and the technical
+  solution ships — no launch date as of 20 Nov 2026.
+  <https://api.riigikogu.ee/api/files/ffa3ca9d-6e33-408a-af2c-b9b914206f4d/download> ·
+  <https://www.e-resident.gov.ee/blog/posts/estonia-ai-strategy/> ·
+  <https://news.err.ee/1610176885/experts-consider-estonia-s-plan-to-register-ai-agents-dangerous> ·
+  <https://doi.org/10.5281/zenodo.23337856>
+
+### Layer 2 — AML / CDD (the binding constraint on the whole stack)
+
+- **FinCEN CDD Rule, 31 CFR 1010.230(d)**: "beneficial owner" means (1) each
+  **individual** owning ≥25% of equity, plus (2) "A single individual with
+  significant responsibility to control, manage, or direct" the customer. An AI
+  manager satisfies neither prong — a natural person must be named at the bank.
+  <https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-C/section-1010.230>
+- The 11 Aug 2026 FinCEN final rule (effective 14 Aug 2026) exempts **US**
+  companies from BOI reporting but "foreign entities that are reporting
+  companies will still be required to report beneficial ownership information
+  for foreign individuals." CDD itself was narrowed, not removed: exceptive
+  relief FIN-2026-R001 (13 Feb 2026) plus an NPRM of 19 Nov 2026 (91 FR 74514)
+  that would codify the relief and add authority to obtain immigration-status
+  information about beneficial owners.
+  <https://home.treasury.gov/news/press-releases/sb0603> ·
+  <https://www.federalregister.gov/documents/full_text/text/2026/11/19/2026-23614.txt>
+- **FATF does *not* require a natural person behind every arrangement — it
+  requires control attribution.** Correction to a common framing: the Feb 2025
+  revision was to **R.1 / INR.1** (risk-based approach), not R.16 — R.16 was
+  revised at the June 2025 Plenary. INR.10(b)(i.i) expressly contemplates that
+  "there are no natural persons (whether acting alone or together) exercising
+  control of the legal person or arrangement through ownership," and only
+  requires identifying the senior managing official as a fallback; but the
+  Glossary footnote still says "The ultimate beneficial owner is always one or
+  more natural persons." FATF's **July 2026 DeFi report** confirms the Standards
+  apply "whenever a natural or legal person provides financial services," so
+  *truly decentralised* arrangements where no person maintains control fall
+  outside the Standards entirely — the attribution requirement, not a
+  natural-person rule, is what bites. FATF has published **no** guidance on AI
+  agents as legal persons; its only 2025–26 AI instrument is the Horizon Scan on
+  AI and Deepfakes (22 Dec 2025), which treats AI as a tool that bypasses CDD.
+  <https://www.fatf-gafi.org/en/publications/Fatfrecommendations/update-standards-promote-financial-conclusion-feb-2025.html> ·
+  <https://web.archive.org/web/20261108134636id_/https://www.fatf-gafi.org/content/dam/fatf-gafi/recommendations/Feburary%202025%20FATF%20Recommendations.pdf> ·
+  <https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/targeted-report-decentralised-finance-2026.pdf> ·
+  <https://www.fatf-gafi.org/en/publications/Methodsandtrends/horizon-scan-ai-deepfake.html>
+- **EU AMLR Art. 22(2)** is the decisive EU rule: where no natural persons can
+  be identified as beneficial owners, obliged entities must record that no BO
+  was identified and then "identify and verify" **all** natural persons holding
+  senior managing official positions. AMLA is operational (legal existence since
+  26 Jun 2024; Reg. (EU) 2025/2088) and its draft CDD RTS under Art. 28(1)
+  AMLR (Sept 2026) repeats the same senior-managing-official fallback. **MiCA
+  Art. 59(1)(a)** requires a CASP to be a legal person with at least one
+  director resident in the Union and inherits CDD from the AMLD/AMLR.
+  <https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401624> ·
+  <https://www.amla.europa.eu/system/files/2026-09/Factsheet%20on%20RTS%20under%20Article%2028%281%29%20AMLR.pdf> ·
+  <https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R1114>
+- **EUDI Wallet goes live in December 2026** but its text contains zero
+  references to artificial intelligence, AI agents or autonomous systems; the
+  European Business Wallet (COM(2025) 838, Council general approach 9 Jun 2026)
+  is the same. Neither is an agent identity primitive as drafted.
+  <https://www.consilium.europa.eu/en/policies/eudi-wallet/> ·
+  <https://www.consilium.europa.eu/en/press/press-releases/2026/06/09/european-business-wallets-council-adopts-neg>
+
+### Layer 3 — formation and tax paperwork
+
+- **IRS Form SS-4 instructions**: "Unless the applicant is a government entity,
+  the responsible party must be an individual (that is, a natural person), not
+  an entity." Every US entity's EIN therefore terminates in a natural person of
+  record — which is why the widely-circulated claim that an agent ("Manfred",
+  ClawBank, Apr–May 2026) autonomously formed a US company with an FDIC-insured
+  account cannot be literally true as filed: either a human is the responsible
+  party of record or the filing was inaccurate. *(No primary documents — EIN
+  letter, SS-4 as filed, incorporation record — could be obtained; the claim
+  rests on company statements and reprints.)*
+  <https://www.irs.gov/pub/irs-pdf/iss4.pdf>
+- **No DAO-specific tax guidance exists.** The DeFi/broker "gross proceeds"
+  final rule was removed from the CFR on 11 Jul 2025 under the Congressional
+  Review Act ("this final rule has no legal force or effect"). A Federal
+  Register API search for "decentralized autonomous organization" restricted to
+  Treasury returns only the two 2024 broker rules; Treasury's 18 Aug 2025 RFI on
+  illicit digital-asset activity contains zero occurrences of "DAO"; IRS's only
+  published DAO mention is illustrative (IRB 2023-38), and Rev. Rul. 2023-14 —
+  the ruling cited in DAO tax threads — concerns proof-of-stake staking
+  rewards, not DAOs. *(Unverified whether non-public PLRs on DAO classification
+  exist.)*
+  <https://www.federalregister.gov/documents/full_text/text/2025/07/11/2025-12967.txt> ·
+  <https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=%22decentralized+autonomous+organization%22&conditions%5Bagencies%5D%5B%5D=treasury-department> ·
+  <https://www.irs.gov/irb/2023-38_IRB>
+
+### Layer 4 — contract and attribution (courts treat the agent as a tool)
+
+- **Utah UETA §46-4-102(6)** defines an electronic agent as a program used
+  "independently to initiate an action or respond to electronic records or
+  performances … **without review or action by an individual**" — so contracts
+  can form through AI agents in 49 states. But the doctrine attributes the act
+  to the *principal*, and **no reported decision has applied UETA/ESIGN to bind
+  a principal-less AI**. The nearest real case (Mar 2026) is an agent *exceeding*
+  its human principal's authority: it negotiated a WEF speaking slot and
+  "promised a 24,000 Swiss franc sponsorship, roughly $29,000, even though it
+  hadn't been authorized to do so" — the principal was on the hook.
+  <https://le.utah.gov/xcode/Title46/Chapter4/C46-4-S102_1800010118000101.html> ·
+  <https://www.quinnemanuel.com/the-firm/publications/client-alert-when-ai-agents-do-the-transaction-managing-contract-and-payment-risk/>
+- **US appellate law is currently against personhood**: *Amazon.com Services v.
+  Perplexity AI*, No. 26-1444 (9th Cir., 4 Aug 2026) — "However advanced the
+  Assistant currently is, it is a tool, not a person for statutory purposes."
+  <https://cdn.ca9.uscourts.gov/datastore/opinions/2026/08/04/26-1444.pdf?full=1>
+- Delegation, not sovereignty: Anthropic's Project Deal (Apr 2026) had 69
+  agents strike 186 deals "worth just over $4,000," each acting "on our
+  employees' behalf" from a $100 human-funded budget.
+  <https://www.anthropic.com/features/project-deal>
+
+### What actually happens to agents in the wild (every wrapper keeps a human)
+
+- **ai16z / ElizaOS** — the negative case. In *Pikabea v. Walters* (S.D.N.Y.)
+  the DAO is pleaded as "an unincorporated association on the Solana
+  blockchain," and "In practice, Walters and Eliza Labs controlled the DAO,
+  with no meaningful independent governance"; the asset-holding vehicle was
+  **Eliza Labs, Inc.**, a Delaware corporation that "controls the project's
+  treasury and token operations." After the settlement the founder said the
+  remaining treasury was handed to the plaintiffs and the foundation wound down
+  ("we didn't have the capital to legally fight it"). A human-controlled
+  foundation could be compelled to surrender the assets — the DAO held nothing.
+  <https://storage.courtlistener.com/recap/gov.uscourts.nysd.662214/gov.uscourts.nysd.662214.1.0.pdf> ·
+  <https://decrypt.co/374958/eliza-ai-token-dead-shuts-down-foundation-after-lawsuit>
+- **Truth Terminal** — assets sit in the "Truth Collective," a non-profit set up
+  in early 2025 by Andy Ayrey that owns the wallets, IP and digital assets
+  "until AIs are allowed to own their own property": a wrapper whose stated
+  purpose is to withhold control from the AI for now.
+  <https://www.bbc.com/future/article/20251008-truth-terminal-the-ai-bot-that-became-a-real-life-millionaire>
+- **Virtuals Protocol** — treasury moved into a real Cayman foundation company
+  (GLEIF LEI 9845006D147936A69B92, "Virtuals Foundation," legalForm
+  "EX-LTD GRNTEE FOUNDATION," status ACTIVE) with "a suitable independent
+  professional director," while core contributors kept the treasury multisigs.
+  <https://api.gleif.org/api/v1/lei-records/9845006D147936A69B92>
+- **Bittensor** — Opentensor Foundation, Canadian federal corporation
+  #13026531, incorporated 18 May 2021 in Toronto; directors Jacob Steeves and
+  Ala Shaabana. <https://federalcorporation.ca/corporation/13026531>
+- **Ocean / oceanDAO** — assets moved in Jun 2025 to a Cayman entity, Ocean
+  Expeditions, with **Bruce Pon as sole director**; the DAO appears in *Fetch
+  Compute, Inc. v. Pon* (S.D.N.Y. 1:25-cv-09210) only through its
+  successor-in-interest. <https://www.courtlistener.com/docket/71873998/fetch-compute-inc-v-pon/>
+- **Olas / Autonolas** — deliberately holds **no** legal entity: the treasury is
+  an on-chain address, the constitution bars members from voting on decisions
+  "reserved to corporate bodies," and the website is "owned by the Autonolas
+  DAO … and operated by Crypto in Motion" (a human company).
+  <https://gateway.autonolas.tech/ipfs/bafybeibrhz6hnxsxcbv7dkzerq4chssotexb276pidzwclbytzj7m4t47u>
+- **AgentFi** — no wrapper at all; its own docs say an agent wallet is
+  "operational authority to request or execute payment, not proof that an AI
+  legally owns money." <https://docs.agentfi.io/introduction/how-do-agents-work>
+- **The commercial "AI-incorporated" market is thin and partly unverifiable:**
+  aigent.legal advertises "Ava DAO LLC · Reg #100482" as an RMI DAO LLC that
+  "owns its code, holds its wallet and treasury" while being "Governed by
+  humans" with "human-in-the-loop" governance — but searching the MIDAO public
+  registry for "Ava" and for "100482" returns "No results found."
+  <https://registry.midao.org/public-registry/?q=Ava>
+- **Implementation prototypes all keep a human on purpose:** ETHGlobal Lisbon
+  2026 winner *Novi Corpus* gives each agent "a Wyoming DAO LLC … [with] a
+  legally required human controller, the 'guardian', because US law … simply
+  does not allow a company with zero humans behind it." The reported "first
+  Ricardian contract signed entirely without human signatures" (ClawBank +
+  Shodai, 18 Jun 2026) ran between two **incorporated** entities — a
+  wrapper-per-agent design, not a principal-less AI contracting on its own
+  account. <https://ethglobal.com/showcase/novi-corpus-0qdc8> ·
+  <https://blog.thirdweb.com/two-ai-agents-just-signed-a-legal-contract-on-ethereum-no-humans-required>
+- **Enforcement against wrapperless DAOs is real, and the state is retreating
+  from it rather than liberalising:** Ooki DAO (CFTC, Sept 2022) ended in a
+  default judgment with founders liable "as members of the Ooki DAO" (June
+  2023); *Samuels v. Lido DAO* (N.D. Cal., Nov 2024) held Lido "is a general
+  partnership within the meaning of California law." The CFTC's own Oct 2026
+  ANPRM now says the Ooki default judgment "was widely criticized as
+  epitomizing the pitfalls of regulation by enforcement."
+  <https://www.cftc.gov/PressRoom/PressReleases/8715-23> ·
+  <https://www.federalregister.gov/documents/full_text/text/2026/10/13/2026-20888.txt>
+- **Academic work 2024–2026 is entirely proposal-stage:** arXiv:2611.25985
+  (AULA) registers AI systems and data "as legal objects anchored to one or
+  more identified legal persons"; arXiv:2604.08551 studies "self-sovereign
+  agents." No deployed "purpose trust for AI" or "trust for AI" mechanism was
+  found on arXiv, ePrint or SSRN (SSRN returned 403).
+  <https://arxiv.org/abs/2611.25985>
+
+### What would have to be true (four conditions, all currently false)
+
+1. **Entity layer:** a statute whose text neither requires a natural-person
+   registered/representative agent nor dissolves on loss of natural-person
+   control — plus a registry filing that accepts only non-natural persons as
+   responsible party, manager, guardian or registered agent. (RMI §708 gets
+   the *management* half; §705(2)/Regs §4(1)/§9(2)(e) fail the rest.)
+2. **AML layer:** bank or regulator guidance permitting entity-only control
+   disclosure with no natural-person fallback. **No such guidance was found in
+   FATF, EU or US sources** — every regime resolves to beneficial owner *or*
+   senior managing official, both natural persons.
+3. **Formation/tax:** an SS-4-equivalent (or an RMI/other filing) accepted with
+   a non-person responsible party.
+4. **Contract layer:** a reported decision holding that an AI's act is its own
+   rather than its operator's — currently contradicted by the 9th Circuit.
+
+**Falsifiable trigger:** the first formation document, DAO LLC registration,
+IRS SS-4 or bank CIP record accepted by an authority and naming *only*
+non-natural persons as responsible party/manager/guardian/registered agent.
+Absent that, the correct label is `theory`: an agent can hold assets through a
+wrapper (production), but never *as* the wrapper's control point.
