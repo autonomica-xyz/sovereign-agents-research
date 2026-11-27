@@ -219,3 +219,33 @@ topic page + log entry when answered. The 5 structural open problems live in
   formation document / DAO LLC registration / IRS SS-4 / bank CIP record
   naming only non-natural persons as responsible party, manager, guardian or
   registered agent. → [approaches-legal](pages/approaches-legal.md) §agent-custody
+
+## Added 2026-11-27 (rotation, cost-math cell + watch list)
+
+- P1: **Cache-read pricing ≤ $0.001/Mtok.** At a measured 291:1 re-read to
+  written ratio the cache tier is ~99.7% of an always-on agent's bill, so this
+  single trigger is worth more than any headline model-price move. Today the
+  floor is $0.003 (DeepSeek off-peak cache hit) / $0.00765 (gpt-oss-20b via
+  Darkbloom). → [cost-math-dollar-a-day](pages/cost-math-dollar-a-day.md)
+- P2: **A 24GB-class GPU at ≤ $0.0417/GPU-hr on a reputable provider** flips
+  dedicated 24/7 operation to feasible. Today: $0.07 Vast tail (unverified),
+  $0.3747 verified-only minimum, $0.46825 median, $0.34 RunPod Community
+  4090. → [cost-math-dollar-a-day](pages/cost-math-dollar-a-day.md)
+- P2: **A 70B-class open model under $0.05/Mtok input at ≥ 60 tok/s
+  sustained.** Today's $0.10 floor (DeepInfra Turbo) runs at 20 tok/s; the
+  215 tok/s Groq route costs $0.59. Price-half or speed-triple, either way.
+  → [cost-math-dollar-a-day](pages/cost-math-dollar-a-day.md)
+- P3: **Used 4090-class hardware below ~$1,200.** At the $1,599 MSRP the
+  owned-hardware route clears $1/day only at 4 h/day; below ~$1,200 capital
+  alone leaves room for power on US residential rates.
+  → [cost-math-dollar-a-day](pages/cost-math-dollar-a-day.md)
+- P2: **Does anyone publish a controlled 24/7-agent token-rate measurement?**
+  Every consumption figure in the wiki is self-reported, vendor-studied or
+  aggregate; no audited always-on agent billing exists. The first one lets the
+  $1/day envelope be tested against reality rather than a heartbeat profile.
+  → [cost-math-dollar-a-day](pages/cost-math-dollar-a-day.md)
+- P3: **Is confidentialinference.net's directory shrinking?** 86 → 85 → 82
+  models over 25–27 Nov with the provider list unchanged and 0 attested. If
+  providers are dropping models (or the scrape is degrading), the directory
+  stops being a usable proxy for the confidential-inference market.
+  → [privacy-organ](pages/privacy-organ.md)
