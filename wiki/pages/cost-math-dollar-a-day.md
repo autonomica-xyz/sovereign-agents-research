@@ -235,8 +235,8 @@ Jackson Ly's measured fleet: 225.1B tokens/30 d = 7.35B input-side tok/day
       7.35e9 x 0.00765/1e6 + 2.55e7 x 0.0765/1e6 = $58.15/day
       -> $1/day = 1.72% of his volume
 
-At a frontier-ish price ($2.85/Mtok in, the Rapid Claw H100-era API figure
-cited in this repo's economy page) his profile would cost ~$21 000/day.
+At a frontier-ish price (deepseek-v4-pro direct off-peak, $0.66/Mtok in — fetched
+from DeepSeek's own pricing page) his profile would cost $4 901/day.
 **The 291:1 re-read ratio, not the model price, is what separates $1/day from
 $3 233/day.** Halving the re-read ratio (context compaction, isolated sessions,
 smaller scratch context) is worth more than a 10× model-price cut.
@@ -259,8 +259,8 @@ models in 2024–2026):
 
 Hardware deflation is slower: at Epoch's ~30%/yr perf-per-dollar gain, a Vast
 4090 median of $0.46825/hr becomes $0.2771/hr in 2 years → $6.65/day at 24/7,
-still 6.7× over $1/day. Reaching the $0.0417/hr break-even from today's median
-at 30%/yr takes ~9.2 years; from the $0.07 tail, ~1.5 years.
+still 6.6× over $1/day. Reaching the $0.0417/hr break-even from today's median
+at 30%/yr takes ~9.2 years; from the $0.07 tail, ~2.0 years.
 
 ## How it serves the organism
 
@@ -294,7 +294,7 @@ before it spends it on a bigger model.
   the bill is the agent waking, reloading context, and finding nothing to do
   (Cognio's measured model). A sovereign agent that must be reachable 24/7
   inherits this cost even when nobody is using it.
-- **Anthropicic amplification.** Multi-agent designs cost ~15× chat in tokens
+- **Amplification.** Multi-agent designs cost ~15× chat in tokens
   (Anthropic, measured). A $1/day budget buys a *single-agent* 70B loop with
   room to spare, or a multi-agent loop at roughly 8B-class — the parallelism
   that makes agent systems good is exactly what the budget forbids.
