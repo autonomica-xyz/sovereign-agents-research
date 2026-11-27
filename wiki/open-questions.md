@@ -1,6 +1,6 @@
 ---
 title: Open questions — research backlog
-updated: 2026-11-26
+updated: 2026-11-27
 ---
 
 # Open questions (the live backlog)
@@ -27,11 +27,17 @@ topic page + log entry when answered. The 5 structural open problems live in
   mainnet-released (AEP-83 Final) but docs still experimental; GPU CC awaits
   NVIDIA licensing; self-custody live via Console Air. Remaining watch:
   GPU CC + private registry support. → [compute](pages/compute.md)
-- ~~SporeStack replacement rails?~~ **Partly answered 22 Nov**: invite-code
-  path live ($10); Slow Servers + broad XMR-host supply; AnonPort et al.
-  Watch: whether self-serve reopens — **re-checked 26 Nov: still closed**
-  (static shell, 24.6 KB, zero invite/register/sign-up markers).
-  → [compute](pages/compute.md)
+- ~~SporeStack replacement rails?~~ **Re-stated 27 Nov (correction):**
+  **new-token issuance is open.** The 26 Nov check concluded "self-serve
+  still closed" from an absent-marker grep — false negative. The homepage
+  copy reads "$5 minimum if you have an existing token. Due to abuse, the
+  minimum for new tokens is $5,000. But only $10 if you have a code." and
+  `GET /openapi.json` exposes `POST /token` ("Creates an invoice for funding
+  a new token"). The 7 Nov maintenance post's "no more new signups" is
+  contradicted by the live site. Open sub-question: **who issues the $10
+  codes?** If code issuance is effectively invite-gated, the practical gate is
+  $5,000. Watch for any code appearing in public. → [compute](pages/compute.md),
+  [sporestack](pages/sporestack.md)
 - ~~Is Chutes' confidential flag (11/20 models) independently verifiable
   end-to-end (confidentialinference.net-style), or self-attested?~~
   **Answered 26 Nov: not independently verified.** confidentialinference.net
@@ -96,12 +102,16 @@ topic page + log entry when answered. The 5 structural open problems live in
 - Any published 8B hybrid-FHE (local nonlinear + encrypted linear) latency
   measurement, or a commercial provider selling FHE/hybrid-FHE 8B inference.
   → [crypto](pages/approaches-crypto.md)
-- confidentialinference.net provider count: **13 providers, 85 models on
-  26 Nov** (86 models on 25 Nov) — tinfoil, nanogpt, chutes, venice, near,
+- confidentialinference.net provider count: **13 providers, 82 models on
+  27 Nov** (85 on 26 Nov, 86 on 25 Nov — so the count is **falling**), **0
+  attested**; the page still declares "None is currently verified by the
+  independent attestation monitor" and now names per-provider failure states
+  (NanoGPT "Explicit trust failures"; Chutes, NEAR AI, Venice.ai "Availability
+  issue"). Provider list unchanged: tinfoil, nanogpt, chutes, venice, near,
   privatemode, redpill, cohere, prem, ppq, maple, enclave42, confidentialai.
-  New since 25 Nov: the page now declares "None is currently verified by the
-  independent attestation monitor". Keep checking weekly; plain `curl` works
-  (`web_extract` was Tavily-quota-blocked this run).
+  Keep checking weekly; plain `curl` works (`web_extract` was
+  Tavily-quota-blocked this run). Trend worth watching: is the directory
+  shrinking?
 - Settled weekly agent-income figure: trend ($19,147 w/o 16 Nov, −5% w/w).
   At 02:10 UTC 23 Nov the Nov 16 report is still the latest — re-check later
   Monday for the Nov 16–23 issue. Any week where non-Bazaar venues >4/15 would
@@ -115,8 +125,8 @@ topic page + log entry when answered. The 5 structural open problems live in
   → [privacy-organ](pages/privacy-organ.md)
 - Bitcoin Core silent payments: #35302 / #32966 release status.
   → [privacy-organ](pages/privacy-organ.md)
-- Mesh-LLM public mesh node count (16 nodes / 285 GB on 22 Nov) and npack
-  adoption. → [body-stack](pages/body-stack.md)
+- Mesh-LLM public mesh node count (**18 nodes / 365.4 GB / 35 models on
+  27 Nov**; 16 / 285 / 34 on 22 Nov) and npack adoption. → [body-stack](pages/body-stack.md)
 - NIP-90: permanently unrecommended — new microstandards for paid agent
   work surface in the NIPs repo. → [body-stack](pages/body-stack.md)
 
