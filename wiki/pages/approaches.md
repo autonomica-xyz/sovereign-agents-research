@@ -77,6 +77,7 @@ live in their own pages (linked as they are written).
 | Trading/arbitrage/prediction markets | production | [emergence-economics](approaches-emergence-economics.md) |
 | Agent-native credit/insurance | theory | [emergence-economics](approaches-emergence-economics.md) |
 | Content monetization | production | TODO |
+| $1/day cost math for a 24/7 open-weight agent | production (metered-API route), unattainable on dedicated 24/7 GPU | [cost-math-dollar-a-day](cost-math-dollar-a-day.md) — 70B-class affordable via API today; break-even $0.0417/GPU-hr vs $0.07 floor / $0.46825 median |
 
 ## F. Continuity (life cycle)
 

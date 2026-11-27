@@ -48,8 +48,16 @@ topic page + log entry when answered. The 5 structural open problems live in
 
 ## P1b — approaches-map cells to fill (one per rotation)
 
-- Cost math: when can a 24/7 open-weight agent run for $1/day? (spot GPU vs
-  local amortization vs market rates) → [emergence-economics](pages/approaches-emergence-economics.md)
+- ~~Cost math: when can a 24/7 open-weight agent run for $1/day? (spot GPU vs
+  local amortization vs market rates)~~ **Answered 27 Nov**: $1/day ($30/mo) buys
+  **70B-class dense via metered API today** (llama-3.3-70b $0.10/$0.32 per Mtok
+  via DeepInfra = $0.099/day on an idle 48-wake/day heartbeat profile, $0.253/day
+  at heavy duty) and **117B-class MoE** (gpt-oss-120b $0.03/$0.15). It buys
+  **no dedicated 24/7 GPU at any observed price** — break-even is $0.0417/GPU-hr
+  vs a $0.07 tail floor and a $0.46825 median on Vast; and **no owned hardware**
+  (new 4090 at MSRP = $0.73/day capital alone over a 6-year life, $1.057/day at
+  4 h/day on US residential power). The binding constraint is the agent's own
+  context re-read amplification (measured 291:1), not model price. → [cost-math-dollar-a-day](pages/cost-math-dollar-a-day.md)
 - ~~Orbital storage/compute: real seizure-resistance or launch-dependent
   liability?~~ **Answered 24 Nov**: seizure-resistance against local/physical
   action is real (no orbital analogue to colo raids); jurisdictional escape is

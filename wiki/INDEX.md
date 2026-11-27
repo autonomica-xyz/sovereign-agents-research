@@ -203,7 +203,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Compute sources
 
-42 pages.
+43 pages.
 
 | Page | Gist |
 |---|---|
@@ -215,6 +215,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [BuilderNet and SUAVE](pages/buildernet-suave.md) | Flashbots' SUAVE was a proposed chain for private, decentralised block building; in practice the work became BuilderNet, a TDX-based block builder… |
 | [Chutes](pages/chutes.md) | A serverless inference platform (Bittensor ecosystem) whose TEE page documents TDX CVMs with GPU attestation; 11 of 20 listed models were flagged… |
 | [Conway Cloud](pages/conway-cloud.md) | Conway Research's cloud for agents: Linux VMs, inference and domains, paid with USDC over x402. |
+| [Cost math of a $1/day 24/7 open-weight agent](pages/cost-math-dollar-a-day.md) | Re-derived from primary sources on 27 Nov 2026: a 24/7 agent running an open-weight model for $1/day ($30/month) is **not** affordable on… |
 | [distributed-llama](pages/distributed-llama.md) | A C++ project (b4rtaz) that splits LLM inference across several devices over Ethernet with tensor parallelism, aimed at clusters of cheap boards… |
 | [Enclava](pages/enclava.md) | A confidential-applications platform in development (access by request, Nov 2026): containers deployed into AMD SEV-SNP TEEs with remote… |
 | [EQVPS (agent-provisioned VPS over MCP)](pages/eqvps.md) | A VPS seller that publishes a step-by-step guide "for an AI agent to buy and run a VPS on its own over MCP or REST: register, pay in crypto,… |
