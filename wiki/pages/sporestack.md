@@ -3,25 +3,34 @@ title: "SporeStack (and Slow Servers)"
 category: compute
 status: stable
 sources: [docs/state-of-the-art.md]
-updated: 2026-11-23
+updated: 2026-11-27
 ---
 
 # SporeStack
 
 > The archetypal machine-buyable VPS: fund a token with XMR, BTC or BCH and
 > drive servers through an API reachable over Tor and I2P, with no account.
-> EternalSeedBox was built on it. SporeStack raised its minimum to $1,000 on
-> 27 Oct 2026 and stopped issuing new tokens on 7 Nov 2026 after someone used
-> it to launch 250 masscan servers.
+> EternalSeedBox was built on it. New-token issuance is **open again at a
+> $5,000 minimum** ($10 with a code) as of 27 Nov 2026 — the 7 Nov 2026
+> maintenance post said "no more new signups", but the homepage copy and
+> `POST /token` contradict it.
 
 ## Details
 
 - Resold DigitalOcean and Vultr capacity, so it never offered confidential
   execution.
-- Maintenance mode: existing tokens keep working; the homepage showed a $10
-  invite-code path beside a $5,000 self-serve minimum (Nov 2026).
-- Same operator runs **Slow Servers** (SSH-based signup, Tor).
-- Acceptable-use policy can forfeit a token's balance.
+- Token model: a 32–64 char secret is the account. `$5` minimum top-up on an
+  existing token; **new tokens: $5,000 minimum**, or **$10 with a
+  coupon-style code** (homepage copy, 27 Nov 2026). `POST /token` in
+  `api.sporestack.com/openapi.json` = "Creates an invoice for funding a new
+  token. Invoice includes your new token." — so new tokens really do issue.
+- Same operator runs **Slow Servers** (SSH-based signup, Tor; committed to run
+  to ≥2030). The 7 Nov post also says the operator is open to selling
+  SporeStack for $100k–$1M.
+- API changelog: **2026-11-18 "Affiliate is no more."**; earlier breaking
+  changes require an explicit `provider` and `region` on every launch.
+- Acceptable-use policy can forfeit a token's balance. Abuse (250 masscan
+  servers on a $1,000 token) is what drove the 7 Nov restrictions.
 
 ## How it serves the organism
 

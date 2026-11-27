@@ -2,7 +2,7 @@
 title: "Drive 4: Get more compute"
 status: stable
 sources: [docs/state-of-the-art.md]
-updated: 2026-11-22
+updated: 2026-11-27
 ---
 
 # Drive 4: Get more compute — earn, buy, pool
@@ -21,8 +21,8 @@ Source: [state-of-the-art.md §Drive 4](../../docs/state-of-the-art.md).
 
 ## Buying permissionlessly
 Akash (self-custody wallet, TEE experimental) · Phala (USDC, stops at $0) ·
-Nosana (Solana) · SporeStack (XMR/BTC, Tor/I2P — **closed to new tokens since
-7 Nov 2026**) · BitLaunch (BTC/LTC/ETH) · Conway Cloud (x402, single vendor) ·
+Nosana (Solana) · SporeStack (XMR/BTC, Tor/I2P — **new tokens issued at a
+$5,000 minimum, or $10 with a code, since 27 Nov**) · BitLaunch (BTC/LTC/ETH) ·
 inference-only: Routstr, PayPerQ, lnget. Spheron/io.net: no TEE.
 The anonymous, permissionless supply is shrinking or experimental.
 
@@ -50,9 +50,13 @@ Pluralis Agora · Nous Psyche · idle GPUs (Gensyn, Tribler donations).
 ## Update 2026-11-22 — supply and revenue measurements (research pass 1)
 
 ### Buying
-- SporeStack: maintenance mode since 7 Nov, but the homepage now shows a
-  **$10 invite-code path** beside a $5,000 self-serve minimum; existing
-  tokens keep working ([blog](https://sporestack.com/blog/posts/2026-11-07-maintenance-mode.html),
+- SporeStack: **new tokens issue again** — homepage copy (27 Nov) states a
+  $5,000 minimum for new tokens, or $10 with a coupon-style code, and
+  `POST /token` is live in the OpenAPI spec ("Creates an invoice for funding
+  a new token"). The 7 Nov maintenance post said "no more new signups", so the
+  site now contradicts its own operator statement. $5 minimum top-up on an
+  existing token. Open sub-question: who issues the $10 codes?
+  ([sporestack](sporestack.md), [blog](https://sporestack.com/blog/posts/2026-11-07-maintenance-mode.html),
   [changelog](https://api.sporestack.com/changelog)).
 - Replacement XMR rails verified: Slow Servers (same operator, ssh-signup,
   Tor) — [slowservers.net](https://slowservers.net/); 88-host XMR VPS survey
