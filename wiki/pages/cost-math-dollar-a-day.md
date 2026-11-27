@@ -82,7 +82,7 @@ prices; the floor per provider is what a cost-minimising agent can actually get.
 | Model | In | Out | Floor provider | URL |
 |---|---|---|---|---|
 | gpt-oss-20b (21B MoE, 3.6B active) | 0.0153 | 0.0765 | Darkbloom (cache 0.00765) | <https://openrouter.ai/openai/gpt-oss-20b> |
-| gpt-oss-120b (117B MoE, 5.1B active) | 0.03 | 0.15 | Venice/NEAR/CoreWeave (cache 0.03) | <https://openrouter.ai/openai/gpt-oss-120b> |
+| gpt-oss-120b (117B MoE, 5.1B active) | 0.03 | 0.15 | Venice 12 tok/s, NEAR AI 20 tok/s (cache 0.015); CoreWeave 0.03/0.17 (cache 0.03) | <https://openrouter.ai/openai/gpt-oss-120b> |
 | llama-3.3-70b (dense 70B) | 0.10 | 0.32 | DeepInfra Turbo (20 tok/s, 97.98% uptime) | <https://openrouter.ai/meta-llama/llama-3.3-70b-instruct> |
 | llama-3.3-70b | 0.59 | 0.79 | Groq (215 tok/s, cache 0.295) | same page |
 | llama-3.1-8b | 0.02 | 0.04 | DeepInfra (70 tok/s) | <https://openrouter.ai/meta-llama/llama-3.1-8b-instruct> |
@@ -387,6 +387,13 @@ fact, checkable on a provider's own pricing page):
   from their October 2025 low (SemiAnalysis, May 2026, paywalled newsletter —
   found via search summary, not fetched in full). GPU-hour deflation and
   capability-adjusted token deflation may be moving in opposite directions.
+- **Two cited URLs return 403 to an automated HEAD check but were fetched
+  successfully in-session** (`sec.gov/.../R32.htm` — SEC requires a
+  identifying User-Agent and blocks the linter's default; the "Technology
+  equipment 6 years" line was read directly from the filing; and the Eurostat
+  `statistics-explained` page, which blocks the linter but rendered fine for
+  `web_extract`). Neither is dead; the lint warning is bot-blocking, not a
+  broken link.
 
 ## Related
 
