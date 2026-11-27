@@ -3,7 +3,7 @@ title: "Mesh LLM"
 category: technology
 status: stable
 sources: [docs/nostr-blossom-iroh.md]
-updated: 2026-11-23
+updated: 2026-11-27
 ---
 
 # Mesh LLM
@@ -17,8 +17,9 @@ updated: 2026-11-23
 
 - Runs a model locally if it fits, routes to a peer, or splits layers across
   peers (pipeline stages).
-- Releases v0.78–v0.80.0 (16 Nov 2026); public mesh snapshot: 16 nodes,
-  285.4 GB pooled, 34 models (public.meshllm.cloud).
+- Releases v0.78–v0.80.0 (16 Nov 2026); public mesh snapshot: **18 nodes,
+  365.4 GB pooled, 35 models, 18 links** (public.meshllm.cloud, read
+  27 Nov 2026; 16 nodes / 285.4 GB / 34 models on 22 Nov).
 - Payments: `pay-lightning` plugin v0.1.2 plus Lexe and NWC wallet plugins are
   documented, but the `ln-payments-plugin` repo still says "WIP, do not use"
   (Nov 2026). Spiral presented the plan publicly (Oct 2026).

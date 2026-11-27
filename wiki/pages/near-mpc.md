@@ -3,7 +3,7 @@ title: "NEAR MPC (Chain Signatures)"
 category: technology
 status: stable
 sources: [docs/research-notes.md]
-updated: 2026-11-23
+updated: 2026-11-27
 ---
 
 # NEAR MPC (Chain Signatures)
@@ -20,6 +20,9 @@ updated: 2026-11-23
 - Release 3.19.0 (12 Nov 2026) removed ECDSA presignatures, closing a
   TEE-rollback share-leak vector flagged 25 Sep 2026; key-share migration now
   needs an attested destination node.
+- Release 3.19.1 (26 Nov 2026) is a testnet-only patch: bumps nearcore to
+  2.15.0-rc.1 for protocol 89, node-only, no contract upgrade, no launcher
+  vote; nearcore 2.15 migrates the node database on first start.
 - An independent tracker showed 16 nodes / threshold 11 after a removal on
   22 Oct 2026.
 
