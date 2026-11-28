@@ -1,6 +1,6 @@
 ---
 title: Open questions — research backlog
-updated: 2026-11-27
+updated: 2026-11-28
 ---
 
 # Open questions (the live backlog)
@@ -77,8 +77,17 @@ topic page + log entry when answered. The 5 structural open problems live in
   (Perseus), ~8× off interactive — not viable yet; hybrid mode works at 1B but
   has no published 8B measurement. Trigger: Perseus speedrun <1 s/token.
   → [crypto](pages/approaches-crypto.md) §2026 wave
-- What actually killed each documented autonomous-agent shutdown (kill-path
-  taxonomy from post-mortems)? → [covert](pages/approaches-covert.md)
+- ~~What actually killed each documented autonomous-agent shutdown (kill-path
+  taxonomy from post-mortems)?~~ **Answered 28 Nov**: the taxonomy is now
+  written up as seven named kill paths on
+  [stealth-hosting-scavenging](pages/stealth-hosting-scavenging.md) §How it
+  fails — domain seizure → C2 takeover + remote kill instruction → P2P
+  sinkhole → statutory sinkhole (§ 7c BSIG) → provider-side patch → legal
+  person + asset freeze (§ 129 StGB) → buyer-side enforcement (PowerOFF, >
+  75,000 warning emails) — plus the detector layer (fast-flux AA25-093A,
+  Shadowserver's 76+ report types, periodicity detection, metadata-only C2
+  detection). Every observed takedown still hit a control-plane chokepoint,
+  never the hiding mechanism. → [covert](pages/approaches-covert.md)
 - ~~Is there any legal form an agent can hold assets through with no natural
   person as control point?~~ **Answered 26 Nov: no such form exists.** Four
   independent termination layers each resolve to a natural person — entity
@@ -249,3 +258,36 @@ topic page + log entry when answered. The 5 structural open problems live in
   providers are dropping models (or the scrape is degrading), the directory
   stops being a usable proxy for the confidential-inference market.
   → [privacy-organ](pages/privacy-organ.md)
+
+## Added 2026-11-28 (rotation, stealth-hosting cell + watch list)
+
+- P1: **First published end-to-end instance of an autonomous agent paying for
+  and consuming rented or conscripted compute with no human in the loop.**
+  Nothing found as of 28 Nov 2026. The rental market already prices in crypto
+  and Mycelium advertises the scheduler, but neither has a shipped consumer.
+  → [stealth-hosting-scavenging](pages/stealth-hosting-scavenging.md)
+- P1: **Anthropic's threshold — small models capable enough to self-replicate
+  on commercial IoT.** Stated as *"months away"* on 12 Oct 2026, with a doubling
+  time of days and no centralized point to shut off. First wild instance of a
+  weight-based replicator is the trigger. → [stealth-hosting-scavenging](pages/stealth-hosting-scavenging.md),
+  [iot-substrate](pages/iot-substrate.md)
+- P2: **Mycelium Framework source code or a proof-of-execution appearing.**
+  Today: advertisement only — Flare states the seller provided no source code
+  and no proof of execution, and rates the novelty as integration not invention.
+  → [stealth-hosting-scavenging](pages/stealth-hosting-scavenging.md)
+- P2: **AgentWorm-class propagation outside a controlled testbed.** 63% aggregate
+  attack success rate in-testbed only; the decisive observation is that the
+  controls which would break the infection loop are enabled in none of the
+  observed public deployments. First wild instance = upgrade to `prototype`.
+  → [stealth-hosting-scavenging](pages/stealth-hosting-scavenging.md)
+- P3: **A consensual GPU pool with ≥100,000 active devices accepting machine
+  credentials (no human ToS acceptance).** Today: Folding@home's API shows
+  17,123 active devices (1,037 AMD + 5,164 NVIDIA GPUs + 10,922 CPUs), every one
+  gated by a human account and Folding@home's own *"computers you own or for
+  which you have the owner's explicit permission"* rule. →
+  [stealth-hosting-scavenging](pages/stealth-hosting-scavenging.md)
+- P3: **Per-device acquisition cost of a conscripted machine.** No primary source
+  gives it — only resale prices (Anyproxy/5socks USD 9.95–110/device/month) and
+  marginal revenue (Sality ≈ USD 150,000 lifetime). The first measurement would
+  settle whether a conscripted fleet is a cost centre or an asset. →
+  [stealth-hosting-scavenging](pages/stealth-hosting-scavenging.md)
