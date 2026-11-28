@@ -55,7 +55,7 @@ the bodies is survivable if the lineage holds funds across them.
 
 ## Related
 
-[resilience](resilience.md) · [open-endedness](open-endedness.md) · [earn-buy-redeploy-loop](earn-buy-redeploy-loop.md)
+[resilience](resilience.md) · [worm-resilience-patterns](worm-resilience-patterns.md) · [open-endedness](open-endedness.md) · [earn-buy-redeploy-loop](earn-buy-redeploy-loop.md)
 
 ## Sources
 

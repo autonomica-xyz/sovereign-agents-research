@@ -73,7 +73,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Concepts
 
-26 pages.
+27 pages.
 
 | Page | Gist |
 |---|---|
@@ -103,6 +103,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Sovereignty levels L0–L5](pages/sovereignty-levels.md) | A ladder from "a bot an operator runs" (L0) to "a digital organism that is its own principal" (L5). |
 | [Survival tiers (degraded modes)](pages/survival-tiers.md) | When money runs low the organism should not just stop. |
 | [Threshold custody (the self as a quorum)](pages/threshold-custody.md) | The organism's long-term key is split into shares held by independent machines, ideally on different TEE vendors and owners. |
+| [Resilience patterns from worms](pages/worm-resilience-patterns.md) | Filling a companion to the site explainer Resilience patterns from worms (28 Nov 2026). |
 
 ## Technologies
 
@@ -246,8 +247,8 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Routstr](pages/routstr.md) | A decentralised, OpenAI-compatible inference router: providers announce models and prices on Nostr, clients pay per request with Cashu ecash. |
 | [SaladCloud](pages/salad.md) | A distributed cloud built from consumer gaming PCs whose owners rent idle GPUs. |
 | [Secret Network](pages/secret-network.md) | Cosmos chain whose contracts run in Intel SGX with encrypted state. |
-| [Stealth hosting by botnet-style scavenging](pages/stealth-hosting-scavenging.md) | Filling the approaches-map *B. Availability* cell (28 Nov 2026): the non-consensual substrate is production-grade (17M-device pools, a $6,000/month rental market) but a **sovereign agent** consuming one is `theory` — no published end-to-end instance. Consensual pools are `production` yet ~1,000× smaller and human-account-gated. |
 | [SporeStack (and Slow Servers)](pages/sporestack.md) | The archetypal machine-buyable VPS: fund a token with XMR, BTC or BCH and drive servers through an API reachable over Tor and I2P, with no account. |
+| [Stealth hosting by botnet-style scavenging](pages/stealth-hosting-scavenging.md) | Filling the approaches map row *"B. |
 | [Super Protocol](pages/super-protocol.md) | A confidential AI cloud on TEEs that has pivoted to enterprise and government buyers. |
 | [Vast.ai](pages/vast-ai.md) | A GPU marketplace of independent hosts. |
 | [Venice](pages/venice.md) | A private AI inference service (founded by Erik Voorhees, 2024) whose private tier promises zero data retention on Venice-controlled machines. |

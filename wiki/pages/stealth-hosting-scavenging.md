@@ -303,7 +303,7 @@ resale prices and marginal revenue.
 [covert](approaches-covert.md) · [approaches](approaches.md) ·
 [compute](compute.md) · [censorship-resistant-hosting](censorship-resistant-hosting.md) ·
 [iot-substrate](iot-substrate.md) · [not-get-killed](not-get-killed.md) ·
-[self-replication](self-replication.md) · [toronto-ai-worm](toronto-ai-worm.md) ·
+[self-replication](self-replication.md) · [worm-resilience-patterns](worm-resilience-patterns.md) · [toronto-ai-worm](toronto-ai-worm.md) ·
 [palisade-hack-and-replicate](palisade-hack-and-replicate.md) ·
 [host-seizure](host-seizure.md) · [legal-takedown](legal-takedown.md) ·
 [dns-seizure](dns-seizure.md) · [supplier-shutdown](supplier-shutdown.md) ·
