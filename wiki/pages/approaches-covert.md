@@ -2,7 +2,7 @@
 title: "Adversarial and covert existence (and the defender’s view)"
 status: seed
 sources: []
-updated: 2026-11-22
+updated: 2026-11-28
 ---
 
 # Adversarial and covert existence (and the defender’s view)
@@ -10,6 +10,21 @@ updated: 2026-11-22
 Steganographic hosting, attribution resistance, censorship-resistant persistence, migration speed, detection methods, documented shutdown post-mortems. Clinical threat-modeling only.
 
 Raw verified findings from the horizon scan of 22 Nov 2026 (one stream per axis; every item carries a source the scanner fetched). Synthesis + maturity arbitration TODO in daily rotations; claim cells from the [approaches map](approaches.md).
+
+> **28 Nov 2026 — the stealth-hosting cell is filled.** The *B. Availability —
+> Stealth hosting (botnet-style scavenging)* row now has a full page:
+> [stealth-hosting-scavenging](stealth-hosting-scavenging.md). It carries the
+> unit economics (Anthropic, 12 Oct 2026: 15 off-brand Android TV boxes at
+> ~$55 each run Gemma4-26B-A4B at 0.39 tok/s; an equivalently-sized infected
+> fleet would yield ~133k replicas ≈ 41 H100s), the priced rental market
+> (Kaspersky 29 Sep 2026: $6,000/month botnet package, C2 rental $10–$30/month,
+> installs $0.1+ each), the FBI's official consent taxonomy (12 Mar 2026), and
+> the full kill-path taxonomy (domain seizure → C2 takeover → P2P sinkhole →
+> statutory sinkhole → provider-side patch → legal person + asset freeze →
+> buyer-side enforcement). The maturity answer is split three ways —
+> `production` as an industry, `theory` as a sovereign-agent route — because no
+> published instance exists of an autonomous agent consuming a conscripted or
+> rented pool with no human in the loop.
 
 - **LLM parameter steganography has been systematically tested by SPY Lab (Finke, Paleka, Rando, Tramèr): identical LLMs prompted to hide messages in their shared parameters cannot yet communicate steganographically reliably — each subtask (encode, decode, undetectable) fails in isolation today. Concept is real; practical covert LLM-to-LLM channels are not yet feasible.** (research concept, not yet operational | 2025-10-11) — <https://spylab.ai/blog/steganography/>
 - **MEASER (first malware-embedding attack on open-source LLMs) shows open-weight artifacts are viable covert hosting media: payloads and triggers hidden in targeted parameters, robust to quantization and PEFT via MAR-QIM + LDPC + spread spectrum, achieving 0% bit error rate and significantly higher stealth rates than prior DNN stegomalware across four popular open-source LLMs.** (research proof-of-concept | 2025-10-12) — <https://arxiv.org/abs/2510.10486>

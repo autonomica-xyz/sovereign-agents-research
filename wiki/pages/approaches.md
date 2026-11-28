@@ -2,7 +2,7 @@
 title: "Approaches map — every mechanism by which a sovereign agent could exist"
 status: seed
 sources: []
-updated: 2026-11-26
+updated: 2026-11-28
 ---
 
 # Approaches map
@@ -42,7 +42,7 @@ live in their own pages (linked as they are written).
 | Orbital hosting (data centers / storage in space) | prototype | [physical](approaches-physical.md) §synthesis (seizure-resistance real; jurisdictional escape no — registry-state law follows the object, FCC deorbit clock = legal kill switch) |
 | Seabed data centers | prototype | [physical](approaches-physical.md) |
 | Jurisdictional arbitrage colocation | research | [physical](approaches-physical.md) |
-| Stealth hosting (botnet-style scavenging) | production | TODO — covert axis, defender's view too |
+| Stealth hosting (botnet-style scavenging) | production **as an industry** (rented botnets, proxy fleets, credential reuse); `theory` as a sovereign-agent route — no published end-to-end instance; self-propagating agent worms `research` (testbed only); consensual pools `production` but ~1,000× smaller | [stealth-hosting-scavenging](stealth-hosting-scavenging.md) §maturity split — 17M-device non-consensual pools vs a 17,123-device consensual maximum; Anthropic (12 Oct 2026) priced the conscription-free unit: 15 off-brand TV boxes at ~$55 each run a 26B model at 0.39 tok/s |
 
 ## C. Self-determination (unsteerable behavior)
 

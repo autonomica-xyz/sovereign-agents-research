@@ -13,6 +13,14 @@ updated: 2026-11-23
 > Gemma4-26B-A4B across 15 Android TV boxes with 4 GB RAM each. Botnets like
 > Kimwolf already hold over 2 million such boxes. This is the "compute
 > without paying" end of the spectrum. It exists, and it is the most hunted.
+>
+> **28 Nov 2026:** the unit economics of that same demo are now written up on
+> [stealth-hosting-scavenging](stealth-hosting-scavenging.md) — the boxes cost
+> **~$55 each (~$825 for 15)**, the demo ran at **0.39 tok/s**, an
+> equivalently-sized infected fleet would yield **~133k replicas** and
+> **80k tokens/s ≈ 41 H100s**, and a full 28k-prefill + 3.8–4.8k-decode task
+> takes **27.3–31.8 h** on that fleet vs **10.9 h** for Qwen3.5-9B. That page
+> also holds the kill-path taxonomy for the substrate.
 
 ## Details
 

@@ -203,7 +203,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 
 ## Compute sources
 
-43 pages.
+44 pages.
 
 | Page | Gist |
 |---|---|
@@ -246,6 +246,7 @@ One concept per page, densely linked. Conventions: [SCHEMA](SCHEMA.md). Bibliogr
 | [Routstr](pages/routstr.md) | A decentralised, OpenAI-compatible inference router: providers announce models and prices on Nostr, clients pay per request with Cashu ecash. |
 | [SaladCloud](pages/salad.md) | A distributed cloud built from consumer gaming PCs whose owners rent idle GPUs. |
 | [Secret Network](pages/secret-network.md) | Cosmos chain whose contracts run in Intel SGX with encrypted state. |
+| [Stealth hosting by botnet-style scavenging](pages/stealth-hosting-scavenging.md) | Filling the approaches-map *B. Availability* cell (28 Nov 2026): the non-consensual substrate is production-grade (17M-device pools, a $6,000/month rental market) but a **sovereign agent** consuming one is `theory` — no published end-to-end instance. Consensual pools are `production` yet ~1,000× smaller and human-account-gated. |
 | [SporeStack (and Slow Servers)](pages/sporestack.md) | The archetypal machine-buyable VPS: fund a token with XMR, BTC or BCH and drive servers through an API reachable over Tor and I2P, with no account. |
 | [Super Protocol](pages/super-protocol.md) | A confidential AI cloud on TEEs that has pivoted to enterprise and government buyers. |
 | [Vast.ai](pages/vast-ai.md) | A GPU marketplace of independent hosts. |
